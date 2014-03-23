@@ -45,6 +45,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('default', function (cb) {
+gulp.task('watch', function () {
+  gulp.watch(['assets/sass/*.scss'], ['sass']);
+  gulp.watch(['posts/**/*', 'pages/**/*', 'templates/*'], ['build']);
+});
+
+gulp.task('build', function () {
   runSequence('clean', 'posts', 'pages', 'sass');
 });
+
+gulp.task('default', ['build', 'watch']);
