@@ -1,8 +1,10 @@
-var _ = require('underscore');
-var gulp = require('gulp');
-var runSequence = require('run-sequence');
+var _            = require('underscore');
+var gulp         = require('gulp');
+var runSequence  = require('run-sequence');
+var sass         = require('gulp-sass');
 var transblogify = require('./lib/transblogify');
-var clean  = require('gulp-clean');
+var clean        = require('gulp-clean');
+var mkdirp       = require('mkdirp');
 
 // Generate pygments stylesheets:
 // http://funcptr.net/2011/11/27/generating-stylesheets-for-pygments/
@@ -33,6 +35,16 @@ gulp.task('pages', function () {
   });
 });
 
+gulp.task('sass', function () {
+  mkdirp.sync('./build/css');
+
+  return gulp.src('./assets/sass/application.scss')
+    .pipe(sass({
+      errLogToConsole: true
+    }))
+    .pipe(gulp.dest('./build/css'));
+});
+
 gulp.task('default', function (cb) {
-  runSequence('clean', 'posts', 'pages');
+  runSequence('clean', 'posts', 'pages', 'sass');
 });

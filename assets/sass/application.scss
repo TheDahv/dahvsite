@@ -1,0 +1,15 @@
+@import 'pygments';
+@import 'normalize';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+body {
+  @include outer-container;
+}
+#main {
+  @include span-columns(12);
+
+  h1 {
+    text-align: center;
+  }
+}
