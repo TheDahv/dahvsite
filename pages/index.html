@@ -1,0 +1,16 @@
+---
+template: main
+---
+
+<h1>My Site</h1>
+
+<h2>Latest Posts</h2>
+<ul>
+<% _.each(posts.slice(0, 4), function (post) { %>
+  <li>
+    <a href="/<%- post.slug %>">
+      <%= post.frontMatter.title %>
+    </a>
+  </li>
+<% }); %>
+</ul>
