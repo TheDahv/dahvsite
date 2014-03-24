@@ -3,10 +3,10 @@ template: home
 ---
 
 <nav>
-  <ul>
-    <li><a href="/about">
-      <h3>About</h3>
-
+  <input type="radio" name="home-nav" id="nav-about" />
+  <label for="nav-about">
+    <h3>About</h3>
+    <a href="/about">
       <div class="navContent">
         <p>
           People + Software + Fun + Intelligent Ideas
@@ -15,29 +15,38 @@ template: home
           That's the kind of thing I like to do
         </p>
       </div>
-    </a></li>
-    <li><a href="/blog">
-      <h3>Blog</h3>
+    </a>
+  </label>
 
+  <input type="radio" name="home-nav" id="nav-blog" />
+  <label for="nav-blog">
+    <h3>Blog</h3>
+    <a href="/blog">
       <div class="navContent">
         <p>
           Read some of the words I wrote
         </p>
       </div>
-    </a></li>
-    <li><a href="/work">
-      <h3>Work</h3>
+    </a>
+  </label>
 
+  <input type="radio" name="home-nav" id="nav-work" />
+  <label for="nav-work">
+    <h3>Work</h3>
+    <a href="/work">
       <div class="navContent">
         <p>
           I have a few examples up on the Internet of work I've done. Let's talk
           about them together.
         </p>
       </div>
-    </a></li>
-    <li><a href="/projects">
-      <h3>Projects</h3>
+    </a>
+  </label>
 
+  <input type="radio" name="home-nav" id="nav-projects" />
+  <label for="nav-projects">
+    <h3>Projects</h3>
+    <a href="/projects">
       <div class="navContent">
         <p>
           I build things for fun and contribute to projects.
@@ -46,8 +55,8 @@ template: home
           Let's go over some of the more interesting ones.
         </p>
       </div>
-    </a></li>
-  </ul>
+    </a>
+  </label>
 </nav>
 
 <h1>My Site</h1>
