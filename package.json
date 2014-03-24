@@ -16,7 +16,11 @@
     "run-sequence": "~0.3.6",
     "when": "~3.0.0",
     "stream-reduce": "~1.0.3",
-    "gulp-sass": "~0.7.1"
+    "gulp-sass": "~0.7.1",
+    "express": "~3.5.0",
+    "connect-livereload": "~0.3.2",
+    "tiny-lr": "0.0.5",
+    "gulp-livereload": "~1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

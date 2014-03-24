@@ -5,6 +5,42 @@ var sass         = require('gulp-sass');
 var transblogify = require('./lib/transblogify');
 var clean        = require('gulp-clean');
 var mkdirp       = require('mkdirp');
+var path         = require('path');
+
+// Live Reload
+// http://rhumaric.com/2014/01/livereload-magic-gulp-style/
+var express = require('express');
+var app;
+
+var EXPRESS_PORT = 4000;
+var EXPRESS_ROOT = __dirname + '/build';
+var LIVERELOAD_PORT = 35729;
+
+var startExpress = function () {
+  if (!app) {
+    app = express();
+    app.use(require('connect-livereload')());
+    app.use(express.static(EXPRESS_ROOT));
+    app.listen(EXPRESS_PORT);
+  }
+};
+
+var lr;
+var startLiveReload = function () {
+  lr = require('tiny-lr')();
+  lr.listen(LIVERELOAD_PORT);
+};
+
+var notifyLivereload = function (event) {
+  if (event) {
+    console.log(event);
+    gulp.src(event.path, {read: false})
+      .pipe(require('gulp-livereload')(lr));
+  }
+  //var fileName = require('path').relative(EXPRESS_ROOT, event.path);
+
+  //lr.changed({ body: { files: [fileName] } });
+};
 
 // Generate pygments stylesheets:
 // http://funcptr.net/2011/11/27/generating-stylesheets-for-pygments/
@@ -45,13 +81,26 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('watch', function () {
+gulp.task('watchsrc', function () {
   gulp.watch(['assets/sass/*.scss'], ['sass']);
-  gulp.watch(['posts/**/*', 'pages/**/*', 'templates/*'], ['build']);
+  gulp.watch(['posts/**/*', 'pages/**/*', 'templates/**/*'], ['build']);
 });
 
 gulp.task('build', function () {
   runSequence('clean', 'posts', 'pages', 'sass');
 });
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('autoserve', ['build', 'watchsrc'], function () {
+  startExpress();
+  startLiveReload();
+
+  // Wait 2 seconds before watching for live reload
+  setTimeout(function () {
+    gulp.watch(['build/**/*'], function (changeEvent) {
+      var changedFile = path.relative(EXPRESS_ROOT, changeEvent.path);
+      lr.changed({ body: { files: [changedFile] } });
+    });
+  }, 2000);
+});
+
+gulp.task('default', ['build']);
