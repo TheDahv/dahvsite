@@ -3,9 +3,31 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+// Pages
+@import 'home';
+
 body {
   @include outer-container;
 }
+
+header {
+  @include row;
+
+  h1, h2 {
+    @include span-columns(12);
+    text-align: center;
+  }
+
+  nav {
+    @include span-columns(12);
+
+    ul { list-style: none;}
+    ul li {
+      display: inline-block;
+    }
+  }
+}
+
 #main {
   @include span-columns(12);
 
