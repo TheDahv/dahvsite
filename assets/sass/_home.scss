@@ -1,13 +1,21 @@
-html, body#home {
-  height: 100%;
-  min-height: 100%;
-}
-
 // Color scheme borrowed from
 // https://kuler.adobe.com/6a00d83451ccbc69e201347fc98117970c-400wi-color-theme-3684331/
 $home-base-color: #db512f;
 $home-text-color: #cbc3a5;
 
+html, body#home {
+  height: 100%;
+  min-height: 100%;
+  font-family: 'Forum', Helvetica, sans-serif;
+  color: darken($home-text-color, 30%);
+}
+
+h1, h2, h3 {
+  font-family: 'EB Garamond', Helvetica, sans-serif;
+  color: $home-base-color;
+}
+
+// Nav
 #home {
   width: 100%;
   max-width: 100%;
@@ -18,6 +26,16 @@ $home-text-color: #cbc3a5;
     min-height: 30%;
     background-color: lighten($home-text-color, 30%);
     color: $home-base-color;
+
+    h1 {
+      font-weight: bold;
+      font-size: 6em;
+      letter-spacing: -5px;
+
+      @include media($mobile-breakpoint) {
+        font-size: 4em;
+      }
+    }
   }
 
   #content {
@@ -35,10 +53,10 @@ $home-text-color: #cbc3a5;
     display: -ms-flex;
     display: flex;
 
-    @include media(max-width 480px) {
+    @include media($mobile-breakpoint) {
       flex-direction: column;
     }
-    @include media(min-width 480px) {
+    @include media($larger-devices) {
       flex-direction: row;
     }
 
@@ -52,15 +70,15 @@ $home-text-color: #cbc3a5;
 
       text-align: center;
 
-      @include media(min-width 480px) {
+      @include media($larger-devices) {
         height: 100%;
         min-height: 100%;
       }
 
-      h3 {
+      h2 {
         margin-top: 2em;
         color: lighten($home-text-color, 30%);
-        @include media(max-width 480px) {
+        @include media($larger-devices) {
           margin-top: 1em;
         }
       }
@@ -106,6 +124,45 @@ $home-text-color: #cbc3a5;
       background-color: lighten($home-base-color, (5% * $item));
       a {
         color: darken($home-base-color, 40% / $item);
+      }
+    }
+  }
+}
+
+// Content
+.intro-image {
+  width: 100%;
+  height: 30em;
+
+  background-image: url('/images/family.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 50% top;
+
+  @include media($mobile-breakpoint) {
+    height: 10em;
+  }
+}
+
+#home-content {
+  @include outer-container;
+
+  .words {
+    @include row;
+
+    .content {
+      @include span-columns(9);
+
+      @include media($mobile-breakpoint) {
+        @include span-columns(12);
+      }
+    }
+
+    #blog-listing {
+      @include span-columns(3);
+
+      @include media($mobile-breakpoint) {
+        @include span-columns(12);
       }
     }
   }

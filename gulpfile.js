@@ -86,8 +86,15 @@ gulp.task('watchsrc', function () {
   gulp.watch(['posts/**/*', 'pages/**/*', 'templates/**/*'], ['build']);
 });
 
+gulp.task('move-assets', function (cb) {
+  mkdirp.sync('build/images');
+
+  return gulp.src('assets/images/**/*')
+    .pipe(gulp.dest('build/images'));
+});
+
 gulp.task('build', function () {
-  runSequence('clean', 'posts', 'pages', 'sass');
+  runSequence('clean', 'posts', 'pages', 'sass', 'move-assets');
 });
 
 gulp.task('autoserve', ['build', 'watchsrc'], function () {

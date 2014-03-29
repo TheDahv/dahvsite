@@ -5,8 +5,8 @@ template: home
 <nav>
   <input type="radio" name="home-nav" id="nav-about" />
   <label for="nav-about">
-    <h3>About</h3>
-    <a href="/about">
+    <h2>About</h2>
+    <a href="">
       <div class="navContent">
         <p>
           People + Software + Fun + Intelligent Ideas
@@ -20,7 +20,7 @@ template: home
 
   <input type="radio" name="home-nav" id="nav-blog" />
   <label for="nav-blog">
-    <h3>Blog</h3>
+    <h2>Blog</h2>
     <a href="/blog">
       <div class="navContent">
         <p>
@@ -32,7 +32,7 @@ template: home
 
   <input type="radio" name="home-nav" id="nav-work" />
   <label for="nav-work">
-    <h3>Work</h3>
+    <h2>Work</h2>
     <a href="/work">
       <div class="navContent">
         <p>
@@ -45,7 +45,7 @@ template: home
 
   <input type="radio" name="home-nav" id="nav-projects" />
   <label for="nav-projects">
-    <h3>Projects</h3>
+    <h2>Projects</h2>
     <a href="/projects">
       <div class="navContent">
         <p>
@@ -59,15 +59,47 @@ template: home
   </label>
 </nav>
 
-<h1>My Site</h1>
+<div class="intro-image"></div>
 
-<h2>Latest Posts</h2>
-<ul>
-<% _.each(posts.slice(0, 4), function (post) { %>
-  <li>
-    <a href="/<%- post.slug %>">
-      <%= post.frontMatter.title %>
-    </a>
-  </li>
-<% }); %>
-</ul>
+<section id="home-content">
+  <hr class="row-spacer">
+
+  <div class="words">
+    <div class="content">
+      <h1>I Build Things</h1>
+      <p>
+        Whether it is building a strong family, getting involved
+        in my community, leading teams through projects, or hacking on software, I love
+        building and creating
+      </p>
+
+      <p>
+        When it comes to my professional life, my history paints me first as a technical program
+        manager, then a software engineer, then a web developer, and finally as a cross-team,
+        "make things happen" technical director.
+      </p>
+
+      <p>
+        However, I like to think of myself as a hard-working kid lucky enough to know how to
+        help people turn their ideas into software experiences.
+      </p>
+    </div><!-- .content -->
+
+    <aside id="blog-listing">
+      <h2>Latest Posts</h2>
+      <ul>
+      <% _.each(posts.slice(0, 4), function (post) { %>
+        <li>
+          <a href="/<%- post.slug %>">
+            <%= post.frontMatter.title %>
+          </a>
+        </li>
+      <% }); %>
+      </ul>
+    </aside><!-- #blog-listing -->
+  </div><!-- .words -->
+
+  <hr class="row-spacer">
+</section>
+
+
