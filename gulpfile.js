@@ -1,6 +1,7 @@
 var _            = require('underscore');
 var gulp         = require('gulp');
 var runSequence  = require('run-sequence');
+var awspublish   = require('gulp-awspublish');
 var sass         = require('gulp-sass');
 var transblogify = require('./lib/transblogify');
 var clean        = require('gulp-clean');
@@ -108,6 +109,16 @@ gulp.task('autoserve', ['build', 'watchsrc'], function () {
       lr.changed({ body: { files: [changedFile] } });
     });
   }, 2000);
+});
+
+gulp.task('publish', function () {
+  var publisher = awspublish.create(require('./awscredentials.json'));
+
+  return gulp.src('build/**/*')
+    .pipe(publisher.publish())
+    .pipe(publisher.sync())
+    .pipe(publisher.cache())
+    .pipe(awspublish.reporter());
 });
 
 gulp.task('default', ['build']);
