@@ -66,10 +66,6 @@ h1, h2, h3 {
 
         font-size: golden-ratio(16px, 4);
         letter-spacing: -5px;
-
-        @include media($mobile-breakpoint) {
-          font-size: 4em;
-        }
       }
 
       quote {
@@ -80,6 +76,41 @@ h1, h2, h3 {
           margin-top: golden-ratio(16px, -1);
           display: block;
           font-style: italic;
+        }
+      }
+    }
+
+    @include media($mobile-breakpoint) {
+      @include span-columns(12);
+      height: 61.804%;
+
+      .text {
+        @include span-columns(12);
+        background-color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        top:0; left: 0;
+        height: 100%;
+
+        h1, h2, quote {
+          @include span-columns(12); 
+          text-align: center;
+        }
+
+        h1 {
+          font-size: golden-ratio(1em, 3);
+          letter-spacing: -2px;
+        }
+
+        quote {
+          text-align: justify;
+          padding-left: 1em;
+          padding-right: 1em;
+          font-weight: 500;
+          font-size: golden-ratio(1em, 1);
+        }
+
+        h2 {
+          font-size: golden-ratio(1em, 0);
         }
       }
     }
@@ -110,11 +141,6 @@ h1, h2, h3 {
       flex: 1;
 
       text-align: center;
-
-      @include media($larger-devices) {
-        //height: 100%;
-        //min-height: 100%;
-      }
 
       h2 {
         margin-top: 2em;
@@ -165,6 +191,22 @@ h1, h2, h3 {
 
           overflow: hidden;
         }
+      }
+    }
+
+    @include media($mobile-breakpoint) {
+      @include span-columns(12);
+      height: 38.1953%;
+      min-height: 38.1953%;
+
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        h2 { margin: 0;}
       }
     }
   }
