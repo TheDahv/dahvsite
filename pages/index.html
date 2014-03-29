@@ -2,64 +2,80 @@
 template: home
 ---
 
-<nav>
-  <input type="radio" name="home-nav" id="nav-about" />
-  <label for="nav-about">
-    <h2>About</h2>
-    <a href="">
-      <div class="navContent">
-        <p>
-          People + Software + Fun + Intelligent Ideas
-        </p>
-        <p>
-          That's the kind of thing I like to do
-        </p>
-      </div>
-    </a>
-  </label>
+<header>
+  <div class="content">
+    <div class="text">
+      <h1>David Pierce</h1>
 
-  <input type="radio" name="home-nav" id="nav-blog" />
-  <label for="nav-blog">
-    <h2>Blog</h2>
-    <a href="/blog">
-      <div class="navContent">
-        <p>
-          Read some of the words I wrote
-        </p>
-      </div>
-    </a>
-  </label>
+      <quote>
+        It has long been an axiom of mine that the little things are infinitely the
+        most important.
 
-  <input type="radio" name="home-nav" id="nav-work" />
-  <label for="nav-work">
-    <h2>Work</h2>
-    <a href="/work">
-      <div class="navContent">
-        <p>
-          I have a few examples up on the Internet of work I've done. Let's talk
-          about them together.
-        </p>
-      </div>
-    </a>
-  </label>
+        <span class="attribution">
+          Sherlock Holmes in "A Case of Identity", by Sir Arthur Conan Doyle
+        </span>
+      </quote>
+      <h2>Husband - Father - Friend - Software Engineer</h2>
+    </div>
+  </div>
 
-  <input type="radio" name="home-nav" id="nav-projects" />
-  <label for="nav-projects">
-    <h2>Projects</h2>
-    <a href="/projects">
-      <div class="navContent">
-        <p>
-          I build things for fun and contribute to projects.
-        </p>
-        <p>
-          Let's go over some of the more interesting ones.
-        </p>
-      </div>
-    </a>
-  </label>
-</nav>
+  <nav>
+    <input type="radio" name="home-nav" id="nav-about" />
+    <label for="nav-about">
+      <h2>About</h2>
+      <a href="">
+        <div class="navContent">
+          <p>
+            People + Software + Fun + Intelligent Ideas
+          </p>
+          <p>
+            That's the kind of thing I like to do
+          </p>
+        </div>
+      </a>
+    </label>
 
-<div class="intro-image"></div>
+    <input type="radio" name="home-nav" id="nav-blog" />
+    <label for="nav-blog">
+      <h2>Blog</h2>
+      <a href="/blog">
+        <div class="navContent">
+          <p>
+            Read some of the words I wrote
+          </p>
+        </div>
+      </a>
+    </label>
+
+    <input type="radio" name="home-nav" id="nav-work" />
+    <label for="nav-work">
+      <h2>Work</h2>
+      <a href="/work">
+        <div class="navContent">
+          <p>
+            I have a few examples up on the Internet of work I've done. Let's talk
+            about them together.
+          </p>
+        </div>
+      </a>
+    </label>
+
+    <input type="radio" name="home-nav" id="nav-projects" />
+    <label for="nav-projects">
+      <h2>Projects</h2>
+      <a href="/projects">
+        <div class="navContent">
+          <p>
+            I build things for fun and contribute to projects.
+          </p>
+          <p>
+            Let's go over some of the more interesting ones.
+          </p>
+        </div>
+      </a>
+    </label>
+  </nav>
+</header>
 
 <section id="home-content">
   <hr class="row-spacer">

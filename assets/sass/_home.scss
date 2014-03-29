@@ -15,36 +15,82 @@ h1, h2, h3 {
   color: $home-base-color;
 }
 
-// Nav
 #home {
   width: 100%;
   max-width: 100%;
   margin: 0;
+}
 
-  header {
-    height: 30%;
-    min-height: 30%;
-    background-color: lighten($home-text-color, 30%);
-    color: $home-base-color;
+#home header {
+  @include row;
 
-    h1 {
-      font-weight: bold;
-      font-size: 6em;
-      letter-spacing: -5px;
+  color: $home-base-color;
 
-      @include media($mobile-breakpoint) {
-        font-size: 4em;
+  height: 100%;
+
+  // Left site - Words
+  .content {
+    @include span-columns(9);
+    width: 61.804%;
+    height: 100%;
+    margin: 0;
+
+    background-color: #3a3a3a;
+    background-image: url('/images/family.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% top;
+
+    position: relative;
+    .text {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: golden-ratio(16px, 7);
+
+
+      @include media($larger-devices) {
+        padding-left: golden-ratio(16px, 3);
+
+        h1, h2, quote {
+          @include span-columns(12);
+          position: relative;
+        }
+      }
+
+      h1 {
+        font-weight: bold;
+
+        font-size: golden-ratio(16px, 4);
+        letter-spacing: -5px;
+
+        @include media($mobile-breakpoint) {
+          font-size: 4em;
+        }
+      }
+
+      quote {
+        font-size: golden-ratio(16px, 1);
+
+        .attribution {
+          font-size: golden-ratio(16px, 0);
+          margin-top: golden-ratio(16px, -1);
+          display: block;
+          font-style: italic;
+        }
       }
     }
   }
 
-  #content {
-    height: 70%;
-    min-height:70%;
-  }
-
+  // Right side - Nav
   nav {
-    @include fill-parent();
+    @include span-columns(3);
+    width: 38.1953%;
+    margin: 0;
+
     height: 100%;
     min-height: 100%;
 
@@ -53,12 +99,7 @@ h1, h2, h3 {
     display: -ms-flex;
     display: flex;
 
-    @include media($mobile-breakpoint) {
-      flex-direction: column;
-    }
-    @include media($larger-devices) {
-      flex-direction: row;
-    }
+    flex-direction: column;
 
     label {
       @include transition(1s all);
@@ -71,8 +112,8 @@ h1, h2, h3 {
       text-align: center;
 
       @include media($larger-devices) {
-        height: 100%;
-        min-height: 100%;
+        //height: 100%;
+        //min-height: 100%;
       }
 
       h2 {
@@ -89,6 +130,17 @@ h1, h2, h3 {
         overflow: hidden;
         opacity: 0;
         @include transition(opacity 0.6s ease-in);
+      }
+    }
+
+    // Different colors for nav section
+    $nav-colors: #1b19a2, #43a30d, #d6d326, #5d43db;
+    @for $item from 1 through length($nav-colors) {
+      label:nth-of-type(#{$item}) {
+        background-color: lighten($home-base-color, (5% * $item));
+        a {
+          color: darken($home-base-color, 40% / $item);
+        }
       }
     }
 
@@ -116,36 +168,11 @@ h1, h2, h3 {
       }
     }
   }
-
-  // Different colors for nav section
-  $nav-colors: #1b19a2, #43a30d, #d6d326, #5d43db;
-  @for $item from 1 through length($nav-colors) {
-    label:nth-of-type(#{$item}) {
-      background-color: lighten($home-base-color, (5% * $item));
-      a {
-        color: darken($home-base-color, 40% / $item);
-      }
-    }
-  }
-}
-
-// Content
-.intro-image {
-  width: 100%;
-  height: 30em;
-
-  background-image: url('/images/family.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 50% top;
-
-  @include media($mobile-breakpoint) {
-    height: 10em;
-  }
 }
 
 #home-content {
   @include outer-container;
+  height: 100%;
 
   .words {
     @include row;
