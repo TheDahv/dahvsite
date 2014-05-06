@@ -1,18 +1,3 @@
-// Color scheme borrowed from
-// https://kuler.adobe.com/6a00d83451ccbc69e201347fc98117970c-400wi-color-theme-3684331/
-$home-base-color: #db512f;
-$home-text-color: #cbc3a5;
-
-html, body#home {
-  height: 100%;
-  font-family: 'Forum', Helvetica, sans-serif;
-  color: darken($home-text-color, 30%);
-}
-
-h1, h2, h3 {
-  font-family: 'EB Garamond', Helvetica, sans-serif;
-  color: $home-base-color;
-}
 
 #home {
   width: 100%;

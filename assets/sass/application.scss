@@ -8,9 +8,17 @@
 
 // Pages
 @import 'home';
+@import 'posts';
 
-body {
-  @include outer-container;
+html, body {
+  height: 100%;
+  font-family: 'Forum', Helvetica, sans-serif;
+  color: darken($home-text-color, 30%);
+}
+
+h1, h2, h3 {
+  font-family: 'EB Garamond', Helvetica, sans-serif;
+  color: $home-base-color;
 }
 
 header {
