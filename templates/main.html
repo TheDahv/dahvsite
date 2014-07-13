@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/pygments.css">
   <link rel="stylesheet" href="/css/application.css">
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond|Forum' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title></title>
 </head>
-<body>
+<body class="post">
   <header>
-    <h1>David Pierce</h1>
-    <h2>Software Engineer</h2>
+    <div class="title">
+      <a href="/">
+        <h1>
+          David Pierce
+
+          <span class="tag">
+            Software Engineer
+          </span>
+        </h1>
+      </a>
+    </div>
     <nav>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Work</a></li>
-    </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/work">Work</a></li>
+        <li><a href="/projects">Projects</a></li>
+      </ul>
     </nav>
   </header>
-
-  <div id="main">
+  <div class="content">
     <%= contents %>
   </div>
 </body>

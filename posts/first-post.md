@@ -2,6 +2,7 @@
 title: First Post
 date: 2013-03-14
 categories: general, first-post
+summary: This is all you need to know about the first post. Yadda yadda yadda
 template: post
 ---
 

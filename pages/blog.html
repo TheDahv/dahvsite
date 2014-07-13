@@ -1,0 +1,30 @@
+---
+template: main
+---
+
+<h1>Blog</h1>
+
+<p>Here is some crap I wrote</p>
+
+<section class="posts">
+
+<% _.each(posts, function (post) { %>
+
+  <article class="post">
+    <h2 class="post__title">
+      <a href="/<%= post.slug %>">
+        <%= post.frontMatter.title %>
+      </a>
+    </h2>
+    <p class="post__date">
+      <%= post.frontMatter.date %>
+    </p>
+    <p class="post__summary">
+      <%= post.frontMatter.summary %>
+    </p>
+  </article><!-- /.post -->
+
+<% }); %>
+
+</section><!-- /.posts -->
+
