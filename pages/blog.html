@@ -17,7 +17,7 @@ template: main
       </a>
     </h2>
     <p class="post__date">
-      <%= post.frontMatter.date %>
+      <%= moment(post.frontMatter.date).format("dddd, DD MMMM YYYY") %>
     </p>
     <p class="post__summary">
       <%= post.frontMatter.summary %>

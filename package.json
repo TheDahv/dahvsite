@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Dahv Blog, generated with Gulp",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "moment": "~2.7.0"
+  },
   "devDependencies": {
     "gulp-front-matter": "~1.0.0",
     "gulp": "~3.5.6",
