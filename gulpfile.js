@@ -89,6 +89,10 @@ gulp.task('watchsrc', function () {
 
 gulp.task('move-assets', function (cb) {
   mkdirp.sync('build/images');
+  mkdirp.sync('build/js');
+
+  gulp.src('assets/js/*')
+    .pipe(gulp.dest('build/js'));
 
   return gulp.src('assets/images/**/*')
     .pipe(gulp.dest('build/images'));
