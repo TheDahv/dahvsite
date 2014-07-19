@@ -5,6 +5,7 @@
 
 @import "variables";
 @import "components";
+@import "typography";
 
 // Pages
 @import 'home';
@@ -38,5 +39,16 @@ header {
   h1 {
     text-align: center;
     font-size: 4em;
+  }
+}
+
+a {
+  color: $home-base-color;
+  text-decoration: none;
+
+  @include transition(color 1s linear);
+
+  &:hover, &:visited {
+    color: darken($home-base-color, 15%);
   }
 }
