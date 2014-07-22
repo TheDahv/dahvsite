@@ -42,13 +42,13 @@ header {
   }
 }
 
-a {
+a, a:visited {
   color: $home-base-color;
   text-decoration: none;
 
   @include transition(color 1s linear);
 
-  &:hover, &:visited {
+  &:hover {
     color: darken($home-base-color, 15%);
   }
 }
