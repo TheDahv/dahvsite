@@ -77,7 +77,8 @@ gulp.task('sass', function () {
 
   return gulp.src('./assets/sass/application.scss')
     .pipe(sass({
-      errLogToConsole: true
+      errLogToConsole: true,
+      sourceComments: 'map'
     }))
     .pipe(gulp.dest('./build/css'));
 });
