@@ -114,3 +114,18 @@ body.post, body.main {
     @include outer-container;
   }
 }
+
+.posts .post {
+  .post__title {
+    margin-bottom: 0;
+  }
+  .post__date {
+    margin-top: 0;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+}
+
+.post .content {
+  padding-bottom: 4em;
+}
