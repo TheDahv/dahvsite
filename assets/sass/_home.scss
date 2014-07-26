@@ -48,11 +48,12 @@
         font-weight: bold;
 
         font-size: golden-ratio(16px, 4);
-        letter-spacing: -5px;
+        letter-spacing: -3px;
       }
 
       quote {
         font-size: golden-ratio(16px, 1);
+        padding-right: 1em;
 
         .attribution {
           font-size: golden-ratio(16px, 0);

@@ -11,15 +11,20 @@
 @import 'home';
 @import 'posts';
 
+$headingfont: 'pt-sans-narrow';
+$bodyfont: 'pontano-sans';
+
 html, body {
   height: 100%;
-  font-family: 'Forum', Helvetica, sans-serif;
+  //font-family: 'Forum', Helvetica, sans-serif;
+  font-family: $bodyfont;
   color: darken($home-text-color, 30%);
 }
 
 h1, h2, h3 {
   font-family: 'EB Garamond', Helvetica, sans-serif;
   color: $home-base-color;
+  font-family: $headingfont;
 }
 
 header {
