@@ -1,0 +1,63 @@
+#resume {
+  @include outer-container();
+}
+
+#resume #introduction {
+  .contact-info {
+    width: 100%;
+
+    td[data-info=title] {
+      text-transform: uppercase;
+    }
+
+    td[data-info=website], td[data-info=contact] {
+      text-align: right;
+    }
+  }
+}
+
+#resume .resume-section {
+  .entry {
+    header {
+      @include row();
+      .entry__title {
+        @include span-columns(9);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .entry__timeline, .entry__link {
+        @include span-columns(3);
+        text-align: right;
+        font-style: italic;
+        font-size: 0.8em;
+      }
+    }
+
+  }
+}
+
+#resume #pdfdownload {
+  float: right;
+  margin: 0.67em 0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media print {
+  #resume {
+    font-size: 14px;
+    color: #333333;
+
+    .webonly {
+      display: none;
+    }
+
+    p, ul li {
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+  }
+}
