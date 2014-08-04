@@ -33,6 +33,15 @@ body.post, body.main {
       }
     }
 
+    @include media($mobile-breakpoint) {
+      h1 {
+        text-align: center;
+        .tag {
+          padding-right: 0;
+        }
+      }
+    }
+
     nav {
       background-color: $home-base-color;
 
