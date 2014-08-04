@@ -243,7 +243,17 @@
       }
     }
   }
+
+  @include media($mobile-breakpoint) {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+  }
+  @include media($mobile-landscape-breakpoint) {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+  }
 }
+
 
 #about .iLove, #about .iAm {
   @include row;

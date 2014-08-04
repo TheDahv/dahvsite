@@ -129,6 +129,8 @@ body.post, body.main {
 
   .content {
     @include outer-container;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
   }
 }
 
