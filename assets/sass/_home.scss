@@ -81,7 +81,7 @@
         }
 
         h1 {
-          font-size: golden-ratio(1em, 3);
+          font-size: golden-ratio(0.8em, 3);
           letter-spacing: -2px;
           margin-top: 0.3em;
           margin-bottom: 0.5em;
@@ -92,11 +92,30 @@
           padding-left: 1em;
           padding-right: 1em;
           font-weight: 500;
-          font-size: golden-ratio(1em, 1);
+          font-size: golden-ratio(0.8em, 1);
         }
 
         h2 {
-          font-size: golden-ratio(1em, 0);
+          font-size: golden-ratio(0.8em, 0);
+        }
+      }
+    }
+
+    @include media($mobile-landscape-breakpoint) {
+      .text {
+        position: relative;
+        height: 100%;
+
+        h1 {
+          font-size: golden-ratio(0.8em, 2);
+          letter-spacing: -2px;
+          margin-top: 0.3em;
+          margin-bottom: 0.5em;
+
+        }
+
+        quote, h2 {
+          font-size: golden-ratio(0.8em, 0);
         }
       }
     }
@@ -242,6 +261,8 @@
 
       h1 {
         text-align: center;
+        margin: 0;
+        line-height: 1.5;
       }
     }
   }
