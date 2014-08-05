@@ -15,7 +15,7 @@ template: main
       </a>
     </h2>
     <p class="post__date">
-      <%= moment(post.frontMatter.date).format("dddd, D MMMM YYYY") %>
+      <%= moment.utc(post.frontMatter.date).format("dddd, D MMMM YYYY") %>
     </p>
     <p class="post__summary">
       <%= post.frontMatter.summary %>
