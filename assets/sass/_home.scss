@@ -136,70 +136,34 @@
 
     flex-direction: column;
 
-    label {
-      @include transition(1s all);
+    a {
       cursor: pointer;
       -webkit-flex: 1;
       -moz-flex: 1;
       -ms-flex: 1;
       flex: 1;
 
+      font-size: 1.5em;
       text-align: center;
 
-      h2 {
-        margin-top: 2em;
-        color: lighten($home-text-color, 30%);
-        @include media($larger-devices) {
-          margin-top: 1em;
-        }
-      }
+      margin: 0;
+      color: #ffffff;
+      font-family: $headingfont;
 
-      a {
-        display: inline-block;
-        width: 0; height: 0;
-        overflow: hidden;
-        @include transition(color 1s linear);
+      position: relative;
+      span {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin: auto;
+        height: 1em;
       }
     }
 
     // Different colors for nav section
     $nav-colors: #1b19a2, #43a30d, #d6d326, #5d43db;
     @for $item from 1 through length($nav-colors) {
-      label:nth-of-type(#{$item}) {
+      a:nth-of-type(#{$item}) {
         background-color: lighten($home-base-color, (5% * $item));
-        a {
-          color: darken($home-base-color, 40% / $item);
-        }
-      }
-    }
-
-    input[type=radio] {
-      display: none;
-
-      &:checked + label {
-        -webkit-flex: 4;
-        -moz-flex: 4;
-        -ms-flex: 4;
-        flex: 4;
-
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-          flex: 1;
-        }
-
-        a {
-          flex: 5;
-          width: 100%;
-          text-decoration: none;
-          text-align: center;
-
-          @include transition(color 1s linear);
-          overflow: hidden;
-          color: #ffffff;
-          text-decoration: underline;
-        }
       }
     }
 
@@ -213,9 +177,7 @@
       display: flex;
       flex-direction: column;
 
-      label {
-        h2 { margin: 0;}
-      }
+      a { margin: 0; }
     }
   }
 }

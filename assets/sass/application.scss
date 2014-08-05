@@ -12,12 +12,9 @@
 @import 'posts';
 @import 'resume';
 
-$headingfont: 'pt-sans-narrow';
-$bodyfont: 'pontano-sans';
 
 html, body {
   height: 100%;
-  //font-family: 'Forum', Helvetica, sans-serif;
   font-family: $bodyfont;
   color: darken($home-text-color, 30%);
 }
