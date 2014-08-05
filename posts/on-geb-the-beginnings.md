@@ -6,6 +6,10 @@ summary: !
   Some opening thoughts as I begin on a book cherished among engineers, thinkers, and philosophers alike.
 ---
 
+#On GEB - The Beginnings
+
+*Tuesday, 20 March 2012*
+
 I celebrated my first year of marriage this past weekend and my lovely wife and I really enjoyed celebrating how we've grown in love, service, sacrifice, and grace toward each other.
 
 As is traditional, paper gifts seem to be the thing for the first anniversary and we accidentally stumbled into fulfilling said tradition. I got my wife ballet tickets (made of paper, obviously) to see the Pacific Northwest Ballet perform [New Works](http://www.pnb.org/Season/11-12/NewWorks/).

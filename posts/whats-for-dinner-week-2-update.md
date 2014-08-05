@@ -5,6 +5,10 @@ categories: programming, wfd
 summary: A brief update on my What's For Dinner project
 ---
 
+#What's For Dinner - Week 2 Update
+
+*Monday, 20 June 2011*
+
 I got even **less** time to code on anything this week, so there hasn't been anything major. [What's For Dinner](http://dinnerplanner.herokuapp.com) is still in development mode and I have a list of cool ideas I want to put into the application.
 
 The one thing I was able to make was a bookmarklet to generate shopping lists based on the plans you enter. This was another innovation born of necessity as Micaline and I used this feature more. We were able to use WFD to plan our meals just fine, but getting them onto paper so we could use the plan in the real world was a bit cumbersome. Before, I was copying and pasting each meal and its ingredients into a separate document and printing that to take to the grocery store.
@@ -17,7 +21,7 @@ I think this will tide us over until I build a better print feature, but it was 
 
 Feel free to check out [other bookmarks](http://dl.dropbox.com/u/11288811/personal_ideas/bookmarklets/bookmarklets.html) I've put together (Be warned, I've seen this page look funky on older browsers I didn't get a chance to test).
 
-# Future Plans
+## Future Plans
 
 I think the next thing I want to work on in WFD is a smarter update experience. Instead of updating all 7 meals on saving, each individual plan that was updated should just get saved in the database.
 

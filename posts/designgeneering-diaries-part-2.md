@@ -7,7 +7,11 @@ summary: !
   a better relationship between the disciplines of product design and software engineering.
 ---
 
-<a href="http://www.thedahv.com/blog/designgeneering-diaries-part-1">Last week</a>, I introduced an idea I call "designgeneering" to describe the interaction between developers and designers when building a software product.
+# Designgeneering Diaries - Part 2
+
+*Saturday, 10 March 2012*
+
+[Last week](/blog/designgeneering-diaries-part-1), I introduced an idea I call "designgeneering" to describe the interaction between developers and designers when building a software product.
 
 Some [initial](https://twitter.com/#!/moltman/status/176860828111355906) [responses](https://twitter.com/#!/kirkryyn/status/176875696067579904) I got to the tweet I made for this post were pretty favorable. I was even more excited to hear there are already organizations out there pursuing this idea. So that's good.
 
@@ -19,11 +23,11 @@ Anyway, that wasn't the point of this blog post. I'd like to start talking about
 
 By way of reminder, my designer friend [Brad](https://twitter.com/#!/bradmcnally) and I are going to try a new way of working on an open-source project while we record our experiences.
 
-# Before We Begin
+## Before We Begin
 
 Here is the "tl;dr" summary for this post. I'll talk about what the project is and why we decided to build it. I'll talk about the brainstorming and planning process for the idea. I'll wrap up by sharing my experiences for the first day where we put about an hour and a half of actual work in side by side.
 
-# A Problem and an Idea
+## A Problem and an Idea
 
 An idea I've been kicking around for a while is finding an easier way to tell people about something called Community Groups. In full disclosure, I'm a Christian and I lead what is called a Community Group for my church here in Seattle.
 
@@ -41,13 +45,13 @@ This takes too long. Meeting new people and inviting yourself to an existing com
 
 What if it were easier
 
-# A Project and a Solution
+## A Project and a Solution
 
 This project is basically about making it easier for group leaders like me to generate a one-page site with an easy URL that makes it easier to talk about what their Community Group is like.
 
 It should be clear. It should be attractive. It should be safe and secure. It should be inviting and useful, otherwise this project is pointless.
 
-# The Process
+## The Process
 
 Again, I'm sorry for all the background information. You've already read a lot and I haven't told you anything about designgeneering.
 
@@ -61,7 +65,7 @@ We drew our first sketches in our notebooks and wrote down most of the verbs and
 
 I decided to go with Rails for this project. While I was setting up the code, Brad was putting ideas together in Photoshop. Looking at his mockups was cool because that gave me a chance to figure out what data models would support his interpretation of the idea and I was able to put together more code.
 
-# First Day Results
+## First Day Results
 
 We didn't get much more done than that. It was mostly a big planning session. The big takeaway was I got a more complete picture of the project than I would have had I not included a designer's perspective up front.
 

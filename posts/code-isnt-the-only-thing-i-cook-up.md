@@ -4,6 +4,10 @@ date: 2011-07-05
 summary: My adventure in Colombian cooking!
 ---
 
+#Code isn't the only thing I cook up
+
+*Tuesday, 5 July 2014*
+
 Heh, a corny title, but this gets to be my first cooking post!
 
 Like I mentioned towards the end of my [last post](/side-projects-a-blessing-and-a-distraction), I got to try cooking something from my Colombian heritage.

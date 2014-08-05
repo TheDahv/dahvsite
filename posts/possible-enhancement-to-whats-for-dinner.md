@@ -7,6 +7,10 @@ summary: !
   consider how the project might grow.
 ---
 
+#Possible Enhancement to What's For Dinner
+
+*Wednesday, 6 July 2011*
+
 I just read an article about something called [Punchfork.com](http://punchfork.com/), which seems to be a really cool recipe search engine. I'll probably spend some more time investigating this one.
 
 However, I also saw that they had an [API](http://punchfork.com/api) that lets developers integrate their recipe searching skills into applications.

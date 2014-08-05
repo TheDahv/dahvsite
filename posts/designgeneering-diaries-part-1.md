@@ -7,7 +7,11 @@ summary: !
   a better relationship between the disciplines of product design and software engineering.
 ---
 
-# What is "designgeneering"?
+# Designgeneering Diaries - Part 1
+
+*Monday, 5 March 2012*
+
+## What is "designgeneering"?
 
 I went to a [Seattle Creative Morning](http://twitter.com/#!/seattle_cm) a couple months ago to hear [Jenny Lam](http://twitter.com/#!/helveticagirl) give a talk about the role of designers in startups. You can watch a video of the talk [here](http://t.co/SNfi6Frt). As a developer, my big takeaway was the engineering world can and should be growing in inviting designers into the product creation process.
 
@@ -17,7 +21,7 @@ After hearing the talk and getting to meet more excited and influential designer
 
 In case it isn't obvious, "designgeneering" is "design + engineering" and I pronounce it "design-geneering".
 
-# Why Bother?
+## Why Bother?
 
 Designgeneering should be about building great products people love to use. It is fairly common to think of product development in a series of phases: build something, and then make it look pretty. The problem with this is users care about experiences first, not data.
 
@@ -33,7 +37,7 @@ Instead, I want to promote the idea of inviting designers into the process when 
 
 Ultimately, I think it is engineering and design <em>together</em> that will help define a great application--both technically and experientially.
 
-# How I Will Start
+## How I Will Start
 
 My good friend [Brad](http://twitter.com/#!/bradmcnally) and I have worked on small-time applications together for a while. We built a site for my wedding in 2011. He helped me make this site look and work better. I respect and trust his skills in design, and I really enjoy working on projects with him.
 

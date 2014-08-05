@@ -132,7 +132,7 @@ template: home
       <ul>
       <% _.each(posts.slice(0, 4), function (post) { %>
         <li>
-          <a href="/<%- post.slug %>">
+          <a href="/blog/<%- post.slug %>">
             <%= post.frontMatter.title %>
           </a>
         </li>

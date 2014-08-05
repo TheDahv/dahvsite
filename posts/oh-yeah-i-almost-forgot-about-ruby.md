@@ -6,6 +6,10 @@ summary: !
   Blending problem-solving, a rediscovery of Ruby, and basic software engineering to solve problems in childcare.
 ---
 
+#Oh yeah, I almost forgot about Ruby
+
+*Monday, 29 August 2011*
+
 So last week, I got an opportunity to tinker around on a MacBook Air for a particular work project. It actually had very little to do with development, but I once read an article about setting one up to use as a development tool. I honestly can't form a reasonable opinion regarding all the fuss around using Apple products since I've never used one seriously since a semester-long development project in college.
 
 I still hear the Mac OS is great for development, so I thought I'd give it a try. I stayed in over my lunch breaks to try figuring my way around. Besides non-obvious shortcuts (I don't happen to be an emacs user) and windowing idioms with which I wasn't familiar, nothing struck me as things I couldn't get on my Linux machine. Granted, just about all my work was done in the terminal.
