@@ -1,7 +1,7 @@
 ---
 title: The Empathetic Playground
 date: 2014-08-06
-categories: programming
+categories: programming, ux, design, empathy
 summary: !
   The browser can feel like a playground to a passionate web developer as he or
   she moves HTML around on the page. As builders of the web, we must have a sense
@@ -10,10 +10,6 @@ summary: !
   In this post, I explore some HTML tricks I've picked up, and why they didn't
   make good interfaces.
 ---
-
-# The Empathetic Playground
-
-*Wednesday, 6 August 2014*
 
 I've been working on resurrecting my web site in the last few weeks. I have
 learned so much more about building engaging sites in my time at
@@ -28,7 +24,7 @@ In a more recent example, I took a new approach to the home page navigation.
 The software approach was stimulating, but the interface ended up confusing most
 people who used it.
 
-## HTML Trickery
+# HTML Trickery
 
 First, I should explain how some parts of HTML and CSS excite me.
 
@@ -75,7 +71,7 @@ telling the browser how to manipulate the DOM step by step.
 It feels much more elegant to push CSS3 as far as it can go and describe to
 the browser what should happen and let it do the heavy lifting.
 
-## Radio Buttons for Menu Navigation
+# Radio Buttons for Menu Navigation
 
 As I mentioned, it is fun for me to challenge myself and build with as little
 JavaScript as possible. I took that approach to my home page navigation.
@@ -102,7 +98,7 @@ behavior.
 
 ![Mobile radio button example](/images/the-empathetic-playground/expanding-nav-controls-mobile.gif)
 
-## The Wrong Thing Built the Right Way is Still the Wrong Thing
+# The Wrong Thing Built the Right Way is Still the Wrong Thing
 
 We have a motto on our dev team: "The wrong thing build the right way
 is still the wrong thing". I believe that applies to my initial approach

@@ -33,7 +33,14 @@
     </nav>
   </header>
   <div class="content">
-    <%= contents %>
+    <div class="postHeader">
+      <h1 class="postHeader__title"><%= title %></h1>
+      <span class="postHeader__date"><%= moment.utc(date).format("dddd, D MMMM YYYY") %></span>
+    </div>
+
+    <div class="postBody">
+      <%= contents %>
+    </div>
 
     <div id="disqus_thread"></div>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
