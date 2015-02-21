@@ -8,13 +8,9 @@ summary: !
   I set out to build a web application to help my wife and I plan meals together.
 ---
 
-#What's For Dinner?
-
-*Monday, 6 June 2011*
-
 I'm a pretty organized person and I really enjoy planning as much as my life as is sensible and rational. This includes planning out meals for the week.
 
-## The Story
+# The Story
 
 My habits of meal planning and grocery shopping grew over the span of a couple years. After I graduated from college and moved to Nebraska, I was suddenly thrust into a new world where no dining halls nor mothers were preparing food for me. Thankfully, I learned to love cooking when I was younger and I was able to feed myself. I survived through my first months on my own and life was fine.
 
@@ -28,7 +24,7 @@ Then I got married.
 
 I had to learn to adjust to planning for 2 people, and coordinate with my wife to plan out a week's worth of meals that worked well for the both of us. Our weeks can get pretty hectic, and so can our diets without a good plan. Unfortunately, it was hard for us to find time to draft a plan together and make it to a grocery store on a free evening (that happens to be Mondays for us). Without a better solution, Micaline and I would chat about what we wanted to eat and I would compile our ideas onto a piece of paper that we would take to the store after I picked her up from work.
 
-## The Solution
+# The Solution
 
 Our meal planning was working, but it could be better. I decided to start working on a tool that would help us plan together and keep our grocery list in check. That's how [What's For Dinner](http://dinnerplanner.herokuapp.com) was born.
 
@@ -36,7 +32,7 @@ The idea is we can use the application to generate a blank slate on which we can
 
 Feel free to try it out and let me know what still needs work!
 
-## The Future
+# The Future
 
 There are a few things I would like What's For Dinner to be able to do.
 
@@ -49,7 +45,7 @@ Here are some things I would like the application to do:
 - Customized Shopping List: Right now, the shopping list is laid out to model my path through the Queen Anne Safeway. Your grocery store might not be the same, so it would be cool if you could reorder the layout.
 - Print-Optimized Stylesheet: Once the meal plan is finished, it really doesn't do you any good until you can take it to the store or pin it on your refrigerator. I want to make a stylesheet that will be used when printing the plan to paper.
 
-## Feedback
+# Feedback
 
 Do you have other good ideas? If you're a developer, you can file bugs on the [GitHub Issues Page](https://github.com/TheDahv/whatsfordinner/issues?sort=created&direction=desc&state=open) for the project.
 
@@ -58,4 +54,3 @@ Eventually, I'm going to implement comments on this blog, so that might be a way
 Otherwise, hit me up on [twitter](https://twitter.com/TheDahv) or shoot me an email.
 
 Thanks for reading!
-

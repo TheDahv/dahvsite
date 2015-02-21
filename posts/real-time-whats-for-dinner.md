@@ -7,10 +7,6 @@ summary: !
   simultaneously without having to be in the same room.
 ---
 
-#Real-Time What's For Dinner
-
-*Sunday, 10 July 2011*
-
 I managed to trick What's For Dinner into doing something cool!
 
 I've mentioned before I wanted to make the application dead simple and easy to use. This meant sharing details among meal planners seamlessly and without effort. Previously, users would need to coordinate when to save manually and refresh to retrieve updates, so that wasn't very seamless or effortless. Without close coordination, it was pretty easy to overwrite each others' entries.
@@ -32,4 +28,3 @@ Instead, I turned to the [Faye](http://faye.jcoglan.com/) pubsub messaging syste
 I haven't gotten a good chance to test this with <strong>other</strong> browser (aka, Internet Explorer), nor have I been able to try it with bigger numbers of people using it at once.
 
 Try it out and let me know how it works for you!
-

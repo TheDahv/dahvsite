@@ -1,14 +1,10 @@
 ---
 title: Oh yeah, I almost forgot about Ruby
 date: 2011-08-29
-categories: programming
+categories: programming, ruby
 summary: !
   Blending problem-solving, a rediscovery of Ruby, and basic software engineering to solve problems in childcare.
 ---
-
-#Oh yeah, I almost forgot about Ruby
-
-*Monday, 29 August 2011*
 
 So last week, I got an opportunity to tinker around on a MacBook Air for a particular work project. It actually had very little to do with development, but I once read an article about setting one up to use as a development tool. I honestly can't form a reasonable opinion regarding all the fuss around using Apple products since I've never used one seriously since a semester-long development project in college.
 
@@ -37,4 +33,3 @@ Looking at all my scribbles on the whiteboard, my immediate reaction was to figu
 But Rails is really good at mapping data models that are best described in an ER format, and this is a kind of problem that seems to match what Rails does well. So I guess I'm going to build another Rails project in my spare time.
 
 Wish me luck!
-

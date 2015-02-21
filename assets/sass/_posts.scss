@@ -131,6 +131,20 @@ body.post, body.main {
     @include outer-container;
     padding-left: 0.8em;
     padding-right: 0.8em;
+
+    .postHeader {
+      .postHeader__title {
+        font-size: 3em;
+        margin-bottom: 0;
+      }
+      .postHeader__date {
+        font-style: italic;
+      }
+    }
+
+    .postBody {
+      margin-top: 4em;
+    }
   }
 }
 
