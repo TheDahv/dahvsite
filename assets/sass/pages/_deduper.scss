@@ -1,0 +1,44 @@
+#deduper {
+  text-align: center;
+}
+
+.instructions {
+  width: 75%;
+  margin: 0 auto 1em auto;
+
+  &:last-of-type {
+    margin-bottom: 4em;
+  }
+}
+
+#controls label {
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  width: 75%;
+}
+
+#input, #results {
+  width: 75%;
+}
+
+#activate {
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+
+  button[disabled] {
+    color: #ddd;
+  }
+}
+#results {
+  background-color: #ddd;
+
+  margin-bottom: 2em;
+}
+
+#codeDisplay {
+  text-align: left;
+}
