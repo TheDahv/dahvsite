@@ -22,7 +22,7 @@ template: main
       <textarea id="input" name="input" cols="30" rows="10" tabindex="1"></textarea>
     </div>
     <div id="activate">
-      <button tabindex="2">Process List</button>
+      <button tabindex="2" disabled>Process List</button>
     </div>
     <div>
       <label for="results">Results</label><br>
@@ -93,14 +93,22 @@ template: main
           * lines of input on some browsers takes longer than the processing
           * itself!
           */
-          activateButton = function (evt) {
+          activateButton = function () {
             button.disabled = false;
-
-            if (evt && evt.preventDefault) {
-              evt.preventDefault();
-              evt.stopPropagation();
-            }
           };
+
+      // Listen for paste events to determine when the user can run
+      // the dedupe function
+      // This is a bit smoother than "tabbing-out"
+      if (input.addEventListener) {
+        input.addEventListener('paste', activateButton);
+      }
+
+      // However, if our user types emails into the textarea, we won't
+      // get a "paste" event. So we still register our "tab-out" listener
+      if ('undefined' !== typeof input.onchange) {
+        input.onchange = activateButton;
+      }
 
       // Fire deduping when the user clicks the button
       button.onclick = runDeduper;
