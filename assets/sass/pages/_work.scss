@@ -1,0 +1,25 @@
+.workItem {
+  @include row;
+  margin-bottom: 4em;
+
+  .workItem__screenshot {
+    @include span-columns(4);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .workItem__information {
+    @include span-columns(8);
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .description {
+
+  }
+}

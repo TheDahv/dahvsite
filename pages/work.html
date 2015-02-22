@@ -4,14 +4,22 @@ template: main
 
 <h1>Work</h1>
 
-<h2><em>It's a work in progress!</em></h2>
-
-<p>
-I apologize everything isn't done yet! I'm actually building a
-static site generator plugin for <a href="http://gulpjs.com/" target="_blank">gulp.js</a>
-to build this site. With the few hours of free time a week I have, it is a bit slow going.
-</p>
-
-<p>
-I should have everything done soon!
-</p>
+<% _.each(data.workitems, function (work) { %>
+<section class="workItem">
+  <div class="workItem__screenshot">
+    <a href="<%= work.linkUrl %>" target="_blank">
+    <img src="<%= work.screenshotUrl %>" alt="<%= work.title %>">
+    </a>
+  </div>
+  <div class="workItem__information">
+    <h2>
+      <a href="<%= work.linkUrl %>" target="_blank">
+        <%= work.title %>
+      </a>
+    </h2>
+    <div class="description">
+      <%= work.content %>
+    </div>
+  </div>
+</section>
+<% }); %>
