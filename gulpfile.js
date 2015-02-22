@@ -85,7 +85,7 @@ gulp.task('sass', function () {
 
 gulp.task('watchsrc', function () {
   gulp.watch(['assets/sass/*/**.scss'], ['sass']);
-  gulp.watch(['posts/**/*', 'pages/**/*', 'templates/**/*'], ['build']);
+  gulp.watch(['posts/**/*', 'pages/**/*', 'templates/**/*' ,'data/**/*'], ['build']);
 });
 
 gulp.task('move-assets', function (cb) {
