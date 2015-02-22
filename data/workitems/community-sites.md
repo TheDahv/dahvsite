@@ -1,7 +1,7 @@
 ---
 title: UP Global - Community Sites
 linkUrl: http://www.up.co/communities
-screenshotUrl: http://placehold.it/350x350
+screenshotUrl: /images/work/community-sites.png
 ---
 
 The "Community Sites" project is a platform to showcase entrepreneurial
