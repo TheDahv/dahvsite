@@ -4,16 +4,31 @@ template: main
 
 <h1>Projects</h1>
 
-<h2><em>It's a work in progress!</em></h2>
+<% _.each(data.projects, function (project) { %>
+<section class="project">
+  <div class="project__screenshot">
+    <a href="<%= project.demo || project.github %>">
+      <img src="<%= project.screenshot %>" alt="<%= project.title %>">
+    </a>
+  </div>
 
-<p>
-I apologize everything isn't done yet! I'm actually building a
-static site generator plugin for <a href="http://gulpjs.com/" target="_blank">gulp.js</a>
-to build this site. With the few hours of free time a week I have, it is a bit slow going.
-</p>
-
-<p>
-I should have everything done soon!
-</p>
-
-
+  <div class="project__information">
+    <h2>
+      <a href="<%= project.demo || project.github %>" target="_blank">
+        <%= project.title %>
+      </a>
+    </h2>
+    <div class="project__links">
+      <% if (project.demo) { %>
+      <a href="<%= project.demo %>" target="_blank">[Demo]</a>
+      <% } %>
+      <% if (project.github) { %>
+      <a href="<%= project.github %>" target="_blank">[GitHub]</a>
+      <% } %>
+    </div>
+    <div class="description">
+      <%= project.content %>
+    </div>
+  </div>
+</section>
+<% }); %>
