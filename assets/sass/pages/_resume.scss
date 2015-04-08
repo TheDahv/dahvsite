@@ -43,14 +43,23 @@
   font-weight: 700;
 }
 
+.printonly {
+  display: none;
+}
+
 @media print {
+  .printonly {
+    display: block;
+  }
+
+  .webonly {
+    display: none !important;
+  }
+
   #resume {
     font-size: 14px;
     color: #333333;
 
-    .webonly {
-      display: none;
-    }
 
     p, ul li {
       font-size: 14px;
