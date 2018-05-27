@@ -4,7 +4,7 @@ var runSequence  = require('run-sequence');
 var awspublish   = require('gulp-awspublish');
 var sass         = require('gulp-sass');
 var transblogify = require('./lib/transblogify');
-var clean        = require('gulp-clean');
+var del          = require('del');
 var mkdirp       = require('mkdirp');
 var path         = require('path');
 
@@ -47,11 +47,8 @@ var notifyLivereload = function (event) {
 // http://funcptr.net/2011/11/27/generating-stylesheets-for-pygments/
 // https://github.com/chjj/marked
 
-gulp.task('clean', function () {
-  console.log("Cleaning...");
-  return gulp.src('build/**/*', {read: false})
-    .pipe(clean({force: true}));
-});
+
+gulp.task('clean', del.bind(del, [ 'build/**/*']));
 
 gulp.task('posts', function () {
   return transblogify.posts({
@@ -100,7 +97,7 @@ gulp.task('move-assets', function (cb) {
 });
 
 gulp.task('build', function () {
-  runSequence('clean', 'posts', 'pages', 'sass', 'move-assets');
+  runSequence('clean', 'pages', 'posts', 'sass', 'move-assets');
 });
 
 gulp.task('autoserve', ['build', 'watchsrc'], function () {
