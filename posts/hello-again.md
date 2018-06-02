@@ -36,21 +36,21 @@ those streams to a final destination (your build output).
 
 Streams can live anywhere! My current coworkers will attest to streams
 processing as my "silver bullet" for many problems where they make sense. Gulp
-taught I could model more problems as streams than I originally thought.
+taught me I could model more problems as streams than I originally thought.
 
 So naturally, I built a static site generator and blogging engine as a streams
 processing library. The output of the stream transform is then streamed to AWS
 S3 and hosted from there. My site costs a couple dollars a year to run, and
 that's pretty fun.
 
-You can read the code [on my Gitlab
-account](https://gitlab.com/TheDahv/dahvsite-gulp). It represents the kind of
-code I wrote in 2014, and I definitely don't recommend trying to use it
+You can read the code for the generator and the site content itself [on Gitlab
+](https://gitlab.com/TheDahv/dahvsite-gulp). It represents the kind of code I
+wrote in 2014, and I definitely don't recommend trying to use it
 yourself.
 
-This site is a mere artifact to me scratching a dumb itch. It also clearly
-exemplifies how little a programmer values their own time if you give them the
-right problem to geek out on.
+The site you're reading is an artifact of me scratching a dumb itch. It also
+clearly exemplifies how little a programmer values their own time if you give
+them the right problem to geek out on.
 
 All that is to say: if you want to make it harder to contribute to your own
 blog, do it with a blog engine you built yourself and that you can only run from
@@ -121,9 +121,9 @@ We made Belltown home until 2013 when our first son was born; we could only
 stand sharing a one-bedroom apartment with an infant for so long.
 
 We managed to find a new neighborhood not too far away and moved to North Queen
-Anne. What was once a "dead zone" between Fremont and Ballard became the place
-where we would discover a sweet community, where my oldest son would learn to
-walk and talk, and where we would meet our second son.
+Anne. What to me was once a "dead zone" between Fremont and Ballard became the
+place where we would discover a sweet community, where my oldest son would learn
+to walk and talk, and where we would meet our second son.
 
 We experienced many big life moments there—both joyous and painful—and really
 felt like we were putting down roots. But Seattle house and rent prices are
