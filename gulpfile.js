@@ -46,7 +46,13 @@ function notifyLivereload(event) {
 // http://funcptr.net/2011/11/27/generating-stylesheets-for-pygments/
 // https://github.com/chjj/marked
 
-gulp.task('clean', del.bind(del, [ 'build/**/*']));
+gulp.task('clean',
+  del.bind(del, [
+    'build/**/*',
+    '!build/about',
+    '!build/about/davidpierce-resume.pdf'
+  ]
+));
 
 gulp.task('posts', () => {
   return transblogify.posts({
