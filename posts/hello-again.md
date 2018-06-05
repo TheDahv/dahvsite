@@ -7,8 +7,6 @@ summary: !
   change the OS on your laptop, get a new job, and move.
 ---
 
-# Hello Again
-
 Well, here is another one of those "sorry I stopped writing, I'm really going to
 stick with it this time posts".
 
@@ -17,7 +15,7 @@ since 2014. Let's recap a few noteworthy things since then that took attention
 away from contributing to my own site. I will leave more significant events to
 their own posts.
 
-## Building a Blogging Engine
+# Building a Blogging Engine
 
 Rails taught me building a blogging engine was a good way to kick the tires on a
 new programming language. One of the first toy apps I learned was a data system
@@ -59,7 +57,7 @@ right AWS keys.
 
 I'd be lying if I said it wasn't fun, though.
 
-## Changing Jobs
+# Changing Jobs
 
 My last post was in August 2014. At that time, I was Technical Director at UP
 Global, formerly Startup Weekend. As a community and a small team, we were doing
@@ -86,7 +84,7 @@ job search.
 I ended up at another Seattle company working on [Moz
 Local](https://moz.com/products/local).
 
-## Returning to Linux
+# Returning to Linux
 
 Before Startup Weekend, I was a full-time "Linux on the desktop" person. About a
 month into working there, it was obvious that silly X.Org issues—like being
@@ -113,7 +111,7 @@ content—including my website.
 So that really slowed things down until I was able to make the site more “`git`
 friendly” and move the source code into the cloud.
 
-## Moving
+# Moving
 
 My wife and I met in Belltown in 2009. We found a church that was committed to
 its downtown context, and building community in a city commonly lonely to many.
@@ -142,7 +140,7 @@ yard and easier access to Seattle's natural beauty to share with my children. We
 have space to pursue hobbies and interests I had sacrificed to fit within our space
 and budget.
 
-## And Now What?
+# And Now What?
 
 Well, there was a lot I left out in the last 4 years. Those were definitely
 among the bigger events, but there have also been a few other life-changing and
