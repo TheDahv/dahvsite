@@ -2,3 +2,39 @@ hr.row-spacer {
   border: none;
   margin-bottom: 2em;
 }
+
+dt {
+    float: left;
+    width: 15%;
+    text-align: right;
+    padding: .25em;
+    clear: left;
+
+    font-size: 1em;
+    font-weight: 600;
+}
+dd {
+    float: left;
+    width: 75%;
+    padding: .25em 0;
+
+    @include media($mobile-breakpoint) {
+      margin-left: 0;
+      padding: .25em;
+    }
+
+    p {
+      margin-top: 0;
+      font-size: 1em;
+    }
+}
+dl:after {content:"";display:table;clear:both;}
+
+@include media($mobile-breakpoint) {
+  dt, dd {
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+}
