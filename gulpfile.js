@@ -16,6 +16,7 @@ let app;
 const EXPRESS_PORT = 4000;
 const EXPRESS_ROOT = __dirname + '/build';
 const LIVERELOAD_PORT = 35729;
+const SITE_ROOT = 'http://www.thedahv.com';
 
 function startExpress() {
   if (!app) {
@@ -108,8 +109,19 @@ gulp.task('move-assets', () => {
     .pipe(gulp.dest('build/images'));
 });
 
+gulp.task('create-sitemap', () => {
+  return transblogify.sitemap({ siteRoot: SITE_ROOT });
+});
+
 gulp.task('build', () => {
-  runSequence('clean', 'pages', 'posts', 'sass', 'move-assets');
+  runSequence(
+    'clean',
+    'pages',
+    'posts',
+    'sass',
+    'move-assets',
+    'create-sitemap'
+  );
 });
 
 gulp.task('autoserve', ['build', 'watchsrc'], () => {
