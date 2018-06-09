@@ -11,7 +11,7 @@ reflect on what moved, shook, and impacted me in my first year of my 30s.
 # My Family Got Bigger
 
 A few weeks before my birthday, we met our 3rd son, Wesley James Pierce, on 21
-May 2018. That was about 3.5 weeks earlier than he was due, at least a week
+May 2018. That was about 3.5 weeks earlier than he was due, and at least a week
 earlier than my mother's arrival in anticipation of a baby due in mid-June.
 
 Wesley's arrival is wonderful and beautiful. It's also the last child we *plan*
