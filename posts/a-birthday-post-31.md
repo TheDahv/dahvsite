@@ -6,7 +6,7 @@ categories: personal
 ---
 
 Today was my first day of being 31. Woo hoo, happy birthday me. I thought I'd
-reflect on what moved, shaked, and impacted me in my first year of my 30s.
+reflect on what moved, shook, and impacted me in my first year of my 30s.
 
 # My Family Got Bigger
 
