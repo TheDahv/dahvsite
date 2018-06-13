@@ -1,7 +1,9 @@
 ---
 title: Code isn't the only thing I cook up
 date: 2011-07-05
-summary: My adventure in Colombian cooking!
+summary: !
+  My adventure in Colombian cooking! I share my attempt at frying plantains and
+  think about other connections I'd like to make to my heritage through cooking.
 categories: cooking, colombia
 ---
 

@@ -1,8 +1,12 @@
 ---
 title: A Birthday Post - Turning 31
 date: 2018-06-07
-summary: Reflections from riding around the sun 31 times.
 categories: personal
+summary: !
+  Reflections from riding around the sun 31 times. Insights drawn from things
+  like children and parenting, autism, ethnicity and racism, community
+  orientation and global citizenship, and understanding my privilege in a
+  changing world.
 ---
 
 Today was my first day of being 31. Woo hoo, happy birthday me. I thought I'd

@@ -1,7 +1,9 @@
 ---
 title: Side Projects - A blessing and a distraction
 date: 2011-07-05
-summary: A run-down through my various side-projects.
+summary: !
+  A run-down through my various side-projects. Read through what I've been
+  working on and check out links to code, demos, and lessons learned.
 ---
 
 The weekly rhythm of What's For Dinner definitely broke down a few weeks ago. That doesn't mean development stopped at all though!

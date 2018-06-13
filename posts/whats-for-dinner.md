@@ -26,7 +26,7 @@ I had to learn to adjust to planning for 2 people, and coordinate with my wife t
 
 # The Solution
 
-Our meal planning was working, but it could be better. I decided to start working on a tool that would help us plan together and keep our grocery list in check. That's how [What's For Dinner](http://dinnerplanner.herokuapp.com) was born.
+Our meal planning was working, but it could be better. I decided to start working on a tool that would help us plan together and keep our grocery list in check. That's how [What's For Dinner](http://wfd.thedahv.com) was born.
 
 The idea is we can use the application to generate a blank slate on which we can plan our meals together. There is no need for authentication or authorization. You just make a new plan, share the URL with somebody, and start planning together. Eventually, you should be able to print out your finished plan and never think about it again until the next time you need to make a new plan.
 
@@ -48,6 +48,9 @@ Here are some things I would like the application to do:
 # Feedback
 
 Do you have other good ideas? If you're a developer, you can file bugs on the [GitHub Issues Page](https://github.com/TheDahv/whatsfordinner/issues?sort=created&direction=desc&state=open) for the project.
+
+_UPDATE: You may want to check out the updated version of What's For Dinner on
+my [projects page](/projects/)._
 
 Eventually, I'm going to implement comments on this blog, so that might be a way to add feedback.
 

@@ -2,10 +2,12 @@
 title: What's For Dinner - Week 2 Update
 date: 2011-06-20
 categories: programming, wfd
-summary: A brief update on my What's For Dinner project
+summary: !
+  A brief update on my What's For Dinner project where I share some tools I made
+  to make the meal planning tool a little easier to use.
 ---
 
-I got even **less** time to code on anything this week, so there hasn't been anything major. [What's For Dinner](http://dinnerplanner.herokuapp.com) is still in development mode and I have a list of cool ideas I want to put into the application.
+I got even **less** time to code on anything this week, so there hasn't been anything major. [What's For Dinner](http://wfd.thedahv.com/) is still in development mode and I have a list of cool ideas I want to put into the application.
 
 The one thing I was able to make was a bookmarklet to generate shopping lists based on the plans you enter. This was another innovation born of necessity as Micaline and I used this feature more. We were able to use WFD to plan our meals just fine, but getting them onto paper so we could use the plan in the real world was a bit cumbersome. Before, I was copying and pasting each meal and its ingredients into a separate document and printing that to take to the grocery store.
 

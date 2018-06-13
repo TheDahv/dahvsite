@@ -2,12 +2,14 @@
 title: What's For Dinner - Week 1 Update
 date: 2011-06-12
 categories: programming, wfd
-summary: A brief update on my What's For Dinner project
+summary: !
+  A brief update on my What's For Dinner project. I talk about some UX
+  improvements I've made and 
 ---
 
-I didn't get a ton of time to work on [What's For Dinner](http://dinnerplanner.herokuapp.com) this week, but I just submitted a couple feature updates.
+I didn't get a ton of time to work on [What's For Dinner](http://wfd.thedahv.com) this week, but I just submitted a couple feature updates.
 
-If you have no idea what I'm talking about, you should probably read [this](/whats-for-dinner) first.
+If you have no idea what I'm talking about, you should probably read [this](/blog/whats-for-dinner/) first.
 
 # Keyboard Save Shortcut
 
@@ -24,6 +26,9 @@ You may notice that the ingredients section is gone. I haven't even started on t
 # What I Need From You
 
 Keep playing with it and let me know what issues you find or what feature requests you have. I've been saving all my ideas on the [issues page](https://github.com/TheDahv/whatsfordinner/issues) for the project, but you can leave an idea in the comments and I'll make sure I look at them sometime.
+
+_UPDATE: Years later, if you're still here, you may want to check out the
+updated version of [What's For Dinner](http://www.thedahv.com/projects/)._
 
 Another thing I need help with is testing. For example, I was only able to test the keyboard save shortcut in Chrome and Firefox 3 on Linux. If the feature doesn't work for you, please let me know which browser version and OS you are using and I can check it out.
 
