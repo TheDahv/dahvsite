@@ -24,15 +24,15 @@ template: home
       <span>About</span>
     </a>
 
-    <a href="/blog">
+    <a href="/blog/">
       <span>Blog</span>
     </a>
 
-    <a href="/work">
+    <a href="/work/">
       <span>Work</span>
     </a>
 
-    <a href="/projects">
+    <a href="/projects/">
       <span>Projects</span>
     </a>
   </nav>
@@ -79,9 +79,9 @@ template: home
 
         <p>
           If you'd like to know more about me, feel free to glance at my
-          <a href="/about/resume">resume</a>, my <a href="/work">past work</a>,
-          or any <a href="/projects">side-projects</a> I happen to be working on.
-          Otherwise, you can check out my <a href="/blog">blog</a> where I write
+          <a href="/about/resume/">resume</a>, my <a href="/work/">past work</a>,
+          or any <a href="/projects/">side-projects</a> I happen to be working on.
+          Otherwise, you can check out my <a href="/blog/">blog</a> where I write
           about programming, project management, software I like, and life in general.
         </p>
 
@@ -93,7 +93,7 @@ template: home
       <ul>
       <% _.each(posts.slice(0, 4), function (post) { %>
         <li>
-          <a href="/blog/<%- post.slug %>">
+          <a href="/blog/<%- post.slug %>/">
             <%= post.frontMatter.title %>
           </a>
         </li>

@@ -7,7 +7,7 @@ summary: !
   a better relationship between the disciplines of product design and software engineering.
 ---
 
-[Last week](/blog/designgeneering-diaries-part-1), I introduced an idea I call "designgeneering" to describe the interaction between developers and designers when building a software product.
+[Last week](/blog/designgeneering-diaries-part-1/), I introduced an idea I call "designgeneering" to describe the interaction between developers and designers when building a software product.
 
 Some [initial](https://twitter.com/#!/moltman/status/176860828111355906) [responses](https://twitter.com/#!/kirkryyn/status/176875696067579904) I got to the tweet I made for this post were pretty favorable. I was even more excited to hear there are already organizations out there pursuing this idea. So that's good.
 
