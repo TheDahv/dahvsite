@@ -30,7 +30,7 @@
     "build": "gulp",
     "clean": "gulp clean",
     "dev": "gulp autoserve",
-    "publish": "gulp publish"
+    "publish": "gulp publish && gulp redirects"
   },
   "author": "",
   "license": "BSD-2-Clause"

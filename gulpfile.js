@@ -1,6 +1,7 @@
 const _            = require('underscore');
 const awspublish   = require('gulp-awspublish');
 const del          = require('del');
+const es           = require('event-stream');
 const gulp         = require('gulp');
 const mkdirp       = require('mkdirp');
 const path         = require('path');
@@ -112,6 +113,20 @@ gulp.task('move-assets', () => {
 
 gulp.task('create-sitemap', () => {
   return transblogify.sitemap({ siteRoot: SITE_ROOT });
+});
+
+gulp.task('redirects', () => {
+  const {client} = awspublish.create(require('./awscredentials.json'));
+  return transblogify.redirects()
+    .pipe(es.map((Key, callback) => {
+      console.log(Key);
+      client.putObject({
+        ACL: 'public-read',
+        Key,
+        WebsiteRedirectLocation: `https://www.thedahv.com/${Key}/`
+      }, callback);
+    }))
+  .pipe(awspublish.reporter());
 });
 
 gulp.task('build', () => {
