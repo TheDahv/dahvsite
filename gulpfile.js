@@ -17,7 +17,7 @@ let app;
 const EXPRESS_PORT = 4000;
 const EXPRESS_ROOT = __dirname + '/build';
 const LIVERELOAD_PORT = 35729;
-const SITE_ROOT = 'http://www.thedahv.com';
+const SITE_ROOT = 'https://www.thedahv.com';
 
 function startExpress() {
   if (!app) {
