@@ -80,7 +80,8 @@ gulp.task('sass', () => {
   return gulp.src('./assets/sass/application.scss')
     .pipe(sass({
       errLogToConsole: true,
-      sourceComments: 'map'
+      sourceComments: 'map',
+      outputStyle: 'compressed'
     }))
     .pipe(gulp.dest('./build/css'));
 });
