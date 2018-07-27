@@ -2,3 +2,4 @@ node_modules
 build
 awscredentials.json
 .awspublish-www.thedahv.com
+.DS_Store
