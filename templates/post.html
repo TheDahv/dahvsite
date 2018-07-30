@@ -16,6 +16,13 @@
   <meta name="keywords" content="<%= categories %>">
   <% } %>
 
+  <meta property="og:title" content="<%= title %> | David Pierce">
+  <meta property="og:description" content="<%= summary %>">
+  <meta property="og:url" content="https://www.thedahv.com/blog/<%= slug %>/">
+  <% if (og_image) { %>
+    <meta property="og:image" content="<%= og_image %>">
+  <% } %>
+
   <script src="//use.edgefonts.net/pontano-sans;pt-sans-narrow.js"></script>
 </head>
 <body class="post">
