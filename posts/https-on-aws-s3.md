@@ -13,7 +13,7 @@ If you haven't heard, Google cares about site owners implementing https on their
 websites. They took a big step on 24 July 2018 with their Chrome browser:
 
 - [A milestone for Chrome security: marking HTTP as "not
-  secure"](https://www.blog.google/products/chrome/milestone-chrome-security-marking-http-not-secure/])
+  secure"](https://www.blog.google/products/chrome/milestone-chrome-security-marking-http-not-secure/)
   (Google)
 - [A secure web is here to
   stay](https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html) (Google)
