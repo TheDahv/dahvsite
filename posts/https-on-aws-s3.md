@@ -236,13 +236,21 @@ Your work isn't done yet. Here are a few more related tasks to handle:
   rendered into your pages point to the URL with the correct protocol.
 - **Update Google Analytics settings**  
   If you are using Google Analytics for your site, update the protocol for the default URL
-  in Property Settings:  
+  in View Settings and in Property Settings:  
   ![Updating protocol in Google Analytics default URL setting](/images/https-and-s3/google-analytics-settings.png)
 - **Set up Google Search Console HTTPS property**  
   It appears Google Search Console [does not support migrating a property from
   http to https](https://support.google.com/webmasters/answer/83106). I created
   a new property, and updated my properties to declare this new property as the
   preferred source of search results.
+- **Update Google Analytics link to Search Console**  
+  If you've linked your Google Analytics property to a Google Search Console for
+  search analytics in the Acquisition section, update it to point to the https
+  property you created in the previous step. You will find this setting in
+  "Admin > Property > Product Linking > All Product > Search Console". Delete
+  the existing property and then click the "Adjust Link" button to choose your
+  new property:  
+  ![Update Search Console integration with Google Analytics](/images/https-and-s3/google-analytics-search-console-integration.png)
 
 <script type="application/ld+json">
 {
@@ -355,6 +363,24 @@ Your work isn't done yet. Here are a few more related tasks to handle:
               "@type": "HowToDirection",
               "position": "1",
               "text": "It appears Google Search Console [does not support migrating a property from http to https (https://support.google.com/webmasters/answer/83106). Create a new property, and update other properties to declare this new property as the preferred source of search results."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "HowToSection",
+      "name": "Update Google Analytics link to Search Console",
+      "position": "6",
+      "itemListElement": [
+        {
+          "@type": "HowToStep",
+          "position": "1",
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "position": "1",
+              "text": "If you've linked your Google Analytics property to a Google Search Console for search analytics in the Acquisition section, update it to point to the https property you created in the previous step. You will find this setting in 'Admin > Property > Product Linking > All Product > Search Console'. Delete the existing property and then click the 'Adjust Link' button to choose your new property"
             }
           ]
         }
