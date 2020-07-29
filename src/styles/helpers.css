@@ -1,0 +1,16 @@
+.accent-color {
+  color: var(--accent-color);
+}
+
+.accent-background {
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease-in;
+}
+.accent-background:hover {
+  background-color: var(--accent-color-lightened);
+}
+
+.display-font {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

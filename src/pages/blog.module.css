@@ -1,0 +1,15 @@
+.postLink a {
+  text-decoration: none;
+}
+.postLink a:hover {
+  text-decoration: underline;
+}
+.postLink h2 {
+  margin-bottom: 0.25rem;
+}
+
+.postLinkDate {
+  font-size: 0.75rem;
+  font-style: oblique;
+  margin-bottom: 0.25rem;
+}

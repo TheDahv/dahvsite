@@ -1,0 +1,143 @@
+.about {
+  margin-top: 2em;
+  padding: 0 4rem;
+}
+
+.headerContents, .profileContainer, .nav, .blogSample {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .headerContents {
+    width: 80%;
+  }
+  .profileContainer {
+    width: 80%;
+  }
+  .nav {
+    width: 80%;
+  }
+  .blogSample {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .headerContents {
+    width: 70%;
+  }
+  .profileContainer {
+    width: 70%;
+  }
+  .nav {
+    width: 70%;
+  }
+  .blogSample {
+    width: 70%;
+  }
+}
+
+.header {
+  background-color: var(--accent-color);
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.headerContents {
+  padding-top: 3rem;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+.headerContents h2 {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 960px) {
+  .headerContents {
+    height: 50vh;
+    text-align: left;
+  }
+}
+
+.headerContents h1, .headerContents h2 {
+  color: white;
+}
+
+.profileContainer {
+  background-color: white;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 960px) {
+  .profileContainer {
+    min-height: 50vh;
+    margin: -20vh auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.profile {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+@media (min-width: 960px) {
+  .profile {
+    flex-direction: row;
+  }
+}
+
+.profile .profileImg {
+  margin: 0 auto;
+}
+
+.profileCopy {
+  padding: 2rem;
+}
+
+@media (min-width: 960px) {
+  .profile .profileImg {
+    flex: 1 1 auto;
+  }
+
+  .profile .profileCopy {
+    flex: 5 0;
+  }
+}
+
+.introStatement {
+  font-size: 1rem;
+}
+
+.profile img {
+  clip-path: circle(140px at center);
+}
+
+@media (min-width: 960px) {
+  .profile img {
+    clip-path: none;
+    height: 100%;
+  }
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+.blogSample {
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+
+.blogSample h2 {
+  color: var(--accent-color);
+}

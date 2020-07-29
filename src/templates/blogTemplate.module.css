@@ -1,0 +1,12 @@
+.postHeader {
+  margin-bottom: 2rem;
+}
+
+.postTitle {
+  margin-bottom: 0.25rem;
+}
+
+.postDate {
+  font-style: italic;
+  font-size: 1rem;
+}

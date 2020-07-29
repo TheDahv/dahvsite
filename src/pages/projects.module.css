@@ -1,0 +1,33 @@
+.screenshot {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 960px) {
+  .information {
+    display: flex;
+  }
+
+  .links {
+  }
+
+  .screenshot, .description {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .screenshot {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .screenshot {
+    flex-basis: 33%;
+    flex-grow: 1;
+  }
+
+  .description {
+    flex-basis: 66%;
+    flex-grow: 2;
+  }
+}

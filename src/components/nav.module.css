@@ -1,0 +1,16 @@
+.homeNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.homeNav a {
+  color: #FFF;
+  flex-grow: 1;
+  padding: .5rem 2rem;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.homeNav a:hover {
+}
