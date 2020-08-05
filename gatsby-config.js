@@ -63,16 +63,11 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-plugin-typography',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`
-      }
+        pathToConfigModule: 'src/utils/typography',
+      },
     },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: { }
-    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
