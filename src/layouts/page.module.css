@@ -7,3 +7,13 @@
 .content h1, h2, h3, h4, h5 {
   color: var(--accent-color);
 }
+
+.readableLayout {
+  margin: 0 auto;
+  width: 60ch;
+}
+.readableLayoutTitle {
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  /* width: 23ch; */
+}

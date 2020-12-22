@@ -1,3 +1,26 @@
+.post {
+  margin: 0 auto;
+}
+
+hr {
+  border: 1.5px solid var(--secondary-color);
+  color: var(--secondary-color);
+  height: 0;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  width: 60ch;
+}
+
+@media (min-width: 960px) {
+  .post {
+    width: 60ch;
+    margin: 0 auto;
+  }
+}
+
+.postBody {
+}
+
 .postHeader {
   margin-bottom: 2rem;
 }

@@ -11,16 +11,17 @@ export default function Template({ data, location }) {
 
   return (
     <PageLayout
-      title={markdownRemark.frontmatter.title}
-      summary={markdownRemark.frontmatter.summary}
       location={location}
+      summary={markdownRemark.frontmatter.summary}
+      title={markdownRemark.frontmatter.title}
     >
-      <main>
+      <hr />
+      <main className={styles.post}>
         <div className={styles.postHeader}>
           <span className={styles.postDate}>{frontmatter.date}</span>
         </div>
 
-        <div className="post-body" dangerouslySetInnerHTML={{ __html: html }}>
+        <div className={styles.postBody} dangerouslySetInnerHTML={{ __html: html }}>
         </div>
       </main>
     </PageLayout>

@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
 import HomeLayout from '../layouts/home'
 import SEO from '../components/seo'
 import styles from './index.module.css'
-import { HomeNav } from '../components/nav'
-
 
 const IndexPage = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -24,12 +23,27 @@ const IndexPage = ({ location }) => {
         }
       }
 
+      talapusRiver: file(relativePath: {eq: "talapus-river-rocks.jpg"}) {
+        id
+        childImageSharp {
+          fluid(quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      face: file(relativePath: {eq: "face-lincoln-park.png"}) {
+        id
+        childImageSharp {
+          fixed(width: 200) {
+            src
+          }
+        }
+      }
+
       recentPosts: allFile(
         filter: {sourceInstanceName: {eq: "posts"}},
-        sort: {
-          fields: childMarkdownRemark___frontmatter___date,
-          order: DESC
-        },
+        sort: {fields: childMarkdownRemark___frontmatter___date, order: DESC},
         limit: 5
       ) {
         edges {
@@ -48,33 +62,35 @@ const IndexPage = ({ location }) => {
     }
   `)
 
-  const { recentPosts } = data
+  const { face, recentPosts, talapusRiver } = data
   return (
     <HomeLayout>
       <SEO title='Home' location={location} />
       <div className={styles.main}>
-        <div className={styles.header}>
+        <BackgroundImage
+          Tag="section"
+          className={styles.header}
+          fluid={talapusRiver.childImageSharp.fluid}
+          backgroundColor={'#040e18'}
+        >
           <div className={styles.headerContents}>
-            <h1>David Pierce</h1>
-            <h2>Technical Product Manager</h2>
+            <h1>Hi, my name is <nobr>David Pierce</nobr></h1>
+            <h2>
+              I'm a <nobr>technical product manager</nobr> and <nobr>software
+              engineer</nobr> who thinks you should enjoy <nobr>your software</nobr>
+            </h2>
+            <img
+              src={face.childImageSharp.fixed.src}
+              alt='Profile of David Pierce'
+            />
           </div>
-        </div>
+        </BackgroundImage>
         <div className={styles.profileContainer}>
           <div className={styles.profile}>
-            <div className={styles.profileImg}>
-              <img
-                src={data.bannerProfile.childImageSharp.fluid.src}
-                alt='Profile of David Pierce'
-              />
-            </div>
             <div className={styles.profileCopy}>
               <h3>
                 Husband - Father - Friend - Nerd
               </h3>
-              <p className={`${styles.introStatement} accent-color display-font`}>
-                I am a product manager and senior software engineer who thinks
-                you should enjoy your software.
-              </p>
               <p>
                 I love building and creating solutions for real problems in the best
                 way possible. For me, it is about context &amp; craft. Context means I
@@ -83,19 +99,18 @@ const IndexPage = ({ location }) => {
               </p>
               <p>
                 If you'd like to know more about me, feel free to glance at my{' '}
-                <a href='/about/resume/'>resume</a>, my <a href='/work/'>past work</a>
-                , or any <a href='/projects/'>side-projects</a> I happen to be working
-                on. Otherwise, you can check out my <a href='/blog/'>blog</a> where I
+                <Link to='/resume/'>resume</Link>, my <Link to='/work/'>past work</Link>
+                , or any <Link href='/projects/'>side-projects</Link> I happen to be working
+                on. Otherwise, you can check out my <Link href='/blog/'>blog</Link> where I
                 write about programming, project management, software I like, and life
                 in general.
               </p>
             </div>
           </div>
-          <HomeNav />
         </div>
       </div>
       <div className={styles.blogSample}>
-        <h2>Latest Posts</h2>
+        <h3>Latest Posts</h3>
         <ul>
           {recentPosts.edges.map(renderRecentPost)}
         </ul>

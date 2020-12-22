@@ -35,7 +35,7 @@ export default function Projects ({ location }) {
   `)
 
   return (
-    <PageLayout title={'Projects'} location={location}>
+    <PageLayout title={'Projects'} location={location} wideLayout>
       {data.allFile.edges.map(renderProject)}
     </PageLayout>
   )

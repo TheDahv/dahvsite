@@ -34,7 +34,7 @@ export default function Work ({ location }) {
   `)
 
   return (
-    <PageLayout title={'Work'} location={location}>
+    <PageLayout title={'Work'} location={location} wideLayout>
       {data.allFile.edges.map(renderWork)}
     </PageLayout>
   )
@@ -42,7 +42,7 @@ export default function Work ({ location }) {
 
 function renderWork ({ node }) {
   const { html, frontmatter: work } = node.childMarkdownRemark
-  const { fixed, fluid } = work.screenshotUrl.childImageSharp
+  const { fluid } = work.screenshotUrl.childImageSharp
 
   return (
     <section key={node.id}>
