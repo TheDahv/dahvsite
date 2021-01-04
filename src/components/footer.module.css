@@ -1,0 +1,22 @@
+.root {
+  font-size: 0.75rem;
+  margin-top: 3.0rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.root p {
+  margin-bottom: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 25%;
+}
+
+.social a img {
+  width: 20px;
+  height: 20px;
+}

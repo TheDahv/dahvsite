@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Footer from '../components/footer'
 import Typography from '../components/Typography'
 
 export default function HomeLayout ({ children }) {
@@ -10,6 +11,7 @@ export default function HomeLayout ({ children }) {
       <div id='home'>
         {children}
       </div>
+      <Footer />
     </>
   )
 }

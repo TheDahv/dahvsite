@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import cx from 'classnames'
 
+import Footer from '../components/footer'
 import Header from '../components/header'
 import SEO from '../components/seo'
 import styles from './page.module.css'
@@ -36,6 +37,7 @@ export default function PageLayout ({
         </h1>
         {children}
       </div>
+      <Footer />
     </main>
   )
 }
