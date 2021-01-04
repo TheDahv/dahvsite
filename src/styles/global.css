@@ -1,12 +1,7 @@
 :root {
-  /*
-  --accent-color: #db512f;
-  --accent-color-lightened: #dd5c3c;
-  */
-  /*--accent-color: #a1a0a6;*/
   --accent-color: #676A1C;
-  --accent-color-lightened: #96959a;
-  --accent-color-darkened: #96959a;
+
+  --accent-color-lightened: #676A1CA0;
 
   --secondary-color: #1C406A; /* blue */
   --tertiary-color: #1C406A; /* purple */
