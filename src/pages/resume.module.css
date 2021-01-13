@@ -1,0 +1,40 @@
+.root {
+  font-size: 0.85em;
+  margin: 0 auto;
+  max-width: 56.25rem;
+  padding-top: 1rem;
+  width: 100ch;
+}
+
+.root p {
+  margin-bottom: 1em;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media print {
+  .introduction a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.contact {
+  text-align: right;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateRange {
+  font-style: italic;
+}
+
+.pageBreak {
+  page-break-before: always;
+}

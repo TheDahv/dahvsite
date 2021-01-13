@@ -1,6 +1,5 @@
 :root {
   --accent-color: #676A1C;
-
   --accent-color-lightened: #676A1CA0;
 
   --secondary-color: #1C406A; /* blue */
@@ -319,7 +318,7 @@ h6 {
   line-height: 1.1;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #db512f;
+  color: var(--accent-color);
 }
 hgroup {
   margin-left: 0;

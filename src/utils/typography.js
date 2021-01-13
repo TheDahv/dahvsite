@@ -32,5 +32,13 @@ theme.overrideThemeStyles = (config, options) => ({
 */
 
 const typography = new Typography(theme)
+const resumeTypography = new Typography({
+  ...theme,
+  baseFontSize: '14px',
+  baseLineHeight: 1.5,
+  scaleRatio: 1.75,
+})
+
+export { resumeTypography };
 
 export default typography
