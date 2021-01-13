@@ -31,16 +31,16 @@ export default function Footer () {
     <footer className={styles.root}>
       <div className={styles.social}>
         <a href="https://twitter.com/thedahv">
-          <img src={icons.twitter} />
+          <img src={icons.twitter} alt="Twitter logo" />
         </a>
         <a href="https://instagram.com/thedahv">
-          <img src={icons.instagram} />
+          <img src={icons.instagram} alt="Instagram logo" />
         </a>
         <a href="https://github.com/thedahv">
-          <img src={icons.github} />
+          <img src={icons.github} alt="GitHub logo" />
         </a>
         <a href="http://gitlab.com/thedahv">
-          <img src={icons.gitlab} />
+          <img src={icons.gitlab} alt="Gitlab logo" />
         </a>
       </div>
       <p>David Pierce</p>
