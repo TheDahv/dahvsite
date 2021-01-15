@@ -8,7 +8,10 @@ import styles from './work.module.css'
 export default function Work ({ location }) {
   const data = useStaticQuery(graphql`
     query WorkIndex {
-      allFile(filter: {sourceInstanceName: {eq: "work"}}) {
+      allFile(
+        filter: {sourceInstanceName: {eq: "work"}},
+        sort: {fields: name} 
+      ) {
         edges {
           node {
             id
