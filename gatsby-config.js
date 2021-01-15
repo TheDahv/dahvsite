@@ -3,7 +3,8 @@ module.exports = {
     title: `David Pierce`,
     description: `The website for David Pierce, a software engineer in Seattle. Find my résumé, work, projects, and blog posts.`,
     author: `David Pierce - Software Engineer`,
-    siteURL: 'https://www.thedahv.com'
+    siteURL: 'https://www.thedahv.com',
+    siteUrl: 'https://www.thedahv.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -68,6 +69,7 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    'gatsby-plugin-sitemap'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
