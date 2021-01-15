@@ -2,12 +2,14 @@ import React from 'react'
 import cx from 'classnames'
 
 import SEO from '../components/seo'
-import { ResumeTypography } from '../components/Typography'
 import styles from './resume.module.css'
+import { GoogleAnalytics } from '../components/analytics'
+import { ResumeTypography } from '../components/Typography'
 
 export default function Resume ({ location }) {
   return (
     <>
+      <GoogleAnalytics />
       <ResumeTypography />
       <SEO title='Home' location={location} />
       <div className={styles.root}>
