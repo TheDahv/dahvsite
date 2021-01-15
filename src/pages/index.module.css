@@ -10,7 +10,7 @@
   .profileContainer, .blogSample {
     margin: 0 auto;
     padding: 0 1rem;
-    width: 60ch;
+    width: 75ch;
   }
   .nav {
     width: 80%;
@@ -22,7 +22,7 @@
     width: 70%;
   }
   .profileContainer, .blogSample {
-    width: 60ch;
+    width: 75ch;
     margin: 0 auto;
   }
   .nav {

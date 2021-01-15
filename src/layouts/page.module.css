@@ -10,10 +10,18 @@
 
 .readableLayout {
   margin: 0 auto;
-  width: 60ch;
+  width: 75ch;
 }
 .readableLayoutTitle {
   margin: 0 auto;
   margin-bottom: 1.5rem;
   /* width: 23ch; */
+}
+
+@media (max-width: 960px) {
+  .readableLayout, .readableLayoutTitle {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

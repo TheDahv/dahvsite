@@ -16,6 +16,12 @@
   width: 25%;
 }
 
+@media (max-width: 960px) {
+  .social {
+    width: 50%;
+  }
+}
+
 .social a img {
   width: 20px;
   height: 20px;
