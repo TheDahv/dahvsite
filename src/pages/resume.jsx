@@ -17,7 +17,7 @@ export default function Resume ({ location }) {
         <div className={styles.introduction}>
           <div>
             <p>
-              Technical Product Manager and Software Engineer
+              Technical Product Manager and Senior Software Engineer
               <br />
               4027 52nd Ave SW, Seattle WA 98116
             </p>
