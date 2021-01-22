@@ -13,7 +13,7 @@ export function GoogleAnalytics () {
   return (
     <Helmet>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JL78Q8D3E" />
-      <script dangerouslySetInnerHTML={{__html: ga}} />
+      <script>{ga}</script>
     </Helmet>
   )
 }
