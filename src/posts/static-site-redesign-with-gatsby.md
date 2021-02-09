@@ -292,6 +292,6 @@ any questions about what I presented here? What tools do you like using?
 
 Let's discuss on
 [Twitter](https://twitter.com/TheDahv/status/1358955241849319424) or on
-[LinkedIn](https://www.linkedin.com/posts/daviddpierce_aws-gatsbyjs-githubactions-activity-6764721330127548416-uNzJ)
+[LinkedIn](https://www.linkedin.com/posts/daviddpierce_aws-gatsbyjs-githubactions-activity-6764721330127548416-uNzJ).
 
 Here's to avoiding another 3 years and a site redesign before that happens.
