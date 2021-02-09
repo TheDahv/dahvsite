@@ -28,10 +28,6 @@ function SEO ({ description, lang, meta, title, location }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  if (!location) {
-    console.log({ title, description })
-  }
-
   return (
     <Helmet
       htmlAttributes={{
