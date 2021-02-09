@@ -10,7 +10,6 @@ export default function Template ({ data, location }) {
   const { face, markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
-  console.log({ location })
   const meta = [
     {
       name: 'keywords',
