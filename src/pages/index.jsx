@@ -103,7 +103,15 @@ const IndexPage = ({ location }) => {
       </div>
       <div className={styles.profileContainer}>
         <p>
-          Thanks to Sound Roots Photography, to whom the credit belongs for my profile photo.
+          Thanks to{' '}
+          <a
+            href='https://www.soundrootsphotography.com/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Sound Roots Photography
+          </a>
+          , to whom the credit belongs for my profile photo.
         </p>
       </div>
     </HomeLayout>
