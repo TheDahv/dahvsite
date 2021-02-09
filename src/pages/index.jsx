@@ -10,20 +10,7 @@ import styles from './index.module.css'
 const IndexPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
-      bannerProfile: file(relativePath: {eq: "banner-left.jpg"}) {
-        id
-        childImageSharp {
-          fluid(maxHeight: 400, quality: 100) {
-            ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-          fixed(height: 200) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-
-      talapusRiver: file(relativePath: {eq: "talapus-river-rocks.jpg"}) {
+      talapusRiver: file(relativePath: { eq: "talapus-river-rocks.jpg" }) {
         id
         childImageSharp {
           fluid(quality: 90) {
@@ -32,7 +19,7 @@ const IndexPage = ({ location }) => {
         }
       }
 
-      face: file(relativePath: {eq: "face-lincoln-park.png"}) {
+      face: file(relativePath: { eq: "face-lincoln-park.png" }) {
         id
         childImageSharp {
           fixed(width: 200) {
@@ -42,8 +29,8 @@ const IndexPage = ({ location }) => {
       }
 
       recentPosts: allFile(
-        filter: {sourceInstanceName: {eq: "posts"}},
-        sort: {fields: childMarkdownRemark___frontmatter___date, order: DESC},
+        filter: { sourceInstanceName: { eq: "posts" } }
+        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
         limit: 5
       ) {
         edges {
@@ -58,7 +45,6 @@ const IndexPage = ({ location }) => {
           }
         }
       }
-
     }
   `)
 
@@ -68,16 +54,19 @@ const IndexPage = ({ location }) => {
       <SEO title='Home' location={location} />
       <div className={styles.main}>
         <BackgroundImage
-          Tag="section"
+          Tag='section'
           className={styles.header}
           fluid={talapusRiver.childImageSharp.fluid}
           backgroundColor={'#040e18'}
         >
           <div className={styles.headerContents}>
-            <h1>Hi, my name is <nobr>David Pierce</nobr></h1>
+            <h1>
+              Hi, my name is <nobr>David Pierce</nobr>
+            </h1>
             <h2>
-              I'm a <nobr>technical product manager</nobr> and <nobr>software
-              engineer</nobr> who thinks you should enjoy <nobr>your software</nobr>
+              I'm a <nobr>technical product manager</nobr> and{' '}
+              <nobr>software engineer</nobr> who thinks you should enjoy{' '}
+              <nobr>your software</nobr>
             </h2>
             <img
               src={face.childImageSharp.fixed.src}
@@ -88,14 +77,13 @@ const IndexPage = ({ location }) => {
         <div className={styles.profileContainer}>
           <div className={styles.profile}>
             <div className={styles.profileCopy}>
-              <h3>
-                Husband - Father - Friend - Nerd
-              </h3>
+              <h3>Husband - Father - Friend - Nerd</h3>
               <p>
-                I love building and creating solutions for real problems in the best
-                way possible. For me, it is about context &amp; craft. Context means I
-                like to be passionate about my work and mission. Craft means I am
-                committed to doing things the right way with talented people.
+                I love building and creating solutions for real problems in the
+                best way possible. For me, it is about context &amp; craft.
+                Context means I like to be passionate about my work and mission.
+                Craft means I am committed to doing things the right way with
+                talented people.
               </p>
               <p>
                 If you'd like to know more about me, feel free to glance at my{' '}
@@ -111,9 +99,7 @@ const IndexPage = ({ location }) => {
       </div>
       <div className={styles.blogSample}>
         <h3>Latest Posts</h3>
-        <ul>
-          {recentPosts.edges.map(renderRecentPost)}
-        </ul>
+        <ul>{recentPosts.edges.map(renderRecentPost)}</ul>
       </div>
       <div className={styles.profileContainer}>
         <p>
