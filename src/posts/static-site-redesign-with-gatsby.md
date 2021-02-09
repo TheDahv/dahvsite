@@ -246,9 +246,10 @@ trailing slashes. They are indeed different URLs, and most sites redirect one to
 the other without the user ever noticing.
 
 In the previous version of my site, I took advantage of a default S3 behavior of
-serving an `index.html` file for any request to a "directory" in a bucket. All
+serving an `index.html` file for any request to a "directory" in a bucket.  All
 URLs and internal links include a trailing slash &mdash; that is, a link to that
-directory.
+directory. You can read more about that in [the commit where I set that
+up](https://github.com/TheDahv/dahvsite/commit/c03ac75abaf168eaca6b26439d5e7d86b755bd51).
 
 Gatsby doesn't build its assets that way, so instead all my URLs redirect from
 versions with trailing slashes to versions without. So, right now my site is
@@ -285,5 +286,12 @@ experience.
 I want to get back to writing and sharing more often. This setup will also make
 it easy for me to publish other kinds of content like projects and tutorial
 videos I've produced over the years.
+
+Do you manage any statically generated sites or are curious to try? Do you have
+any questions about what I presented here? What tools do you like using? 
+
+Let's discuss on
+[Twitter](https://twitter.com/TheDahv/status/1358955241849319424) or on
+[LinkedIn](https://www.linkedin.com/posts/daviddpierce_aws-gatsbyjs-githubactions-activity-6764721330127548416-uNzJ)
 
 Here's to avoiding another 3 years and a site redesign before that happens.
