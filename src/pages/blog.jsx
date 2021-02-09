@@ -48,7 +48,7 @@ function renderPostLink ({ node }) {
   } = node.childMarkdownRemark
   return (
     <article className={styles.postLink} key={frontmatter.slug}>
-      <Link to={`/blog/${frontmatter.slug}/`}>
+      <Link to={`/blog/${frontmatter.slug}`}>
         <h2>{frontmatter.title}</h2>
       </Link>
       <p className={styles.postLinkDate}>

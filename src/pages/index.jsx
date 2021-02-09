@@ -87,11 +87,12 @@ const IndexPage = ({ location }) => {
               </p>
               <p>
                 If you'd like to know more about me, feel free to glance at my{' '}
-                <Link to='/resume/'>resume</Link>, my <Link to='/work/'>past work</Link>
-                , or any <Link to='/projects/'>side-projects</Link> I happen to be working
-                on. Otherwise, you can check out my <Link to='/blog/'>blog</Link> where I
-                write about programming, project management, software I like, and life
-                in general.
+                <Link to='/resume/'>resume</Link>, my{' '}
+                <Link to='/work/'>past work</Link>, or any{' '}
+                <Link to='/projects/'>side-projects</Link> I happen to be
+                working on. Otherwise, you can check out my{' '}
+                <Link to='/blog/'>blog</Link> where I write about programming,
+                project management, software I like, and life in general.
               </p>
             </div>
           </div>
@@ -122,7 +123,7 @@ function renderRecentPost ({ node }) {
   const { slug, title } = node.childMarkdownRemark.frontmatter
   return (
     <li key={node.id}>
-      <Link to={`/blog/${slug}/`}>{title}</Link>
+      <Link to={`/blog/${slug}`}>{title}</Link>
     </li>
   )
 }
