@@ -7,19 +7,36 @@ import PageLayout from '../layouts/page'
 import styles from './blogTemplate.module.css'
 
 export default function Template ({ data, location }) {
-  const { markdownRemark } = data
+  const { face, markdownRemark } = data
   const { frontmatter, html } = markdownRemark
+
+  console.log({ location })
+  const meta = [
+    {
+      name: 'keywords',
+      content: frontmatter.categories
+    },
+    {
+      name: 'og:title',
+      content: frontmatter.title
+    },
+    {
+      name: 'og:description',
+      content: frontmatter.summary
+    },
+    {
+      name: 'og:url',
+      content: location.href
+    }
+  ]
+  meta.push({
+    name: 'og:image',
+    content: frontmatter.og_image || face.childImageSharp.fixed.src
+  })
 
   return (
     <>
-      <Helmet
-        meta={[
-          {
-            name: 'keywords',
-            content: frontmatter.categories
-          }
-        ]}
-      />
+      <Helmet meta={meta} />
       <PageLayout
         location={location}
         summary={markdownRemark.frontmatter.summary}
@@ -51,6 +68,15 @@ export const pageQuery = graphql`
         slug
         title
         summary
+      }
+    }
+
+    face: file(relativePath: { eq: "face-lincoln-park.png" }) {
+      id
+      childImageSharp {
+        fixed(width: 200) {
+          src
+        }
       }
     }
   }
