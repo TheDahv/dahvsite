@@ -1,6 +1,6 @@
 ---
-title: Maintaining a Product Manager Product Portfolio
-slug: maintaining-product-manager-product-portfolio
+title: Maintaining a Product Manager Project Portfolio
+slug: maintaining-product-manager-project-portfolio
 date: 2021-02-11
 categories: product management
 ogimage: ../images/product-manager-portfolio/personal-project-portfolio.png
