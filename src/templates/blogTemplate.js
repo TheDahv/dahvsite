@@ -8,8 +8,11 @@ import styles from './blogTemplate.module.css'
 
 export default function Template ({ data, location }) {
   const { face, markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, timeToRead, wordCount } = markdownRemark
 
+  const img = frontmatter.ogimage
+    ? frontmatter.ogimage.childImageSharp.fixed.src
+    : face.childImageSharp.fixed.src
   const meta = [
     {
       name: 'keywords',
@@ -30,7 +33,7 @@ export default function Template ({ data, location }) {
   ]
   meta.push({
     name: 'og:image',
-    content: frontmatter.og_image || face.childImageSharp.fixed.src
+    content: img
   })
 
   return (
@@ -44,9 +47,11 @@ export default function Template ({ data, location }) {
         <hr />
         <main className={styles.post}>
           <div className={styles.postHeader}>
-            <span className={styles.postDate}>{frontmatter.date}</span>
+            <span className={styles.postDate}>
+              {frontmatter.date} &ndash;{' '}
+              {`${wordCount.words} words (${timeToRead} minutes)`}
+            </span>
           </div>
-
           <div
             className={styles.postBody}
             dangerouslySetInnerHTML={{ __html: html }}
@@ -64,9 +69,20 @@ export const pageQuery = graphql`
       frontmatter {
         categories
         date(formatString: "dddd, D MMMM yyyy")
+        ogimage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
         slug
         title
         summary
+      }
+      timeToRead
+      wordCount {
+        words
       }
     }
 
