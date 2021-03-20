@@ -1,7 +1,7 @@
 ---
 title: Moz Local
 linkUrl:
-slug: moz-local
+id: moz-local
 screenshotUrl: ../../images/work/moz-local.png
 ---
 

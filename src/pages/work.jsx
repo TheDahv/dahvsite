@@ -20,7 +20,7 @@ export default function Work ({ location }) {
               frontmatter {
                 title
                 linkUrl
-                slug
+                id
                 screenshotUrl {
                   childImageSharp {
                     fluid(maxWidth: 1200) {

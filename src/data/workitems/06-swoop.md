@@ -2,7 +2,7 @@
 title: UP Global - SWOOP
 linkUrl: https://swoop.up.co
 screenshotUrl: ../../images/work/swoop.png
-slug: swoop
+id: swoop
 ---
 
 SWOOP is the primary web application driving UP Global's core technical

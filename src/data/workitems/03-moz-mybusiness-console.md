@@ -1,7 +1,7 @@
 ---
 title: Moz My Business Console
 linkUrl: https://moz.com/blog/my-business-console-free-tool
-slug: moz-mybusinessconsole
+id: moz-mybusinessconsole
 screenshotUrl: ../../images/work/moz-my-business-console.png
 ---
 

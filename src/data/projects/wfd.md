@@ -3,7 +3,7 @@ title: What's for Dinner
 github: https://github.com/TheDahv/wfdinner
 demo: http://wfd.thedahv.com/
 screenshotUrl: ../../images/projects/wfd.png
-slug: eversound
+id: eversound
 ---
 
 What's For Dinner is a simple tool to help friends and family plan meals

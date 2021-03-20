@@ -1,7 +1,7 @@
 ---
 title: Moz Local Market Analytics
 linkUrl: https://moz.com/local-market-analytics-announcement
-slug: moz-local-market-analytics
+id: moz-local-market-analytics
 screenshotUrl: ../../images/work/local-market-analytics.png
 ---
 

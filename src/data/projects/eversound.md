@@ -2,7 +2,7 @@
 title: Eversound
 github: https://github.com/TheDahv/eversound
 screenshotUrl: ../../images/projects/eversound.png
-slug: eversound
+id: eversound
 ---
 
 Eversound is an exploration in distributed personal amplification using

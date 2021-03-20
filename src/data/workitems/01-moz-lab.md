@@ -1,7 +1,7 @@
 ---
 title: Moz Lab
 linkUrl:
-slug: moz-lab
+id: moz-lab
 screenshotUrl: ../../images/work/moz-lab.png
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: UP Global - Community Sites
 linkUrl: http://www.up.co/communities
-slug: community-sites
+id: community-sites
 screenshotUrl: ../../images/work/community-sites.png
 ---
 
