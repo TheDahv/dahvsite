@@ -6,7 +6,7 @@ slug: product-compositional-atoms
 date: 2021-03-20
 categories: product management
 ogimage: null
-summary: When we think about products, we often think about capabilities and features. We think about the technologies and functionality that a product has a customer want to pay for. I think this is "inside out" thinking. I want to show you how to think about user outcomes first and how to compose them from smaller atomic ideas.
+summary: When we think about products, we often think about capabilities and features. We think about the technologies and functionality a product has that a customer would want to pay for. I think of this as "inside out" thinking. Instead, I want to show you how to think about user outcomes first and how to compose them from smaller atomic ideas.
 ---
 
 # Product Compositional Atoms
@@ -17,12 +17,12 @@ When we think about products, we often think about capabilities and features. We
 
 Let's think about some of the common concepts you might encounter working in product as a product manager, designer, or developer. We have:
 
-- capabilities: technologies, machine learning models, and other "cool tech" in your portfolio of assets
-- features: tools and abilities you give your users to do things
+- capabilities: technologies, algorithms, automation, machine learning models, and other "cool tech" in your portfolio of assets
+- features: tools and abilities you give your users to do something
 
 For sake of discussion, let's call these things "product atoms": small indivisible pieces that can compose together to create product experiences. This idea of composition is important, so remember it for later.
 
-These are where we tend to spend much of our time thinking about our products as we're designing or imagining things we can develop to bring to market, differentiating from competitors and winning a segment. 
+These are where we tend to spend much of our time thinking about our products as we're designing or imagining things we can develop to bring to market, with the ultimate goal of differentiating from competitors and winning a segment. 
 
 But here's the thing: these terms describe your company, but they don't describe the customer's journey. Thinking this way limits us to "inside out thinking" where we can only serve customers who fit to the molds we set up. You are limited to seeing the world within the boundaries of the paradigm that defines your existing product. And because of that, you won't see new customer segments you could serve or how you could serve existing customers in new ways.
 
@@ -34,11 +34,11 @@ I don't want this to be condemning; I only know this idea well because it has ha
 
 This happens to developers who are more engaged with cool technology than they are with customer outcomes. But we shouldn't fault them! This is an important part of the product life cycle and we need a fresh and vibrant portfolio of capabilities to embolden our vision of what's possible.
 
-But this happens to product managers, too -- especially as we're growing in experience and seniority. The temptation to launch the next killer feature and get your name on the "ship it" announcement is strong. And it should be; the hunger to ship things is important to the culture at any organization.
+This happens to product managers, too -- especially as we're growing in experience and seniority. The temptation to launch the next killer feature and get your name on the "ship it" announcement is strong. And it should be; the hunger to ship things is important to the culture at any organization.
 
-Without paying attention, our feature or our swim lane becomes the only thing we can see. To make our assigned are as successful as possible, we look for ways to magnify it and try to consume the entire product with out area of ownership. Everybody wants to have that killer feature that makes your product sing, but a single feature doesn't make an entire product experience. It leaves of the holistic customer experience and puts the burden on them to think about how to use that feature to solve a problem.
+But without paying attention, our feature or our swim lane becomes the only thing we can see. To make our assigned area as successful as possible, we look for ways to magnify it and try to consume the entire product with our area of ownership. Everybody wants to have that killer feature that makes your product sing, but a single feature doesn't make an entire product experience. It loses sight of the holistic customer experience and puts the burden on them to think about how to use that feature to solve a problem.
 
-But why should we focus on maturing from this already healthy place? Because it's still about the company, not the customer.
+So why should we focus on maturing from this seemingly productive place? Because it's still about the company, not the customer.
 
 # Thinking Outside In
 
@@ -48,7 +48,7 @@ They want to be the hero of their story where your product naturally comes along
 
 To get to this mode of thinking, we shift our perspective to think of the user first. We think about their motivations, their contexts, and their resources -- or lack thereof. We think about what problems they want to solve and what help they need to solve it. We organize patterns of customer similarities into concepts commonly called "personas".
 
-More importantly, we need to understand what paths and journeys they may take to solve that problem: it may not be the same for all users and it may not be obvious in your tool's architecture today. We commonly know these customer pathways as "workflows". Ideally, your products UX and navigation map to those workflows, but they don't always! You might work on a product whose information architecture has drifted from common workflows. 
+More importantly, we need to understand what paths and journeys they may take to solve that problem: it may not be the same for all users and it may not be obvious in your tool's architecture today. We commonly know these customer pathways as "workflows". Ideally, your product's UX and navigation map to those workflows, but they don't always! You might work on a product whose information architecture has drifted from common workflows. 
 
 More likely is that multiple workflows will share features and capabilities. It's natural for them to overlap and still result in different outcomes.
 
@@ -56,15 +56,15 @@ Remember the idea of composition?
 
 When you encounter a customer problem, you think about what things they need to do to solve those problems. These tools, helpers, and data map to your features. Then you can understand what features already exist and which ones you need to create. Then you can look at what capabilities power those features or understand what capabilities you need to invest in to unlock those features.
 
-More importantly, this let's you think _across_ your product to shift your perspective to how your customers views it from the outside.
+More importantly, this lets you think _across_ your product to shift your perspective to how your customer views it from the outside.
 
 ## Addressing emerging technology
 
-Even though I've painted this spectrum our outside vs. inside thinking, I can't advocate for abandoning one over the other. Developers are still going to explore and we're still going to encounter emerging technology that we want to understand how to leverage.
+Even though I've painted this spectrum of outside vs. inside thinking, I can't advocate for abandoning one over the other. Developers are still going to explore and we're still going to encounter emerging technology that we want to understand how to leverage.
 
 This is the innovative part of product management I really enjoy. To do this well, you need to be able to bounce quickly between internal perspectives and external perspectives.
 
-You need to be able to evaluate new technologies and think "what new questions does this let me ask"? You need to be able to predict what kinds of problems a new capability might address and then go find people who think about those problems. They might not be customers in your current addressable market today. And if not, that's exciting because it _might_ mean you are uncovering an opportunity for the organization to expand its addressable market segments and capture new value.
+You need to be able to evaluate new technologies and think "what new questions does this let me ask?" You need to be able to predict what kinds of problems a new capability might address and then go find people who think about those problems. They might not be customers in your current addressable market today. And if not, that's exciting because it _might_ mean you are uncovering an opportunity for the organization to expand its addressable market segments and capture new value.
 
 But you still need to prove there are real customers who will pay for real outcomes. You need to ask good questions and uncover workflows your product could support. Then you need to map back to features and capabilities you could compose to produce that workflow and estimate your ability to produce them.
 
@@ -72,7 +72,7 @@ And if you've done all that, you can neatly map together how your product atoms 
 
 ## Wrapping up
 
-Learning to think outside in means getting really good at finding interesting questions to explore. But it also means getting really good at knowing your portfolio of product atoms and composing them in your head to pattern march them to customer workflows.
+Learning to think outside in means getting really good at finding interesting questions to explore. But it also means getting really good at knowing your portfolio of product atoms and composing them in your head to pattern match them to customer workflows.
 
 You want to spend time with your data scientists, software engineers, and designers to know what's possible. You want to spend time thinking about your features and how they fit into the customer's bigger story.
 
