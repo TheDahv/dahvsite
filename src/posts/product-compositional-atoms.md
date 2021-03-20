@@ -80,7 +80,7 @@ about how to use that feature to solve a problem.
 So why should we focus on maturing from this seemingly productive place? Because
 it's still about the company, not the customer.
 
-# Thinking Outside In
+## Thinking Outside In
 
 Instead we can think of customer outcomes. A customer doesn't want to buy access to
 "feature XYZ". They want to solve a problem. They want time back in their day.
