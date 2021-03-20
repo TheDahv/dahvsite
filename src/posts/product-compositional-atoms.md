@@ -6,20 +6,12 @@ slug: product-compositional-atoms
 date: 2021-03-20
 categories: product management
 ogimage: null
-summary: When we think about products, we often think about capabilities and features. We think about the technologies and functionality that a product has a customer want to pay for. I think this is "inside out" thinking and I want to show you how to think about user outcomes first and how to compose them from smaller atomic ideas.
+summary: When we think about products, we often think about capabilities and features. We think about the technologies and functionality that a product has a customer want to pay for. I think this is "inside out" thinking. I want to show you how to think about user outcomes first and how to compose them from smaller atomic ideas.
 ---
 
 # Product Compositional Atoms
 
----
-title: Composing products with capabilities, features, and outcomes
-slug: product-compositional-atoms
-date: 2021-03-20
-categories: product management
-ogimage:
-summary: !
-  When we think about products, we often think about capabilities and features. We think about the technologies and functionality that a product has a customer want to pay for. I think this is "inside out" thinking and I want to show you how to think about user outcomes first and how to compose them from smaller atomic ideas.
----
+When we think about products, we often think about capabilities and features. We think about the technologies and functionality that a product has a customer want to pay for. I think this is "inside out" thinking. I want to show you how to think about user outcomes first and how to compose them from smaller atomic ideas.
 
 ## Thinking inside out
 
