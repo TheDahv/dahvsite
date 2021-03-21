@@ -39,11 +39,11 @@ These are where we tend to spend much of our time thinking about our products as
 we're designing or imagining things we can develop to bring to market, with the
 ultimate goal of differentiating from competitors and winning a segment.
 
-But here's the thing: these terms describe your company, but they don't describe
-the customer's journey. Thinking this way limits us to "inside out thinking"
-where we can only serve customers who fit to the molds we set up. You are
-limited to seeing the world within the boundaries of the paradigm that defines
-your existing product. And because of that, you won't see new customer segments
+But here's the thing: these terms describe your company; they do not describe
+your customer's journey. Thinking this way limits us to "inside out thinking"
+where we can only serve customers who fit our molds. You are limited to seeing
+the world within the boundaries of the paradigm that define your existing
+product or prototype. And because of that, you won't see new customer segments
 you could serve or how you could serve existing customers in new ways.
 
 Worse, we find ourselves with the classic problem of inventing hammers looking
