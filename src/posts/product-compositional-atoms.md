@@ -187,3 +187,7 @@ should you or your product design.
 
 Have fun exploring! Find cool stuff. Get to know your customers and help them
 achieve their outcomes. Build amazing things.
+
+Do you have any questions or ideas you'd like to share? Let's discuss on
+[Twitter](https://twitter.com/TheDahv/status/1373425874289135618) or on
+[LinkedIn](https://www.linkedin.com/posts/daviddpierce_composing-products-with-capabilities-features-activity-6779191550346952704-ANeY).
