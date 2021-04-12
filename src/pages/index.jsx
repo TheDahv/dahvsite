@@ -123,7 +123,7 @@ function renderRecentPost ({ node }) {
   const { slug, title } = node.childMarkdownRemark.frontmatter
   return (
     <li key={node.id}>
-      <Link to={`/blog/${slug}`}>{title}</Link>
+      <Link to={`/blog/${slug}/`}>{title}</Link>
     </li>
   )
 }
