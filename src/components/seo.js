@@ -70,10 +70,12 @@ function SEO ({ description, lang, meta, title, location }) {
         },
         {
           name: 'canonical',
-          content: `${site.siteMetadata.siteURL}${location.pathname}`
-        }
+          content: `${site.siteMetadata.siteURL}${location.pathname}/`
+        },
       ].concat(meta)}
-    />
+    >
+      <link rel="canonical" href={`${site.siteMetadata.siteURL}${location.pathname}`} />
+    </Helmet>
   )
 }
 
