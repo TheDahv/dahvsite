@@ -11,7 +11,7 @@ export default function Resume ({ location }) {
     <>
       <GoogleAnalytics />
       <ResumeTypography />
-      <SEO title='Home' location={location} />
+      <SEO title='Resume' location={location} />
       <div className={styles.root}>
         <h1>David Pierce</h1>
         <div className={styles.introduction}>
@@ -19,7 +19,7 @@ export default function Resume ({ location }) {
             <p>
               Technical Product Manager and Senior Software Engineer
               <br />
-              4027 52nd Ave SW, Seattle WA 98116
+              7915 14th Ave SW, Seattle WA 98106
             </p>
           </div>
           <div className={styles.contact}>
@@ -35,32 +35,28 @@ export default function Resume ({ location }) {
         <div>
           <h2>Summary</h2>
           <p>
-            I'm a customer-focused product leader and full-stack engineer
-            specializing in web applications development. I want to use my
-            talents to help people and make an impact I can be proud of. My goal
-            is to use my technical background to bring solutions to customers as
-            a technical product manager, or as a software engineer in a role
-            that can leverage my product background.
+            I'm a customer-focused product leader specializing in products
+            delivered via web applications. I want to use my customer empathy and
+            technical background to create great products as a technical product
+            manager. I thrive in small, collaborative teams where I can turn ambiguity
+            into product direction with iterative discovery and delivery methodologies.
           </p>
         </div>
         <div>
           <h2>Work Experience</h2>
           <div className={styles.entry}>
             <h3>
-              Moz; Seattle, WA &ndash; Technical Product Manager and Senior
-              Software Engineer
+              Moz; Seattle, WA &ndash; Technical Product Manager
             </h3>
             <span className={styles.dateRange}>
               <nobr>June 2015 &ndash; Present</nobr>
             </span>
           </div>
           <p>
-            My Moz career included product management, software engineering, and
-            leadership. Technologies used include JavaScript, Node.js, Express,
-            Go, React, MySQL, Postgres, RethinkDB, Elasticache, Redis, and NSQ
-            in both Linux VM-based and cloud-based architectures. I leaned
-            heavily on Jira, Confluence, and Miro to manage sprints and document
-            products and processes.
+            My Moz career included leading in product management and software
+            engineering. Technologies used include Node.js, React, Go, MySQL, Postgres,
+            Elasticache, and NSQ in VM and cloud-based architectures. I used Jira,
+            Confluence, and Miro to manage sprints and document products.
           </p>
           <div className={styles.entry}>
             <strong>Technical Product Manager</strong>
@@ -70,18 +66,18 @@ export default function Resume ({ location }) {
           </div>
           <p>
             Leveraged my software background, entrepreneurial experience, and
-            customer focus to build technical solutions for marketers. Worked
-            with engineers to build a culture of customer empathy, iterative
-            development, and prioritization to help our company learn and
-            deliver to market faster. I oversaw and led the following:
+            customer focus to build technical solutions for marketers. Worked with
+            engineers to build a culture of customer empathy, iterative development, and
+            prioritization to deliver to market faster. I oversaw and led the following:
           </p>
           <ul>
             <li>
-              Local Market Analytics: a local SEO beta program within the Moz
-              Pro suite with about 5,000 sites registered and 2 enterprise
-              deals. I led customer research, prototyping, implementation, and
-              launch and sales support.
-            </li>
+              Local Market Analytics beta: helped SEOs understand site
+              performance in hyper-local searches, identify regional competitors, and
+              surface colloquial nuance in ranking pages. The beta earned 2 enterprise deals
+              and users tracked 6.7K sites. The beta supported about 50 daily active users
+              tracking 90.5K keywords in 62.4K markets in the US, Canada, UK, and Australia.
+              </li>
             <li>
               MozNext Applications Framework: an internal cross-functional
               program to improve product delivery. Projects include a standard
@@ -90,9 +86,9 @@ export default function Resume ({ location }) {
             </li>
             <li>
               Rapid Prototyping Team: a small team of engineers creating MVPs
-              for use in alpha testing. I served as technical lead and alpha
-              program coach. We produced 3 different alphas for Moz product
-              teams within the last quarter of 2020.
+              for use in alpha testing. I served as technical product manager and coach for
+              the program. I led delivery on 3 alphas for Moz product teams within Q4 2020,
+              with one promoting to beta in the following quarter.
             </li>
           </ul>
 
@@ -115,12 +111,10 @@ export default function Resume ({ location }) {
             <span className={styles.dateRange}>June 2015 &ndash; May 2017</span>
           </div>
           <p>
-            Full-stack Node.js engineer responsible for designing and
-            implementing features, working with data vendor partners, and
-            managing a fleet of VMs. Accomplishments include a redesigning a
-            duplicate listings management experience, upgrading and expanding
-            Moz' GMB API integration, and building a high-performance analytics
-            data service.
+            Full-stack Node.js engineer responsible for designing, implementing,
+            and operating product features. Accomplishments include redesigning a
+            duplicate listings management experience, upgrading and expanding Moz' GMB API
+            integration, and building a high-performance analytics data service.
           </p>
 
           <div className={cx(styles.entry, styles.pageBreak)}>
@@ -131,28 +125,25 @@ export default function Resume ({ location }) {
           </div>
           <p>
             I led the engineering team for a global non-profit building
-            entrepreneurial communities. As technical director, I served as:
+            entrepreneurial communities in over 150 countries. As technical director, I
+            served as product manager, team lead, architect, and engineer. Notable accomplishments include:
           </p>
           <ul>
             <li>
-              Product Manager: Conduct customer interviews, map out pain points
-              and opportunities, and manage roadmap. Work with stakeholders,
-              builders, and third-party vendors to deliver projects.
+              SWOOP: a database and management tool to help staff track,
+              budget, and support over 13.2K organizer-planned events.
             </li>
             <li>
-              Team Lead: Build a healthy team through hiring, culture building,
-              and supporting individual engineers.
+              Organizer Portal: an extension to SWOOP to support volunteer
+              organizers in planning, promoting, and financing their events using the same
+              database as their support staff.
             </li>
             <li>
-              Architect: Design products across systems powered by connected API
-              services.
-            </li>
-            <li>
-              Engineer: Contribute back-end and front-end code on projects from
-              internal tools to public-facing sites.
+              Community Sites: a family of regional marketing websites and a
+              platform for generating and hosting customizable event pages for organizers to
+              market all events tracked in SWOOP.
             </li>
           </ul>
-
           <div className={styles.entry}>
             <h3>WineBid.com; Seattle, WA – Software Engineer</h3>
             <span className={styles.dateRange}>
@@ -192,33 +183,8 @@ export default function Resume ({ location }) {
             writing specifications for service platform monitoring system,
             writing PowerShell scripts to manage VM instances in a dynamic
             service platform, and managing Microsoft's 5 month SharePoint Online
-            2010 Community Tech Preview
+            2010 Community Tech Preview.
           </p>
-        </div>
-        <div>
-          <h2>Education</h2>
-          <h3>
-            Raikes School in Computer Science and Management at the Univerity of
-            Nebraska-Lincoln
-          </h3>
-          <h4>Management Information Systems Major, May 2009</h4>
-
-          <p>Senior/Junior Design Studio Projects</p>
-
-          <ul>
-            <li>
-              Nanonation: Platform-agnostic media rendering software using Qt
-              framework and C++ &ndash; Team contributor.
-            </li>
-            <li>
-              Jacob North: Closed-loop sales and marketing system using Groovy
-              and Grails &ndash; Scrum master.
-            </li>
-            <li>
-              Microsoft: Dynamics Great Plains vendor workflow extension using
-              C# &ndash; Documentation Lead.
-            </li>
-          </ul>
         </div>
       </div>
     </>
