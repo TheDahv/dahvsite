@@ -53,10 +53,10 @@ export default function Resume ({ location }) {
             </span>
           </div>
           <p>
-            My Moz career included leading in product management and software
-            engineering. Technologies used include Node.js, React, Go, MySQL, Postgres,
-            Elasticache, and NSQ in VM and cloud-based architectures. I used Jira,
-            Confluence, and Miro to manage sprints and document products.
+            My Moz career spanned product management and software engineering.
+            Technologies include Node.js, React, Go, MySQL, Postgres, Elasticache,
+            and NSQ in VM and cloud-based architectures. I used Jira, Confluence, and
+            Miro to plan products.
           </p>
           <div className={styles.entry}>
             <strong>Technical Product Manager</strong>
@@ -68,15 +68,14 @@ export default function Resume ({ location }) {
             Leveraged my software background, entrepreneurial experience, and
             customer focus to build technical solutions for marketers. Worked with
             engineers to build a culture of customer empathy, iterative development, and
-            prioritization to deliver to market faster. I oversaw and led the following:
+            prioritization to deliver to market faster. Accomplishments include:
           </p>
           <ul>
             <li>
               Local Market Analytics beta: helped SEOs understand site
-              performance in hyper-local searches, identify regional competitors, and
-              surface colloquial nuance in ranking pages. The beta earned 2 enterprise deals
-              and users tracked 6.7K sites. The beta supported about 50 daily active users
-              tracking 90.5K keywords in 62.4K markets in the US, Canada, UK, and Australia.
+              performance in hyper-local searches, identify local competitors, and
+              surface colloquial nuance in ranking pages. The beta supported 6.7K sites
+              tracking 90.5K keywords in 62.4K markets across the US, Canada, the UK, and Australia.
               </li>
             <li>
               MozNext Applications Framework: an internal cross-functional
@@ -100,10 +99,12 @@ export default function Resume ({ location }) {
           </div>
 
           <p>
-            Promoted consistency in design, implementation, and execution on
-            product goals. Promoted org-wide engineering principles through
-            architecture reviews and knowledge-sharing. Worked with product
-            managers to steer product direction.
+            Influenced product direction on the Moz Local listings management
+            product, supporting over 100K business locations at its peak. I led
+            exploration on opportunities with enterprise and SMB audiences via our API
+            and technical capabilities. Examples include planning and prototyping a
+            proposal for an embedded audit tool to create new revenue opportunities with
+            customers.
           </p>
 
           <div className={styles.entry}>
@@ -124,9 +125,9 @@ export default function Resume ({ location }) {
             </span>
           </div>
           <p>
-            I led the engineering team for a global non-profit building
+            Led the engineering team for a global non-profit building
             entrepreneurial communities in over 150 countries. As technical director, I
-            served as product manager, team lead, architect, and engineer. Notable accomplishments include:
+            served as product manager, team lead, architect, and engineer. Accomplishments include:
           </p>
           <ul>
             <li>
