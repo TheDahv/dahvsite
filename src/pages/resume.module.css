@@ -6,6 +6,21 @@
   width: 100ch;
 }
 
+.root h1,
+.root h2,
+.root h3 {
+  color: var(--accent-color)
+}
+
+@media print {
+
+  .root h1,
+  .root h2,
+  .root h3 {
+    color: var(--accent-color)
+  }
+}
+
 .root p {
   margin-bottom: 1em;
 }

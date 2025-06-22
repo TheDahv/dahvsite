@@ -4,11 +4,12 @@ import cx from 'classnames'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
-import SEO from '../components/seo'
-import styles from './page.module.css'
+import Seo from '../components/seo'
+import Typography from '../components/Typography'
+import * as styles from './page.module.css'
 import { GoogleAnalytics } from '../components/analytics'
 
-export default function PageLayout ({
+export default function PageLayout({
   children,
   location,
   summary,
@@ -28,10 +29,11 @@ export default function PageLayout ({
   return (
     <>
       <GoogleAnalytics />
+      <Typography />
       <main>
-        <SEO title={title} description={summary} location={location} />
+        <Seo title={title} description={summary} location={location} />
 
-        <div className={styles.header}>
+        <div>
           <Header siteTitle={data.site.siteMetadata.title} />
         </div>
         <div

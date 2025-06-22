@@ -1,38 +1,34 @@
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import PageLayout from '../layouts/page'
-import styles from './projects.module.css'
+import * as styles from './projects.module.css'
 
-export default function Projects ({ location }) {
-  const data = useStaticQuery(graphql`
-    query ProjectsIndex {
-      allFile(filter: {sourceInstanceName: {eq: "projects"}}) {
-        edges {
-          node {
-            id
-            childMarkdownRemark {
-              html
-              frontmatter {
-                title
-                demo
-                github
-                screenshotUrl {
-                  childImageSharp {
-                    fluid(maxWidth: 1200) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                id
+export default function Projects({ location }) {
+  const data = useStaticQuery(graphql`query ProjectsIndex {
+  allFile(filter: {sourceInstanceName: {eq: "projects"}}) {
+    edges {
+      node {
+        id
+        childMarkdownRemark {
+          html
+          frontmatter {
+            title
+            demo
+            github
+            screenshotUrl {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
+            id
           }
         }
       }
     }
-  `)
+  }
+}`)
 
   return (
     <PageLayout title={'Projects'} location={location} wideLayout>
@@ -41,9 +37,9 @@ export default function Projects ({ location }) {
   )
 }
 
-function renderProject ({ node }) {
+function renderProject({ node }) {
   const { html, frontmatter } = node.childMarkdownRemark
-  const { fluid } = frontmatter.screenshotUrl.childImageSharp
+  const { gatsbyImageData } = frontmatter.screenshotUrl.childImageSharp
 
   return (
     <section className="project" key={node.id}>
@@ -56,7 +52,7 @@ function renderProject ({ node }) {
       <div className={styles.information}>
         <div className={styles.screenshot}>
           <a href={frontmatter.demo || frontmatter.github}>
-            <Img fluid={fluid} alt={frontmatter.title} />
+            <GatsbyImage image={gatsbyImageData} />
           </a>
         </div>
         <div className={styles.description}>

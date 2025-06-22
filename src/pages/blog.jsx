@@ -2,14 +2,14 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 import PageLayout from '../layouts/page'
-import styles from './blog.module.css';
+import * as styles from './blog.module.css';
 
-export default function Blog ({ location }) {
+export default function Blog({ location }) {
   const data = useStaticQuery(graphql`
     query PostsIndex {
       allFile(
         filter: {sourceInstanceName: {eq: "posts"}},
-        sort: {fields: childMarkdownRemark___frontmatter___date, order: DESC}
+        sort: {childMarkdownRemark: { frontmatter: { date: DESC } } }
       ) {
         edges {
           node {
@@ -22,7 +22,7 @@ export default function Blog ({ location }) {
               frontmatter {
                 title
                 summary
-                date(formatString: "dddd, D MMMM yyyy")
+                date(formatString: "dddd, MMMM D yyyy")
                 slug
               }
               timeToRead
@@ -40,7 +40,7 @@ export default function Blog ({ location }) {
   )
 }
 
-function renderPostLink ({ node }) {
+function renderPostLink({ node }) {
   const {
     frontmatter,
     timeToRead,

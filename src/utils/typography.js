@@ -1,5 +1,4 @@
 import Typography from 'typography'
-//import theme from 'typography-theme-sutro'
 
 const theme = {
   baseFontSize: '16px',
@@ -19,22 +18,10 @@ const theme = {
   ]
 }
 
-// See src/styles/global.css
-/*
-theme.overrideThemeStyles = (config, options) => ({
-  'a': {
-    color: '#db512f',
-  },
-  'a:hover': {
-    color: '#dd5c3c',
-  },
-})
-*/
-
 const typography = new Typography(theme)
 const resumeTypography = new Typography({
   ...theme,
-  baseFontSize: '14px',
+  baseFontSize: '16px',
   baseLineHeight: 1.5,
   scaleRatio: 1.75,
 })

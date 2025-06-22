@@ -1,81 +1,69 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import HomeLayout from '../layouts/home'
-import SEO from '../components/seo'
-import styles from './index.module.css'
+import Seo from '../components/seo'
+import * as styles from './index.module.css'
 
 const IndexPage = ({ location }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      talapusRiver: file(relativePath: { eq: "talapus-river-rocks.jpg" }) {
+  const data = useStaticQuery(graphql`{
+  talapusRiver: file(relativePath: {eq: "talapus-river-rocks.jpg"}) {
+    id
+    childImageSharp {
+      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+    }
+  }
+  face: file(relativePath: {eq: "face-lincoln-park.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData(width: 200, placeholder: BLURRED, layout: FIXED)
+    }
+  }
+  recentPosts: allFile(
+    filter: {sourceInstanceName: {eq: "posts"}}
+    sort: {childMarkdownRemark: {frontmatter: {date: DESC}}}
+    limit: 5
+  ) {
+    edges {
+      node {
         id
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      face: file(relativePath: { eq: "face-lincoln-park.png" }) {
-        id
-        childImageSharp {
-          fixed(width: 200) {
-            src
-          }
-        }
-      }
-
-      recentPosts: allFile(
-        filter: { sourceInstanceName: { eq: "posts" } }
-        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
-        limit: 5
-      ) {
-        edges {
-          node {
-            id
-            childMarkdownRemark {
-              frontmatter {
-                title
-                slug
-              }
-            }
+        childMarkdownRemark {
+          frontmatter {
+            title
+            slug
           }
         }
       }
     }
-  `)
+  }
+}`)
+
 
   const { face, recentPosts, talapusRiver } = data
   return (
     <HomeLayout>
-      <SEO title='Home' location={location} />
-      <div className={styles.main}>
-        <BackgroundImage
-          Tag='section'
-          className={styles.header}
-          fluid={talapusRiver.childImageSharp.fluid}
-          backgroundColor={'#040e18'}
-        >
+      <Seo title='Home' location={location} />
+      <div>
+        <div className={styles.hero}>
+          <GatsbyImage image={talapusRiver.childImageSharp.gatsbyImageData}
+            backgroundColor={'#040e18'}
+            alt="A river with rocks in the foreground and trees in the background"
+            style={{ gridArea: "1/1", maxHeight: "30vh" }}
+          />
           <div className={styles.headerContents}>
             <h1>
               Hi, my name is <nobr>David Pierce</nobr>
             </h1>
-            <h2>
-              I'm a <nobr>technical product manager</nobr> and{' '}
-              <nobr>software engineer</nobr> who thinks you should enjoy{' '}
-              <nobr>your software</nobr>
-            </h2>
-            <img
-              src={face.childImageSharp.fixed.src}
+            <GatsbyImage
+              image={face.childImageSharp.gatsbyImageData}
               alt='Profile of David Pierce'
             />
           </div>
-        </BackgroundImage>
+        </div>
         <div className={styles.profileContainer}>
-          <div className={styles.profile}>
+          <div>
             <div className={styles.profileCopy}>
               <h3>Husband - Father - Friend - Nerd</h3>
               <p>
@@ -116,10 +104,10 @@ const IndexPage = ({ location }) => {
         </p>
       </div>
     </HomeLayout>
-  )
+  );
 }
 
-function renderRecentPost ({ node }) {
+function renderRecentPost({ node }) {
   const { slug, title } = node.childMarkdownRemark.frontmatter
   return (
     <li key={node.id}>

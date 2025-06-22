@@ -1,23 +1,23 @@
 import React from 'react'
 import cx from 'classnames'
 
-import SEO from '../components/seo'
-import styles from './resume.module.css'
+import Seo from '../components/seo'
+import * as styles from './resume.module.css'
 import { GoogleAnalytics } from '../components/analytics'
 import { ResumeTypography } from '../components/Typography'
 
-export default function Resume ({ location }) {
+export default function Resume({ location }) {
   return (
     <>
       <GoogleAnalytics />
       <ResumeTypography />
-      <SEO title='Resume' location={location} />
+      <Seo title='Resume' location={location} />
       <div className={styles.root}>
         <h1>David Pierce</h1>
         <div className={styles.introduction}>
           <div>
             <p>
-              Technical Product Manager and Senior Software Engineer
+              Technical Product Manager
               <br />
               7915 14th Ave SW, Seattle WA 98106
             </p>
@@ -76,7 +76,7 @@ export default function Resume ({ location }) {
               performance in hyper-local searches, identify local competitors, and
               surface colloquial nuance in ranking pages. The beta supported 6.7K sites
               tracking 90.5K keywords in 62.4K markets across the US, Canada, the UK, and Australia.
-              </li>
+            </li>
             <li>
               MozNext Applications Framework: an internal cross-functional
               program to improve product delivery. Projects include a standard

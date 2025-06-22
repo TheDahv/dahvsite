@@ -1,29 +1,30 @@
 module.exports = {
   siteMetadata: {
     title: `David Pierce`,
-    description: `The website for David Pierce, a software engineer in Seattle. Find my résumé, work, projects, and blog posts.`,
-    author: `David Pierce - Software Engineer`,
+    description: `The website for David Pierce, a technical product manager in Seattle. Find my résumé, work, projects, and blog posts.`,
+    author: `David Pierce - Sr. Technical Product Manager`,
     siteURL: 'https://www.thedahv.com',
     siteUrl: 'https://www.thedahv.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
             }
           },
-          'gatsby-remark-copy-linked-files',
         ]
       }
     },
+    /*
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -36,6 +37,7 @@ module.exports = {
         icon: `src/images/favicon.png` // This path is relative to the root of the site.
       }
     },
+    */
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,7 +48,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'posts',
+        name: `posts`,
         path: `${__dirname}/src/posts`,
       }
     },
@@ -63,12 +65,6 @@ module.exports = {
         name: 'work',
         path: `${__dirname}/src/data/workitems`,
       }
-    },
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
     },
     'gatsby-plugin-sitemap'
     // this (optional) plugin enables Progressive Web App + Offline functionality

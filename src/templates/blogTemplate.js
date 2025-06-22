@@ -4,15 +4,15 @@ import { graphql } from 'gatsby'
 
 import PageLayout from '../layouts/page'
 
-import styles from './blogTemplate.module.css'
+import * as styles from './blogTemplate.module.css'
 
-export default function Template ({ data, location }) {
+export default function Template({ data, location }) {
   const { face, markdownRemark } = data
   const { frontmatter, html, timeToRead, wordCount } = markdownRemark
 
   const img = frontmatter.ogimage
-    ? frontmatter.ogimage.childImageSharp.fixed.src
-    : face.childImageSharp.fixed.src
+    ? frontmatter.ogimage.childImageSharp.gatsbyImageData.src
+    : face.childImageSharp.gatsbyImageData.src
   const meta = [
     {
       name: 'keywords',
@@ -49,11 +49,10 @@ export default function Template ({ data, location }) {
           <div className={styles.postHeader}>
             <span className={styles.postDate}>
               {frontmatter.date} &ndash;{' '}
-              {`${wordCount.words} words (${timeToRead} minutes)`}
+              {`${wordCount.words.toLocaleString()} words (${timeToRead} minutes)`}
             </span>
           </div>
           <div
-            className={styles.postBody}
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
         </main>
@@ -62,37 +61,30 @@ export default function Template ({ data, location }) {
   )
 }
 
-export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        categories
-        date(formatString: "dddd, D MMMM yyyy")
-        ogimage {
-          childImageSharp {
-            fixed {
-              src
-            }
-          }
+export const pageQuery = graphql`query ($slug: String!) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      categories
+      date(formatString: "dddd, MMMM D yyyy")
+      ogimage {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, layout: FIXED)
         }
-        slug
-        title
-        summary
       }
-      timeToRead
-      wordCount {
-        words
-      }
+      slug
+      title
+      summary
     }
-
-    face: file(relativePath: { eq: "face-lincoln-park.png" }) {
-      id
-      childImageSharp {
-        fixed(width: 200) {
-          src
-        }
-      }
+    timeToRead
+    wordCount {
+      words
     }
   }
-`
+  face: file(relativePath: {eq: "face-lincoln-park.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData(width: 200, placeholder: BLURRED, layout: FIXED)
+    }
+  }
+}`

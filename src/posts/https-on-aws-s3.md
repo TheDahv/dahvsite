@@ -7,7 +7,7 @@ summary: !
   S3 from HTTP to HTTPS with AWS Cloudfront. I also discuss why you should
   consider securing your site, even if it is a simple static one like mine.
 categories: https, seo, aws, s3, cloudfront
-og_image: https://www.thedahv.com/images/migrating-my-aws-s3-website-to-https/dahvsite-https.png
+og_image: ../images/migrating-my-aws-s3-website-to-https/dahvsite-https.png
 ---
 
 If you haven't heard, Google cares about site owners implementing https on their

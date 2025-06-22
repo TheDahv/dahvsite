@@ -1,5 +1,16 @@
-.headerContents, .profileContainer, .nav, .blogSample {
+.headerContents,
+.profileContainer,
+.nav,
+.blogSample {
   width: 100%;
+}
+
+#home h1,
+#home h2,
+#home h3,
+#home h4,
+#home h5 {
+  color: var(--accent-color);
 }
 
 @media (min-width: 960px) {
@@ -7,11 +18,14 @@
     width: 80%;
     text-align: center;
   }
-  .profileContainer, .blogSample {
+
+  .profileContainer,
+  .blogSample {
     margin: 0 auto;
     padding: 0 1rem;
     width: 75ch;
   }
+
   .nav {
     width: 80%;
   }
@@ -21,10 +35,13 @@
   .headerContents {
     width: 70%;
   }
-  .profileContainer, .blogSample {
+
+  .profileContainer,
+  .blogSample {
     width: 75ch;
     margin: 0 auto;
   }
+
   .nav {
     width: 70%;
   }
@@ -36,20 +53,23 @@
 }
 
 .headerContents {
-  padding-top: 3rem;
+  grid-area: 1/1;
+  position: relative;
+  place-items: center;
+  display: grid;
+
+  padding: 3rem 0;
   margin: 0 auto;
   color: white;
   text-align: center;
 }
-.headerContents h1, .headerContents h2 {
+
+.headerContents h1 {
   color: white;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   max-width: 70vw;
-}
-.headerContents h2 {
-  font-size: 1.25rem;
-  padding-bottom: 1rem;
 }
 
 @media (min-width: 960px) {
@@ -59,7 +79,12 @@
   }
 }
 
-.profileContainer, .blogSample {
+.hero {
+  display: grid;
+}
+
+.profileContainer,
+.blogSample {
   padding: 0 1rem;
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import styles from './footer.module.css'
+import * as styles from './footer.module.css'
 
-export default function Footer () {
+export default function Footer() {
   const data = useStaticQuery(graphql`
     query {
       icons: allFile(

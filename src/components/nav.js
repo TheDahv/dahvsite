@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import styles from './nav.module.css'
+import * as styles from './nav.module.css'
 
-export function MainNav () {
+export function MainNav() {
   return (
     <nav className={styles.homeNav}>
       <Link to='/' className='accent-background'>
