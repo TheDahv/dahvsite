@@ -50,9 +50,6 @@ Here are some things I would like the application to do:
 
 Do you have other good ideas? If you're a developer, you can file bugs on the [GitHub Issues Page](https://github.com/TheDahv/whatsfordinner/issues?sort=created&direction=desc&state=open) for the project.
 
-_UPDATE: You may want to check out the updated version of What's For Dinner on
-my [projects page](/projects/)._
-
 Eventually, I'm going to implement comments on this blog, so that might be a way to add feedback.
 
 Otherwise, hit me up on [twitter](https://twitter.com/TheDahv) or shoot me an email.

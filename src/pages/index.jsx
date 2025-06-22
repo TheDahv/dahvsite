@@ -67,18 +67,17 @@ const IndexPage = ({ location }) => {
             <div className={styles.profileCopy}>
               <h3>Husband - Father - Friend - Nerd</h3>
               <p>
-                I love building and creating solutions for real problems in the
-                best way possible. For me, it is about context &amp; craft.
-                Context means I like to be passionate about my work and mission.
-                Craft means I am committed to doing things the right way with
-                talented people.
+                I love building great products to solve real problems using
+                technology. I blend my software engineering background with
+                passion for understanding customer needs to lead teams to
+                deliver exceptional products. I excel when working on behalf of
+                technical customers or on products that require a deep technical
+                understanding.
               </p>
               <p>
                 If you'd like to know more about me, feel free to glance at my{' '}
-                <Link to='/resume/'>resume</Link>, my{' '}
-                <Link to='/work/'>past work</Link>, or any{' '}
-                <Link to='/projects/'>side-projects</Link> I happen to be
-                working on. Otherwise, you can check out my{' '}
+                <Link to='/resume/'>resume</Link> or my{' '}
+                <Link to='/work/'>past work</Link>. Otherwise, you can check out my{' '}
                 <Link to='/blog/'>blog</Link> where I write about programming,
                 project management, software I like, and life in general.
               </p>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `David Pierce`,
-    description: `The website for David Pierce, a technical product manager in Seattle. Find my résumé, work, projects, and blog posts.`,
+    description: `The website for David Pierce, a technical product manager in Seattle. Find my résumé, work, and blog posts.`,
     author: `David Pierce - Sr. Technical Product Manager`,
     siteURL: 'https://www.thedahv.com',
     siteUrl: 'https://www.thedahv.com'
@@ -50,13 +50,6 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'projects',
-        path: `${__dirname}/src/data/projects`,
       }
     },
     {

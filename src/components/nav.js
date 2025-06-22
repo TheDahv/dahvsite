@@ -15,9 +15,6 @@ export function MainNav() {
       <Link to='/work/' className='accent-background'>
         <span>Work</span>
       </Link>
-      <Link to='/projects/' className='accent-background'>
-        <span>Projects</span>
-      </Link>
     </nav>
   )
 }
