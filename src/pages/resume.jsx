@@ -36,11 +36,11 @@ export default function Resume({ location }) {
           <h2>Summary</h2>
           <p>
             I'm a customer-focused product leader that leverages my diverse
-            software engineering and product background to create impactful web
-            SaaS products. From small startups to large enterprise, I thrive in
-            small, collaborative cross-functional teams, transforming ambiguity
-            into clear product direction through iterative discovery and
-            delivery.
+            software engineering and product background to create impactful
+            digital products. From small startups to large enterprise, I thrive
+            in small, collaborative cross-functional teams, transforming
+            ambiguity into clear product direction through iterative discovery
+            and delivery.
           </p>
         </div>
         <div>
@@ -67,23 +67,26 @@ export default function Resume({ location }) {
           <ul>
             <li>
               Town Square: Led the development and launch of a centralized
-              transportation partner feedback analytics platform, integrating
-              five feedback channels and achieving EU parity within the first
-              year. This laid the groundwork to consume an estimated 245K
-              feedback touchpoints in 2025. So far, we saved early pilot teams
-              ~2 hours/week and allowed one team to redirect 2-8 FTEs from
-              manual scanning. The project exceeded its 2025 adoption goal
-              within a month, with 15+ teams leveraging cross-channel insights.
+              transportation partner feedback analytics platform. It integrated
+              five feedback channels, achieved EU parity within its first year,
+              and is projected to consume 245K touchpoints in 2025. It saved
+              early pilot teams ~2 hours/week, allowed one team to redirect 2-8
+              FTEs from manual scanning, and exceeded its 2025 adoption goal
+              within a month, enabling 15+ teams to reduce deep dives from
+              multi-hour efforts to 30-minute processes. Teams are now
+              proactively detecting and addressing issues in support cases and
+              product pilots, guiding root cause analysis, and informing product
+              improvements.
             </li>
             <li>
               "Top Stories from Ignite" Integration Widget: Researched,
-              proposed, and led content a community content integration into a
-              transportation partner-facing logistics dashboard, achieving an
-              average 4.06% daily CTR post-launch, outperforming the goal by
-              206bps and a comparable widget by 46bps. The pilot for this
-              project activated 5+ previously inactive users, demonstrating the
-              impact of reaching the right people with the right content in the
-              right place.
+              proposed, and led delivery of a community content widget
+              integrating top unread stories into a user's daily logistics
+              dashboard, achieving an average 4.06% daily CTR post-launch,
+              outperforming the goal by 206bps and a comparable widget by 46bps.
+              The pilot for this project activated 5+ previously inactive users,
+              demonstrating the impact of reaching the right people with the
+              right content in the right place.
             </li>
             <li>
               Search UX Improvements: Led the redesign and implementation of
@@ -148,8 +151,8 @@ export default function Resume({ location }) {
               an embedded audit tool to create new enterprise and SMB revenue
               streams. I spearheaded API-driven integrations with leading
               industry listings services such as Google My Business and Yelp,
-              adding value to customers wanted to manage their online presence
-              on those services.
+              adding value to customers who wanted to manage their online
+              presence on those services.
             </li>
           </ul>
           <div className={cx(styles.entry)}>
