@@ -35,11 +35,12 @@ export default function Resume({ location }) {
         <div>
           <h2>Summary</h2>
           <p>
-            I'm a customer-focused product leader with a background in software
-            engineering and web SaaS products. I leverage my diverse technical
-            and product background to create impactful web SaaS products. I
-            thrive in small, collaborative teams, transforming ambiguity into
-            clear product direction through iterative discovery and delivery.
+            I'm a customer-focused product leader that leverages my diverse
+            software engineering and product background to create impactful web
+            SaaS products. From small startups to large enterprise, I thrive in
+            small, collaborative cross-functional teams, transforming ambiguity
+            into clear product direction through iterative discovery and
+            delivery.
           </p>
         </div>
         <div>
@@ -60,10 +61,8 @@ export default function Resume({ location }) {
             network. I specialized in bridging the needs of business
             stakeholders to Science, Software, and Business Intelligence teams
             to enable data-driven decisions, leading the creation and launch of
-            products that streamlined feedback aggregation and analysis.
-          </p>
-          <p>
-            Accomplishments and deliverables include:
+            products that streamlined feedback aggregation and analysis. Accomplishments
+            and deliverables include:
           </p>
           <ul>
             <li>
@@ -78,10 +77,13 @@ export default function Resume({ location }) {
             </li>
             <li>
               "Top Stories from Ignite" Integration Widget: Researched,
-              proposed, and led content integration, achieving an average 4.06%
-              daily CTR post-launch, outperforming the goal by 206bps and a
-              comparable widget by 46bps. This also activated 5+ previously
-              inactive users.
+              proposed, and led content a community content integration into a
+              transportation partner-facing logistics dashboard, achieving an
+              average 4.06% daily CTR post-launch, outperforming the goal by
+              206bps and a comparable widget by 46bps. The pilot for this
+              project activated 5+ previously inactive users, demonstrating the
+              impact of reaching the right people with the right content in the
+              right place.
             </li>
             <li>
               Search UX Improvements: Led the redesign and implementation of
@@ -120,9 +122,9 @@ export default function Resume({ location }) {
             Starting as a software engineer, I pivoted to product management
             where I focused on local SEO, new product launches, and leading
             innovation. I used Jira, Confluence, Loom, and Miro for product
-            planning and internal communications.
+            planning and internal communications. Accomplishments and
+            deliverables include:
           </p>
-          <p>Accomplishments and deliverables include:</p>
           <ul>
             <li>
               Local Market Analytics Beta: Supported 6.7K sites tracking 90.5K
@@ -158,8 +160,9 @@ export default function Resume({ location }) {
           </div>
           <p>
             Led the engineering team for a global non-profit building
-            entrepreneurial communities in over 150 countries. As technical director, I
-            served as product manager, team lead, architect, and engineer. Accomplishments include:
+            entrepreneurial communities in over 150 countries. As technical
+            director, I served as product manager, team lead, architect, and
+            engineer. Accomplishments and deliverables include:
           </p>
           <ul>
             <li>
