@@ -35,90 +35,122 @@ export default function Resume({ location }) {
         <div>
           <h2>Summary</h2>
           <p>
-            I'm a customer-focused product leader specializing in products
-            delivered via web applications. I want to use my customer empathy and
-            technical background to create great products as a technical product
-            manager. I thrive in small, collaborative teams where I can turn ambiguity
-            into product direction with iterative discovery and delivery methodologies.
+            I'm a customer-focused product leader with a background in software
+            engineering and web SaaS products. I leverage my diverse technical
+            and product background to create impactful web SaaS products. I
+            thrive in small, collaborative teams, transforming ambiguity into
+            clear product direction through iterative discovery and delivery.
           </p>
         </div>
         <div>
           <h2>Work Experience</h2>
           <div className={styles.entry}>
             <h3>
-              Moz; Seattle, WA &ndash; Technical Product Manager
+              Amazon; Seattle, WA &ndash; Sr. Product Manager - Technical
             </h3>
             <span className={styles.dateRange}>
-              <nobr>June 2015 &ndash; Present</nobr>
+              <nobr>August 2021 &ndash; Present</nobr>
             </span>
           </div>
           <p>
-            My Moz career spanned product management and software engineering.
-            Technologies include Node.js, React, Go, MySQL, Postgres, Elasticache,
-            and NSQ in VM and cloud-based architectures. I used Jira, Confluence, and
-            Miro to plan products.
+            At Amazon, I leveraged my technical background to build products and
+            programs that transform feedback into actionable insights for global
+            communities of 3K Delivery Service Partners (DSPs) and Amazon
+            Freight Partners (AFPs), vital to the Last and Middle Mile delivery
+            network. I specialized in bridging the needs of business
+            stakeholders to Science, Software, and Business Intelligence teams
+            to enable data-driven decisions, leading the creation and launch of
+            products that streamlined feedback aggregation and analysis.
           </p>
-          <div className={styles.entry}>
-            <strong>Technical Product Manager</strong>
-            <span className={styles.dateRange}>
-              <nobr>January 2019 &ndash; Present</nobr>
-            </span>
-          </div>
           <p>
-            Leveraged my software background, entrepreneurial experience, and
-            customer focus to build technical solutions for marketers. Worked with
-            engineers to build a culture of customer empathy, iterative development, and
-            prioritization to deliver to market faster. Accomplishments include:
+            Accomplishments and deliverables include:
           </p>
           <ul>
             <li>
-              Local Market Analytics beta: helped SEOs understand site
-              performance in hyper-local searches, identify local competitors, and
-              surface colloquial nuance in ranking pages. The beta supported 6.7K sites
-              tracking 90.5K keywords in 62.4K markets across the US, Canada, the UK, and Australia.
+              Town Square: Led the development and launch of a centralized
+              transportation partner feedback analytics platform, integrating
+              five feedback channels and achieving EU parity within the first
+              year. This laid the groundwork to consume an estimated 245K
+              feedback touchpoints in 2025. So far, we saved early pilot teams
+              ~2 hours/week and allowed one team to redirect 2-8 FTEs from
+              manual scanning. The project exceeded its 2025 adoption goal
+              within a month, with 15+ teams leveraging cross-channel insights.
             </li>
             <li>
-              MozNext Applications Framework: an internal cross-functional
-              program to improve product delivery. Projects include a standard
-              component library based on React and Material UI and the creation
-              of a Moz Labs alpha testing environment.
+              "Top Stories from Ignite" Integration Widget: Researched,
+              proposed, and led content integration, achieving an average 4.06%
+              daily CTR post-launch, outperforming the goal by 206bps and a
+              comparable widget by 46bps. This also activated 5+ previously
+              inactive users.
             </li>
             <li>
-              Rapid Prototyping Team: a small team of engineers creating MVPs
-              for use in alpha testing. I served as technical product manager and coach for
-              the program. I led delivery on 3 alphas for Moz product teams within Q4 2020,
-              with one promoting to beta in the following quarter.
+              Search UX Improvements: Led the redesign and implementation of
+              search functionality in our community discussion platform to
+              address challenges with discoverability and surfacing diverse
+              content types. This resulted in a 9.5% increase in advanced search
+              usage in our largest community and a 300% increase in usage for
+              our newest community within six weeks of launch.
+            </li>
+            <li>
+              Community Sentiment Metric: Partnered with the Science team to
+              define and launch a new, comprehensive sentiment metric, driving
+              its adoption into Page 0 views for all supported communities. I
+              delivered an associated self-service dashboard to enable community
+              managers to guide content and engagement plans using sentiment-
+              and engagement-drivers. Additionally, community escalations
+              managers used its prominence component to identify and prioritize
+              high-visibility escalations. As a result, community improved
+              community content viewership by 97%, interactions by 180% and
+              average view percentage by 68% in 2022.
+            </li>
+            <li>
+              Sentiment Model Retraining: Led an annotation campaign that
+              produced 43K ground-truth documents for BERT-based model training,
+              improving accuracy from 68% to 72% and outlining future
+              performance improvements.
             </li>
           </ul>
-
-          <div className={styles.entry}>
-            <strong>Technical Lead</strong>
+          <div className={cx(styles.entry, styles.pageBreak)}>
+            <h3>Moz; Seattle, WA &ndash; Technical Product Manager</h3>
             <span className={styles.dateRange}>
-              May 2017 &ndash; January 2019
+              June 2015 &ndash; August 2021
             </span>
           </div>
-
           <p>
-            Influenced product direction on the Moz Local listings management
-            product, supporting over 100K business locations at its peak. I led
-            exploration on opportunities with enterprise and SMB audiences via our API
-            and technical capabilities. Examples include planning and prototyping a
-            proposal for an embedded audit tool to create new revenue opportunities with
-            customers.
+            Starting as a software engineer, I pivoted to product management
+            where I focused on local SEO, new product launches, and leading
+            innovation. I used Jira, Confluence, Loom, and Miro for product
+            planning and internal communications.
           </p>
-
-          <div className={styles.entry}>
-            <strong>Software Engineer</strong>
-            <span className={styles.dateRange}>June 2015 &ndash; May 2017</span>
-          </div>
-          <p>
-            Full-stack Node.js engineer responsible for designing, implementing,
-            and operating product features. Accomplishments include redesigning a
-            duplicate listings management experience, upgrading and expanding Moz' GMB API
-            integration, and building a high-performance analytics data service.
-          </p>
-
-          <div className={cx(styles.entry, styles.pageBreak)}>
+          <p>Accomplishments and deliverables include:</p>
+          <ul>
+            <li>
+              Local Market Analytics Beta: Supported 6.7K sites tracking 90.5K
+              keywords across 62.4K markets (US, Canada, UK, Australia),
+              enabling hyper-local performance analysis and competitor
+              identification. Secured early client gains, including $31.2K ARR
+              and $42K ARR accounts, alongside ~$9K ARR from 18 SMB customers.
+              User analysis showed 47% high satisfaction for features like
+              market-based ranks and local search volume.
+            </li>
+            <li>
+              Applications Framework Development: Spearheaded an internal
+              program that enhanced product delivery by creating a React-based
+              component library and an alpha testing environment, reducing
+              prototype development from months to two sprints.
+            </li>
+            <li>
+              Listings Management Product Technical Leadership: Influenced
+              product direction for a listings management product supporting
+              over 100K business locations. Led exploration and prototyping of
+              an embedded audit tool to create new enterprise and SMB revenue
+              streams. I spearheaded API-driven integrations with leading
+              industry listings services such as Google My Business and Yelp,
+              adding value to customers wanted to manage their online presence
+              on those services.
+            </li>
+          </ul>
+          <div className={cx(styles.entry)}>
             <h3>Startup Weekend; Seattle, WA &ndash; Technical Director</h3>
             <span className={styles.dateRange}>
               June 2012 &ndash; June 2015
@@ -131,18 +163,18 @@ export default function Resume({ location }) {
           </p>
           <ul>
             <li>
-              SWOOP: a database and management tool to help staff track,
+              SWOOP: Developed a database and management tool to help staff track,
               budget, and support over 13.2K organizer-planned events.
             </li>
             <li>
-              Organizer Portal: an extension to SWOOP to support volunteer
-              organizers in planning, promoting, and financing their events using the same
-              database as their support staff.
+              Organizer Portal: Developed an extension to SWOOP, enabling
+              volunteer organizers in planning, promoting, and financing their
+              events using the same database as their support staff.
             </li>
             <li>
-              Community Sites: a family of regional marketing websites and a
-              platform for generating and hosting customizable event pages for organizers to
-              market all events tracked in SWOOP.
+              Community Sites: Built a family of regional marketing websites and
+              a platform for generating and hosting customizable event pages for
+              all SWOOP-tracked events.
             </li>
           </ul>
           <div className={styles.entry}>
@@ -155,24 +187,10 @@ export default function Resume({ location }) {
             Full-stack developer on a small team building public and internal
             software for an Internet wine auction. Technologies and languages
             include C#, JavaScript, CSS, and MSSQL. Frameworks include ASP.NET
-            MVC, ASP.NET Forms, and WPF. Notable accomplishments include:
+            MVC, ASP.NET Forms, and WPF. Notable accomplishments include
+            delivering a custom hands-free, no-look inventory tool that reduced
+            the inventory process from an entire workday to a couple hours.
           </p>
-          <ul>
-            <li>
-              Research and development of custom hands-free, no-look inventory
-              tool. Cut inventory process from an entire workday to a couple
-              hours.
-            </li>
-            <li>
-              Reconstructed site password algorithm with seamless upgrade for
-              existing users.
-            </li>
-            <li>
-              Built and maintained continuous integration test system with
-              NUnit, WatiN, CruiseControl.NET, and NANT.
-            </li>
-          </ul>
-
           <div className={styles.entry}>
             <h3>Microsoft; Redmond, WA – Program Manager</h3>
             <span className={styles.dateRange}>
@@ -181,10 +199,15 @@ export default function Resume({ location }) {
           </div>
           <p>
             Worked on a SharePoint hosted services team. Accomplishments include
-            writing specifications for service platform monitoring system,
-            writing PowerShell scripts to manage VM instances in a dynamic
-            service platform, and managing Microsoft's 5 month SharePoint Online
-            2010 Community Tech Preview.
+            authoring specifications for service platform monitoring system.  I
+            wrote PowerShell scripts to manage VM instances in a dynamic service
+            platform and managing Microsoft's 5 month SharePoint Online 2010
+            Community Tech Preview.
+          </p>
+          <h2>Education</h2>
+          <p>
+            Raikes School at University of Nebraska &ndash; Bachelor of Science, Management
+            Information Systems; Computer Science Minor.
           </p>
         </div>
       </div>
