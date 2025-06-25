@@ -69,3 +69,21 @@
 .pageBreak {
   page-break-before: always;
 }
+
+.skills {
+  /* A container of horizontally wrapped list items, three across in a 500ch wide container */
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.skills li {
+  width: 30%;
+  margin-bottom: 0;
+}

@@ -35,15 +35,34 @@ export default function Resume({ location }) {
         <div>
           <h2>Summary</h2>
           <p>
-            I'm a customer-focused product leader that leverages my diverse
-            software engineering and product background to create impactful
-            digital products. From small startups to large enterprise, I thrive
-            in small, collaborative cross-functional teams, transforming
-            ambiguity into clear product direction through iterative discovery
-            and delivery.
+            I'm a customer-focused product leader that leverages my product and
+            software background to create impactful products. From startups to
+            corporations, I thrive in turning ambiguity into clear direction in
+            collaboration with cross-functional teams.
           </p>
         </div>
         <div>
+          <h2>Skills Summary</h2>
+          <ul className={styles.skills}>
+            <li>
+              Technical Product Leadership
+            </li>
+            <li>
+              Data & Analytics (Redshift, Jupyter)
+            </li>
+            <li>
+              Cross-functional Collaboration
+            </li>
+            <li>
+              Software Design &amp; Architecture (React, Node.js, and Go)
+            </li>
+            <li>
+              Scrappy UX research &amp; prototyping (Figma)
+            </li>
+            <li>
+              Program & Project Management (Asana and Jira)
+            </li>
+          </ul>
           <h2>Work Experience</h2>
           <div className={styles.entry}>
             <h3>
@@ -54,108 +73,68 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            At Amazon, I leveraged my technical background to build products and
-            programs that transform feedback into actionable insights for global
-            communities of 3K Delivery Service Partners (DSPs) and Amazon
-            Freight Partners (AFPs), vital to the Last and Middle Mile delivery
-            network. I specialized in bridging the needs of business
-            stakeholders to Science, Software, and Business Intelligence teams
-            to enable data-driven decisions, leading the creation and launch of
-            products that streamlined feedback aggregation and analysis. Accomplishments
-            and deliverables include:
+            I build feedback insights and content delivery products for global
+            communities of 3K Last Mile transportation partners. I bridge
+            business stakeholder needs to Science, Software, and Business
+            Intelligence teams. Accomplishments include:
           </p>
           <ul>
             <li>
-              Town Square: Led the development and launch of a centralized
-              transportation partner feedback analytics platform. It integrated
-              five feedback channels, achieved EU parity within its first year,
-              and is projected to consume 245K touchpoints in 2025. It saved
-              early pilot teams ~2 hours/week, allowed one team to redirect 2-8
-              FTEs from manual scanning, and exceeded its 2025 adoption goal
-              within a month, enabling 15+ teams to reduce deep dives from
-              multi-hour efforts to 30-minute processes. Teams are now
-              proactively detecting and addressing issues in support cases and
-              product pilots, guiding root cause analysis, and informing product
-              improvements.
+              Town Square: Led "zero to one" launch of a centralized partner
+              feedback analytics platform, integrating five channels and
+              achieving EU parity in year one, projected to expand and consume
+              245K touchpoints in 2025. This saved early pilot teams ~2
+              hours/week and enabled 15+ teams to reduce deep dives to 30
+              minutes, exceeding 2025 adoption goals by April.
             </li>
             <li>
-              "Top Stories from Ignite" Integration Widget: Researched,
-              proposed, and led delivery of a community content widget
-              integrating top unread stories into a user's daily logistics
-              dashboard, achieving an average 4.06% daily CTR post-launch,
-              outperforming the goal by 206bps and a comparable widget by 46bps.
-              The pilot for this project activated 5+ previously inactive users,
-              demonstrating the impact of reaching the right people with the
-              right content in the right place.
-            </li>
-            <li>
-              Search UX Improvements: Led the redesign and implementation of
-              search functionality in our community discussion platform to
-              address challenges with discoverability and surfacing diverse
-              content types. This resulted in a 9.5% increase in advanced search
-              usage in our largest community and a 300% increase in usage for
-              our newest community within six weeks of launch.
-            </li>
-            <li>
-              Community Sentiment Metric: Partnered with the Science team to
-              define and launch a new, comprehensive sentiment metric, driving
-              its adoption into Page 0 views for all supported communities. I
-              delivered an associated self-service dashboard to enable community
-              managers to guide content and engagement plans using sentiment-
-              and engagement-drivers. Additionally, community escalations
-              managers used its prominence component to identify and prioritize
-              high-visibility escalations. As a result, community improved
-              community content viewership by 97%, interactions by 180% and
-              average view percentage by 68% in 2022.
+              Community Sentiment Metric: Partnered with Science to define and
+              launch a comprehensive sentiment metric, driving its adoption into
+              Page 0 views and enabling community managers to guide
+              content/engagement. This resulted in 97% improved content
+              viewership, 180% increased interactions, and 68% higher average
+              view percentage in 2022.
             </li>
             <li>
               Sentiment Model Retraining: Led an annotation campaign that
               produced 43K ground-truth documents for BERT-based model training,
-              improving accuracy from 68% to 72% and outlining future
-              performance improvements.
+              improving accuracy from 68% to 72%.
             </li>
           </ul>
-          <div className={cx(styles.entry, styles.pageBreak)}>
+          <div className={cx(styles.entry)}>
             <h3>Moz; Seattle, WA &ndash; Technical Product Manager</h3>
             <span className={styles.dateRange}>
               June 2015 &ndash; August 2021
             </span>
           </div>
           <p>
-            Starting as a software engineer, I pivoted to product management
-            where I focused on local SEO, new product launches, and leading
-            innovation. I used Jira, Confluence, Loom, and Miro for product
-            planning and internal communications. Accomplishments and
-            deliverables include:
+            Starting as a software engineer, I pivoted to product management,
+            driving local SEO products and internal innovation programs. I used
+            Jira, Confluence, and Loom for product planning and internal
+            communications. Accomplishments include:
           </p>
           <ul>
             <li>
-              Local Market Analytics Beta: Supported 6.7K sites tracking 90.5K
-              keywords across 62.4K markets (US, Canada, UK, Australia),
-              enabling hyper-local performance analysis and competitor
-              identification. Secured early client gains, including $31.2K ARR
-              and $42K ARR accounts, alongside ~$9K ARR from 18 SMB customers.
-              User analysis showed 47% high satisfaction for features like
-              market-based ranks and local search volume.
+              Local Market Analytics Beta: Drove "zero to one" launch to expand
+              Moz local SEO offering. The beta supported 6.7K sites tracking
+              90.5K keywords across 62.4K markets, securing early client gains
+              of $31.2K ARR and $42K ARR accounts, plus ~$9K ARR from 18 SMB
+              customers.
             </li>
             <li>
-              Applications Framework Development: Spearheaded an internal
-              program that enhanced product delivery by creating a React-based
-              component library and an alpha testing environment, reducing
-              prototype development from months to two sprints.
+              Applications Framework Development: Spearheaded an internal program creating a
+              React-based component library and alpha testing environment, reducing prototype
+              development from months to two sprints.
             </li>
             <li>
-              Listings Management Product Technical Leadership: Influenced
-              product direction for a listings management product supporting
-              over 100K business locations. Led exploration and prototyping of
-              an embedded audit tool to create new enterprise and SMB revenue
-              streams. I spearheaded API-driven integrations with leading
-              industry listings services such as Google My Business and Yelp,
-              adding value to customers who wanted to manage their online
-              presence on those services.
+              Listings Management Product Technical Leadership: Influenced product direction
+              for a listings management product supporting over 100K business locations,
+              leading exploration and prototyping of an embedded audit tool for new revenue
+              streams and spearheading API-driven integrations with popular listings services
+              such as Google My Business and Yelp.
             </li>
           </ul>
-          <div className={cx(styles.entry)}>
+          <div className={cx(styles.entry, styles.pageBreak)}>
             <h3>Startup Weekend; Seattle, WA &ndash; Technical Director</h3>
             <span className={styles.dateRange}>
               June 2012 &ndash; June 2015
