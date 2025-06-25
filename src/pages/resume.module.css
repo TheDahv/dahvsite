@@ -4,6 +4,7 @@
   max-width: 56.25rem;
   padding-top: 1rem;
   width: 100ch;
+  text-align: justify;
 }
 
 
@@ -62,6 +63,10 @@
   justify-content: space-between;
 }
 
+.accomplishments {
+  margin-left: 1em;
+}
+
 .dateRange {
   font-style: italic;
 }
@@ -71,9 +76,9 @@
 }
 
 .skills {
-  /* A container of horizontally wrapped list items, three across in a 500ch wide container */
   padding: 0;
   margin: 0;
+  margin-left: 1em;
   flex-wrap: wrap;
   gap: 0.5em;
   justify-content: space-between;
@@ -81,6 +86,7 @@
   max-width: 100%;
   display: flex;
   margin-bottom: 1em;
+  text-align: left;
 }
 
 .skills li {

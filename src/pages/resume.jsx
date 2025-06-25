@@ -17,7 +17,7 @@ export default function Resume({ location }) {
         <div className={styles.introduction}>
           <div>
             <p>
-              Technical Product Manager
+              Sr. Technical Product Manager
               <br />
               7915 14th Ave SW, Seattle WA 98106
             </p>
@@ -42,7 +42,7 @@ export default function Resume({ location }) {
           </p>
         </div>
         <div>
-          <h2>Skills Summary</h2>
+          <h2>Skills</h2>
           <ul className={styles.skills}>
             <li>
               Technical Product Leadership
@@ -78,7 +78,7 @@ export default function Resume({ location }) {
             business stakeholder needs to Science, Software, and Business
             Intelligence teams. Accomplishments include:
           </p>
-          <ul>
+          <ul className={styles.accomplishments}>
             <li>
               Town Square: Led "zero to one" launch of a centralized partner
               feedback analytics platform, integrating five channels and
@@ -113,7 +113,7 @@ export default function Resume({ location }) {
             Jira, Confluence, and Loom for product planning and internal
             communications. Accomplishments include:
           </p>
-          <ul>
+          <ul className={styles.accomplishments}>
             <li>
               Local Market Analytics Beta: Drove "zero to one" launch to expand
               Moz local SEO offering. The beta supported 6.7K sites tracking
@@ -146,7 +146,7 @@ export default function Resume({ location }) {
             director, I served as product manager, team lead, architect, and
             engineer. Accomplishments and deliverables include:
           </p>
-          <ul>
+          <ul className={styles.accomplishments}>
             <li>
               SWOOP: Developed a database and management tool to help staff track,
               budget, and support over 13.2K organizer-planned events.
