@@ -35,14 +35,15 @@ export default function Resume({ location }) {
         <div>
           <h2>Summary</h2>
           <p>
-            I'm a customer-focused product leader that leverages my product and
-            software background to create impactful products. From startups to
-            corporations, I thrive in turning ambiguity into clear direction in
-            collaboration with cross-functional teams.
+            I'm a customer-focused product leader with a software engineering
+            background that I use to create products for technical customers or
+            that require technical understanding. From startups to corporations,
+            I turn ambiguity into clear direction to deliver results in
+            collaborative and iterative cross-functional teams. Notable skills
+            include:
           </p>
         </div>
         <div>
-          <h2>Skills</h2>
           <ul className={styles.skills}>
             <li>
               Technical Product Leadership
@@ -51,7 +52,7 @@ export default function Resume({ location }) {
               Data & Analytics (Redshift, Jupyter)
             </li>
             <li>
-              Cross-functional Collaboration
+              Prompt Engineering (Claude, Gemini)
             </li>
             <li>
               Software Design &amp; Architecture (React, Node.js, and Go)
@@ -73,32 +74,34 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            I build feedback insights and content delivery products for global
-            communities of 3K Last Mile transportation partners. I bridge
-            business stakeholder needs to Science, Software, and Business
-            Intelligence teams. Accomplishments include:
+            I build feedback insights and community products for 3K Amazon's
+            transportation partners in the Last Mile network. I bridge business
+            stakeholder needs to Science, Software, and Business Intelligence
+            teams. Accomplishments include:
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              Town Square: Led "zero to one" launch of a centralized partner
-              feedback analytics platform, integrating five channels and
-              achieving EU parity in year one, projected to expand and consume
-              245K touchpoints in 2025. This saved early pilot teams ~2
-              hours/week and enabled 15+ teams to reduce deep dives to 30
-              minutes, exceeding 2025 adoption goals by April.
+              Launched a "zero to one" feedback aggregation and insights
+              platform saving 15+ Amazon teams an average ~2 hours/week to drive
+              proactive improvements based on a projected 245K feedback
+              touchpoints across five channels.
             </li>
             <li>
-              Community Sentiment Metric: Partnered with Science to define and
-              launch a comprehensive sentiment metric, driving its adoption into
-              Page 0 views and enabling community managers to guide
-              content/engagement. This resulted in 97% improved content
-              viewership, 180% increased interactions, and 68% higher average
-              view percentage in 2022.
+              Drove product strategy and execution for API-driven widget to
+              surface important unread community discussions, achieving a 4.06%
+              daily click-through rate and outperforming a comparable widget by
+              46bps in the pilot.
             </li>
             <li>
-              Sentiment Model Retraining: Led an annotation campaign that
-              produced 43K ground-truth documents for BERT-based model training,
-              improving accuracy from 68% to 72%.
+              Launched a community sentiment metric with weighted prioritization
+              components to turn ML-based sentiment signals into actionable
+              insights resulting in 97% content viewership growth, 180%
+              interactions growth, and 68% view percentage growth.
+            </li>
+            <li>
+              Led an annotation campaign that produced 43K ground-truth
+              documents for BERT-based sentiment model training, improving
+              accuracy from 68% to 72%.
             </li>
           </ul>
           <div className={cx(styles.entry)}>
@@ -115,23 +118,27 @@ export default function Resume({ location }) {
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              Local Market Analytics Beta: Drove "zero to one" launch to expand
-              Moz local SEO offering. The beta supported 6.7K sites tracking
-              90.5K keywords across 62.4K markets, securing early client gains
-              of $31.2K ARR and $42K ARR accounts, plus ~$9K ARR from 18 SMB
-              customers.
+              Launched a "zero to one" Local SEO beta supporting 6.7K sites
+              tracking 90.5K keywords across 62.4K markets that secured early
+              client gains of $73.2 enterprise ARR and ~$9K SMB ARR. The beta
+              eventually folded into Moz's flagship product.
             </li>
             <li>
-              Applications Framework Development: Spearheaded an internal program creating a
-              React-based component library and alpha testing environment, reducing prototype
-              development from months to two sprints.
+              Spearheaded an internal rapid prototyping studio creating a
+              React-based component library and alpha testing environment,
+              reducing prototype development from months to two sprints, and
+              launching three product alphas in a quarter.
             </li>
             <li>
-              Listings Management Product Technical Leadership: Influenced product direction
-              for a listings management product supporting over 100K business locations,
-              leading exploration and prototyping of an embedded audit tool for new revenue
-              streams and spearheading API-driven integrations with popular listings services
-              such as Google My Business and Yelp.
+              Drove technical leadership and influenced product direction for a
+              listings management product supporting over 100K business
+              locations, leading exploration and prototyping of an embedded
+              audit tool for new revenue streams.
+            </li>
+            <li>
+              Led API integrations for popular listings services such as Google
+              My Business and Yelp to help customers manage their business
+              presence on those services.
             </li>
           </ul>
           <div className={cx(styles.entry, styles.pageBreak)}>
@@ -141,25 +148,25 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            Led the engineering team for a global non-profit building
+            I led the engineering team for a global non-profit building
             entrepreneurial communities in over 150 countries. As technical
             director, I served as product manager, team lead, architect, and
             engineer. Accomplishments and deliverables include:
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              SWOOP: Developed a database and management tool to help staff track,
+              Developed a database and management tool to help staff track,
               budget, and support over 13.2K organizer-planned events.
             </li>
             <li>
-              Organizer Portal: Developed an extension to SWOOP, enabling
-              volunteer organizers in planning, promoting, and financing their
-              events using the same database as their support staff.
+              Developed a partner-facing admin portal, enabling volunteer
+              organizers to plan, promote, and finance their events using the
+              same database as Startup Weekend staff.
             </li>
             <li>
-              Community Sites: Built a family of regional marketing websites and
-              a platform for generating and hosting customizable event pages for
-              all SWOOP-tracked events.
+              Built an automated framework to deliver five regional marketing
+              websites and a platform for generating and hosting customizable
+              event pages for all tracked events.
             </li>
           </ul>
           <div className={styles.entry}>
@@ -169,12 +176,13 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            Full-stack developer on a small team building public and internal
-            software for an Internet wine auction. Technologies and languages
-            include C#, JavaScript, CSS, and MSSQL. Frameworks include ASP.NET
-            MVC, ASP.NET Forms, and WPF. Notable accomplishments include
-            delivering a custom hands-free, no-look inventory tool that reduced
-            the inventory process from an entire workday to a couple hours.
+            I grew my skills as a well-rounded full-stack developer on a small
+            team building public and internal software for an Internet wine
+            auction. Technologies and languages include C#, JavaScript, CSS, and
+            MSSQL. Frameworks include ASP.NET MVC, ASP.NET Forms, and WPF.
+            Notable accomplishments include delivering a custom hands-free,
+            no-look inventory tool that reduced the inventory process from an
+            entire workday to a couple hours.
           </p>
           <div className={styles.entry}>
             <h3>Microsoft; Redmond, WA – Program Manager</h3>
@@ -183,16 +191,21 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            Worked on a SharePoint hosted services team. Accomplishments include
-            authoring specifications for service platform monitoring system.  I
+            I worked on a SharePoint hosted services team. Accomplishments include
+            authoring specifications for service platform monitoring system. I
             wrote PowerShell scripts to manage VM instances in a dynamic service
             platform and managing Microsoft's 5 month SharePoint Online 2010
             Community Tech Preview.
           </p>
           <h2>Education</h2>
+          <div className={styles.entry}>
+            <h3>Raikes School at University of Nebraska</h3>
+            <span className={styles.dateRange}>
+              September 2005 &ndash; May 2009
+            </span>
+          </div>
           <p>
-            Raikes School at University of Nebraska &ndash; Bachelor of Science, Management
-            Information Systems; Computer Science Minor.
+            Bachelor of Science in Management Information Systems; Minor in Computer Science.
           </p>
         </div>
       </div>
