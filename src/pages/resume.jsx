@@ -52,7 +52,7 @@ export default function Resume({ location }) {
               Data & Analytics (Redshift, Jupyter)
             </li>
             <li>
-              Prompt Engineering (Claude, Gemini)
+              Cross-functional Collaboration
             </li>
             <li>
               Software Design &amp; Architecture (React, Node.js, and Go)
