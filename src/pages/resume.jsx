@@ -136,6 +136,12 @@ export default function Resume({ location }) {
               audit tool for new revenue streams.
             </li>
             <li>
+              Drove enterprise locations management API success by translating
+              customer needs into technical solutions while supporting sales
+              processes, onboarding experiences, documentation, and customer key
+              management.
+            </li>
+            <li>
               Led API integrations for popular listings services such as Google
               My Business and Yelp to help customers manage their business
               presence on those services.
