@@ -21,7 +21,7 @@ will take your career where you want it to go?
 More importantly, how do you decide so you don't find yourself asking these
 same questions again a few months or years down the road?
 
-I've been there. In fact, I've been in all 3 circumstances. I know the
+I've been there. In fact, I've been in all three circumstances. I know the
 temptation to panic and “just find a job, any job”. Sometimes being willing to
 say no to the _wrong_ job and finding the _right_ job will make a huge
 difference in your career.
@@ -36,18 +36,18 @@ This is the written version of a conversation I usually have in-person over
 coffee or beer. I'd like to be able to help people I haven't met yet, so let's
 cover who I think this is for:
 
-- graduates or new entrants to the workforce
+- Graduates or new entrants to the workforce
   - knowing what to expect out of a job takes time
   - knowing what kind of career to build is hard without firm introspection to
     understand values, goals, and dislikes
-- those pursuing transitions to new careers or industries
+- Those pursuing transitions to new careers or industries
   - previous knowledge doesn't always transfer
   - knowing personal values is relevant anywhere
-- veterans in an industry growing bored and looking for new challenges
+- Experienced professionals in an industry growing bored and looking for new challenges
   - a string of short-term roles on a résumé can raise questions among hiring
     managers
   - find a job that will interest you and keep you growing
-- hiring managers
+- Hiring managers
   - I write primarily from the perspective of a job seeker, but I also have
     experience as a hiring manager and team builder
   - I don't want to invite someone to a role I know they won't enjoy
@@ -86,12 +86,12 @@ difficult to find an organization and role that aligns perfectly on every facet.
 Sometimes, 2 out of 3 might be good enough if one leg of the triangle
 compensates for weakness in another.
 
-This is up for you to figure out. You might experience a “bad job” or two befor
-eyou discover what really matters to you. It is important to take time after
+This is up for you to figure out. You might experience a “bad job” or two before
+you discover what really matters to you. It's important to take time after
 each experience to reflect on what you learned about:
 
-- the positive things you want to repeat in your next job
-- the negative things you want to prune out
+- The positive things you want to repeat in your next job
+- The negative things you want to prune out
 
 Let's define each leg of the triangle some more.
 
@@ -99,15 +99,15 @@ Let's define each leg of the triangle some more.
 
 This describes three things:
 
-- what the company cares about
-- what you care about
-- how important it is to you that these things align
+- What the company cares about
+- What you care about
+- How important it is to you that these things align
 
 I want to start with the last point. I think of this as a spectrum, and each end
 you statements like have:
 
-- “this job is my life”
-- “this job is just a job”
+- “This job is my life”
+- “This job is just a job”
 
 You probably had an emotional response to one or the other. You need to
 understand that either is perfectly valid and acceptable in the right context.
@@ -145,10 +145,10 @@ to as culture, passion, value, mission, or vision.
 However, don't forget hard-skills or technical facets that may also define an
 opportunity for a candidate:
 
-- technology choices (“I've always wanted to work with XYZ”)
-- location and work environment (“I want to work closer to home”, “I'm tired of
+- Technology choices (“I've always wanted to work with XYZ”)
+- Location and work environment (“I want to work closer to home”, “I'm tired of
   open office environments”)
-- ways of working (“my last organization was too rigid and I want more
+- Ways of working (“my last organization was too rigid and I want more
   autonomy”)
 
 As a candidate, your job is to figure out what you want, or commit to not
@@ -176,9 +176,9 @@ Remember the classic “where do you want to be in 5 years” question in
 interviews? I haven't been asked this in a long time, but I think about it a
 lot. You don't get your time back, so I like to think about:
 
-- what is the “story” of my career and what general trends can I identify
+- What is the “story” of my career and what general trends can I identify
   confidently?
-- how is this current job contributing to that story?
+- How is this current job contributing to that story?
 
 If you are early in your career, you might index a bit more heavily on this
 facet of the triangle as a value. If later, perhaps you're looking for an
@@ -192,14 +192,14 @@ or reject.
 As a hiring manager, you should be looking for this if a candidate is indexing
 heavily on this side of the triangle. Some examples:
 
-- pursuing somebody who is coming to your organization because they're excited
+- Pursuing somebody who is coming to your organization because they're excited
   about a process or technology you're specifically trying to grow on your team
-- thinking twice about whether hiring an aspiring writer to be an office manager
+- Thinking twice about whether hiring an aspiring writer to be an office manager
   if they're not going to be enthusiastic about the role (to be clear, this
   isn't the same thing as a writer finding a gig to help fund their dream; I'm
   describing somebody getting a job, eschewing the work, and doing completely
   different tasks instead)
-- considering someone who is passionate about language or security research may
+- Considering someone who is passionate about language or security research may
   experience difficulty motivating themselves to write consumer web software
 
 ## Sustainability
@@ -257,8 +257,8 @@ As mentioned, each leg of the triangle contains a spectrum within:
     abusive way. That being said, I believe a healthy version of this can exist,
     so take it with a grain of salt
 
-You can index an opportunity at an organization along all 3 spectrums and
-compare it to your own position.
+You can index an opportunity at an organization along these facets and compare
+it to your own position.
 
 The advantage of modeling this as a triangle is you can also evaluate a
 company's positioning in one leg relative to the other legs. For example:
@@ -308,18 +308,18 @@ willingness to adapt to fit your team.
 
 So here is what I think about for software engineering teams:
 
-- tolerance for ambiguity vs stability/predictability
-  - well-defined specs and a predictable workflow
-  - environments where iteration and discovery define the work
-- tolerance for new tech vs stable tech
-  - tried and tested tools where the hiring pool and documentation are readily
+- Tolerance for ambiguity vs stability/predictability
+  - Well-defined specs and a predictable workflow
+  - Environments where iteration and discovery define the work
+- Tolerance for new tech vs stable tech
+  - Tried and tested tools where the hiring pool and documentation are readily
     available
-  - cutting-edge technologies and languages where the solutions are documented
+  - Cutting-edge technologies and languages where the solutions are documented
     as they are discovered
-- company size: startup to corporation
-  - small organizations where breadth, not depth define success
-  - large organizations where doing one thing well define success
-  - models of ownership, responsibility, and accountability
+- Company size: startup to corporation
+  - Small organizations where breadth, not depth define success
+  - Large organizations where doing one thing well define success
+  - Models of ownership, responsibility, and accountability
 
 There is another model of analogies that describe facets of the kinds of
 programmers you'll meet: [“Commandos, Infantry, and
