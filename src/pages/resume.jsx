@@ -82,9 +82,9 @@ export default function Resume({ location }) {
           <ul className={styles.accomplishments}>
             <li>
               Launched a "zero to one" feedback aggregation and insights
-              platform saving 15+ Amazon teams an average ~2 hours/week to drive
-              proactive improvements based on a projected 245K feedback
-              touchpoints across five channels.
+              platform saving 40+ Amazon teams an average ~2 hours/week to
+              detect defects and drive proactive improvements based on a
+              projected 245K feedback touchpoints across five channels.
             </li>
             <li>
               Drove product strategy and execution for API-driven widget to
