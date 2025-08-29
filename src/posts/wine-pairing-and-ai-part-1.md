@@ -109,11 +109,9 @@ Other tools simplify this with just API keys, but that comes with less control
 over permissions and usage.
 
 I knew [Langchain](https://www.langchain.com/) is the leading toolkit to
-standardize the API for interacting with LLMs in code. I like Go, so I found
-
-[LangChain Go](https://github.com/tmc/langchaingo) to abstract away
-model-specific API differences, letting me focus on the problem rather than
-service integration details. I recommend this as worth the learning curve if
+standardize the API for interacting with LLMs in code. I like Go, so I found [LangChain Go](https://github.com/tmc/langchaingo) 
+to abstract away model-specific API differences, letting me focus on the problem 
+rather than service integration details. I recommend this as worth the learning curve if
 you're planning to test multiple providers.
 
 ## The Two-Phase Architecture Decision
