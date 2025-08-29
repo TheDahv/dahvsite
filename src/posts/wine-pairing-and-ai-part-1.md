@@ -245,13 +245,11 @@ want to understand prompt engineering patterns more systematically.
 **For Returning Developers**: 
 * The AWS "secure-by-default" still takes time to learn if you're not already solid on it.
 * Abstractions like LangChain help you focus on the problem rather than service specifics. 
-* Don't let IAM complexity stop you from experimenting – start with
-simpler API-key-based services if needed.
+* Don't let IAM complexity stop you from experimenting – start with simpler API-key-based services if needed.
 
 **For Current Developers**:
 * Systematic prompt engineering approaches pay off.
-* Test across models, use meta-prompting for optimization, and treat prompt
-development like any other code – version it, test it, refactor it.
+* Test across models, use meta-prompting for optimization, and treat prompt development like any other code – version it, test it, refactor it.
 
 **For Product Managers**:
 * Understanding these technical decisions helps you make better product choices.
