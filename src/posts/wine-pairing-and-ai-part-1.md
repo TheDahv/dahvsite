@@ -34,9 +34,11 @@ invited you over for a special dinner.
 
 So I built an app that reads your actual recipe and suggests wines based on the
 specific ingredients, cooking methods, and flavor profiles. You can try it at
-[wine-suggestions.thedahv.com](https://wine-suggestions.thedahv.com). Full
-disclaimer: I happen to work at Amazon, but this is a home project I pursued to
-guide my personal learning journey.
+[wine-suggestions.thedahv.com](https://wine-suggestions.thedahv.com). 
+
+Full disclaimer: I happen to work at Amazon, but this is a home project I 
+pursued to guide my personal learning journey. These thoughts are my own
+and do not represent any company mentioned here.
 
 This is the first post in a series about building that app. This post focuses on
 prompt engineering – learning to communicate effectively with AI models to get
