@@ -5,7 +5,10 @@ date: 2025-09-02
 categories: programming, product-management, ai
 summary: !
   Follow this technical product manager's journey back into coding through
-  building a wine pairing AI app.
+  building a wine pairing AI app. Learn how to build AI web apps fast with Go,
+  AlpineJS, and Docker. Practical guide covering AI-as-backend-logic, caching
+  strategies, and developer experience decisions for rapid AI prototyping
+  without tooling overhead.
 ---
 
 # From CLI to Web App: Building a No-Fuss AI Prototype Stack
