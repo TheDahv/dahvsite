@@ -15,7 +15,12 @@ const theme = {
       name: 'Roboto',
       styles: ['400', '400i', '500', '500i']
     }
-  ]
+  ],
+  overrideStyles: ({ adjustFontSizeTo }, options) => ({
+    '.gatsby-highlight': {
+      ...adjustFontSizeTo('14px'),
+    },
+  }),
 }
 
 const typography = new Typography(theme)

@@ -39,6 +39,20 @@ module.exports = {
     },
     */
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              // Customize options here, e.g., showLineNumbers, noInlineHighlight
+              showLineNumbers: false,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

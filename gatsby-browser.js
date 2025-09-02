@@ -6,3 +6,4 @@
 
 import "./src/styles/global.css"
 import "./src/styles/helpers.css"
+import "./src/styles/prism.css"
