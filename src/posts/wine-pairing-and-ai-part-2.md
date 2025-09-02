@@ -39,6 +39,34 @@ You can read the code for this post on [GitHub](https://github.com/TheDahv/wine-
 
 Here's what I learned about building web apps around AI during that process.
 
+## Key Lessons Learned
+
+Let's start high-level before getting into the details in this post.
+
+### Stack Simplicity Accelerates AI Experimentation
+
+Go's standard library and AlpineJS's reactive patterns let me focus on prompt
+optimization instead of tooling decisions. The goal was spending cycles on AI
+problems, not build configurations.
+
+### AI Changes Backend Architecture Fundamentals
+
+When your business logic becomes prompt calls instead of algorithms, caching
+shifts from performance optimization to cost control and user experience.
+Traditional web app patterns need rethinking.
+
+### Container-First Development Workflow
+
+Docker Compose with hot reloading created tight feedback loops for iterating on
+both prompts and UI simultaneously. Local development that mirrors production
+reduces deployment surprises.
+
+### AI as Creative Collaborator
+
+Beyond code generation, AI excelled at subjective design decisions—helping
+translate abstract vision ("clean, elegant") into concrete CSS and visual
+guidelines.
+
 ## The Prototyping Challenge
 
 I had working CLI tools that could summarize a recipe URL to generate wine
