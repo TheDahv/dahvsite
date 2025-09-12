@@ -214,4 +214,3 @@ followed revealed the hidden costs of "AI-first" development approaches.
   that make software actually work
 
 This is the third post in a series about building an AI-driven app. Next up: adding MCP tools to extend capabilities and optimize LLM output.
-costs under control first.
