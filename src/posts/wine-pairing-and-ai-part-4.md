@@ -1,273 +1,188 @@
-Prompt Instructions:
-
-Read the following posts I authored to familiarize yourself with this journey:
-1. https://www.thedahv.com/blog/wine-pairings-and-ai-part-1/
-2. https://www.thedahv.com/blog/wine-pairings-and-ai-part-2/
-3. https://www.thedahv.com/blog/wine-pairings-and-ai-part-3/
-
-Now we're going to write part 4.
-
+---
+title: Wine Pairings and AI Part 4
+slug: wine-pairings-and-ai-part-4
+date: 2025-03-08
+categories: programming, product-management, ai
+summary: >
+  Picking a managed cache service early in the project came with hidden
+  infrastructure costs I hadn't questioned in months. Learning to write detailed
+  specs and architecture docs before touching code let me migrate to a simpler
+  data layer, deploy without hand-holding, and cut my monthly bill by 85%. The
+  bigger lesson is that comprehensive planning unlocks AI autonomy and
+  architectural knowledge you don't have can come from the docs you give your AI
+  tools.
 ---
 
-# Wine Pairings and AI Part 4: Simplifying Through Subtraction
+# A Guiding Hand Goes a Long Way
 
-## Outline
+I'm a technical product manager trying to ramp up on AI, just like all of you. When I want to
+learn something new, I like to get my hands dirty with a project so I can experience things for
+myself, including the good, bad, and the ugly. I was a full-stack engineer for 10+ years before
+transitioning to product management, but I haven't written any serious code since 2021, so this
+journey was a mix of new things and familiar things for me.
 
-### I. Introduction: The Hidden Costs of "Good Enough"
+Most wine pairing advice is generic. "Red wine with red meat, white wine with fish" isn't
+helpful when you're making Thai basil chicken or your grandmother's complicated braised short rib
+recipe. So I built an app that reads your actual recipe and suggests wines based on the specific
+ingredients, cooking methods, and flavor profiles. You can try it at
+[wine-suggestions.thedahv.com](https://wine-suggestions.thedahv.com).
 
-**Recap of the journey so far:**
-- Part 1: Built AI-powered wine pairing app with prompt engineering and model selection
-- Part 2: Created web infrastructure (Go backend, AlpineJS frontend, Docker/ECS)
-- Part 3: Migrated to serverless (Lambda/SAM), discovered VPC/IAM complexity trap
-- The "$1.50 refactoring" that took weeks to debug in production
+Full disclaimer: I happen to work at Amazon, but this is a home project I pursued to guide my
+personal learning journey. These thoughts are my own and do not represent any company mentioned
+here.
 
-**Setting up Part 4's focus:**
-- Moving from "it works" to "it works simply"
-- The VPC was solving a problem we no longer had
-- How removing infrastructure can be more valuable than adding it
+This is the fourth post in a series about building that app. I took a break from working on it,
+and the way I use AI to build tools has improved dramatically.
 
-### II. The VPC Problem: When Your Solution Becomes Your Problem
+In previous posts, we explored building apps with AI as a key service driver. We stopped short of
+fully embracing AI for the build process ([read more on that](https://www.thedahv.com/blog/wine-pairings-and-ai-part-3/)).
+My conclusion at the time was to avoid low-ROI applications like line-level assistants, instead
+focusing on high-level operations like design, system architecture, and module-level code
+organization.
 
-**Original architecture decisions (from Part 2-3):**
-- Deployed Lambda in VPC to connect to AWS MemoryDB (Valkey/Redis cache)
-- Required NAT Gateway for Lambda to access public internet (Anthropic API, Google OAuth)
-- Needed ElasticIP for NAT Gateway
-- Private subnets, security groups, VPC configuration
+What's transformed my usage of AI in the build phase is putting more effort into planning before
+letting these tools touch code or cloud resources. In this post, we'll cover the problem I needed
+to solve, what plan-driven AI assistance actually looks like in practice, how I approached the
+migration, and what it all cost (and saved).
 
-**Hidden costs discovered:**
-- **Financial**: ~$36/month ($32 NAT Gateway + $3.60 ElasticIP)
-  - $432/year for networking infrastructure
-  - More than the actual compute costs for a hobby project
-- **Performance**: 5-10 second cold start penalty for Lambda ENI creation
-- **Complexity**: VPC networking expertise required for debugging
-- **Deployment friction**: Additional parameters, permissions, failure modes
+You can read the code for this post on
+[GitHub](https://github.com/TheDahv/wine-pairing-suggestions/commit/cde0dc35ecdacb52024304da1474e8c17a09c3e0).
 
-**The realization:**
-- Cache was gated behind `ENABLE_CACHE` flag (disabled by default)
-- DynamoDB doesn't need VPC (internet-facing service)
-- Anthropic API doesn't need VPC (internet-facing)
-- Google OAuth doesn't need VPC (internet-facing)
-- **VPC was only needed for cache, but cache was deprecated**
+## Key Lessons Up Front
 
-### III. Data Layer Migration: Cache-First to DynamoDB-First
+### Document Early and Often
 
-**Original architecture problems:**
-- Cache (Redis/Valkey) as primary data source
-- Ephemeral data loss risk (cache restarts = lost user data)
-- No persistence for quota tracking, recipe pairings, account details
-- VPC dependency created for caching infrastructure
+Whether specs, AGENTS.md files, steering files, or architecture guides, comprehensive
+documentation prevents hallucination, enables consistency across AI sessions, and makes your
+work reproducible. Pick the approaches that fit your workflow. I'll mention these frequently,
+so make sure you read these links if you stop reading here:
 
-**Migration strategy:**
-- Dual-system operation: DynamoDB primary, cache optional
-- Implemented parallel writes to both systems
-- DynamoDB checked first, cache backfilled for performance
-- Graceful degradation: cache failures don't fail requests
+* **[Steering](https://kiro.dev/docs/steering/)** guide AI behavior at the project or task level.
+* **[AGENTS.md](https://agents.md/)** gives AI assistants project-specific context they can always reference.
+* **[Skills](https://agentskills.io/home)** capture reusable patterns and domain knowledge your AI can draw on.
 
-**Implementation phases:**
-1. **Account operations migrated** (PostOauthResponse, WithAccountDetails, WithSufficientQuota)
-2. **Recipe operations migrated** (GetRecipeWineSuggestionsV2, GetRecentSuggestions)
-3. **Cache gating implemented** with `ENABLE_CACHE` environment variable
-4. **Testing in production** with cache disabled
+### Invest in Planning For Better Savings and Results
 
-**Key patterns established:**
-- Structured logging with `[CACHE]` and `[DB]` prefixes for parallel operations
-- Error handling: log but don't fail (graceful degradation)
-- Backward compatibility: existing cache data continues working
-- Validation over creation: infrastructure creates tables, app validates them
+Comprehensive specs unlock AI autonomy. Clearer plans lead to fewer clarifications, which leads
+to successful deployments while you're away from the keyboard. Plus, infrastructure savings dwarf
+the AI tooling costs that made them possible.
 
-**Files modified in migration:**
-- `data/data.go`: SetupTables → ValidateTables (separation of concerns)
-- `webapp/webapp.go`: All endpoints check DB first, cache second
-- `template.yaml`: Added DynamoDB tables with CloudFormation
-- `Makefile`: Added local DynamoDB setup matching CloudFormation
+### Cloud Architecture Wisdom Needs to Come from Somewhere
 
-### IV. Removing the VPC: The Simplification
+Without guidance, you inherit complexity. You can inject architectural knowledge via specs,
+documentation, and AGENTS.md files. Combining multiple AIs with prompt-for-prompt techniques lets
+you leverage each tool's strengths. The result: you can question inherited decisions and remove
+infrastructure that no longer serves you.
 
-**Analysis process:**
-- Audited infrastructure with AWS CLI
-- Found ElasticIP 44.253.146.72 attached to NAT Gateway nat-0ee3c5e7f538f8e7b
-- Verified cache disabled: `ENABLE_CACHE` not set
-- Confirmed Lambda only needs internet-facing services
+## How a Subtle Design Choice Cost $432 a Year
 
-**Implementation steps:**
-1. Updated `template.yaml` to remove VpcConfig section
-2. Removed VPC parameters (VpcId, SecurityGroupId, SubnetIds, ValkeyEndpoint)
-3. Fixed CloudFormation deployment issues:
-   - Added CertificateArn parameter retrieval in Makefile
-   - Fixed DynamoDB ARN construction (manual build vs table attribute reference)
-4. Deployed VPC-less Lambda successfully
-5. Verified health endpoint working
-6. Deleted NAT Gateway (took ~70 seconds)
-7. Released ElasticIP
+My app was running, but the architecture was costing more than it should. To understand why, it
+helps to know what the app actually needs to store.
 
-**Results:**
-- Lambda now internet-facing (no VPC)
-- Zero VPC networking complexity
-- Faster cold starts (no ENI creation)
-- Deployment simplified (fewer parameters, fewer failure modes)
+A cache is a simple, fast storage layer for data you want to retrieve cheaply
+without recomputing it. My app needed that for two reasons: saving and reusing
+expensive LLM and web calls and tracking user quotas to keep the app from being
+abused. A cache was a reasonable solution to both problems.
 
-### V. Improved AI-Assisted Workflow: Lessons from Part 3
+The trouble was the specific cache I chose. I picked Elasticache, Amazon's managed cache service,
+early in the project without fully thinking through what it was implying about the rest of my
+architecture. Elasticache requires a VPC, Amazon's private networking layer. That meant my Lambda
+function, which needs to talk to the public Internet to fetch recipes and call APIs, also had to
+live inside a VPC to reach the cache. Having both required internal IP gateways and an always-on
+IP address, at $32/month for the NAT Gateway and $3.60/month for the static IP. That's $432/year
+just to keep the plumbing in place for a learning project with light traffic.
 
-**Problems identified in Part 3:**
-- Claude Code generated code but lacked AWS infrastructure awareness
-- Gap between local development and production reality
-- AI couldn't provide strategic pushback or anticipate constraints
-- Tool-hopping between Claude Code, Gemini CLI, AWS Q
+## Write the Plan Down Before Touching the Code
 
-**Improvements implemented for Part 4:**
+The biggest change in how I work with AI tools is what I do before I let them write a single line
+of code. I collaborate with the AI to plan the approach, define the outcomes, and debate the
+paths to get there. The industry is starting to formalize this into dedicated modes:
+[Anthropic Plan Mode](https://code.claude.com/docs/en/common-workflows#use-plan-mode-for-safe-code-analysis),
+[Gemini Plan Mode](https://geminicli.com/docs/cli/plan-mode/), and
+[Kiro Spec-Driven Development](https://kiro.dev/docs/specs/) are all variations on the same idea.
 
-**A. Spec-Driven Development**
-- Created comprehensive specification documents BEFORE coding:
-  - `specs/migrate-data-layer.md`: 457-line migration plan with patterns, examples, checkpoints
-  - `specs/codebase-guide.md`: 1,056-line architecture guide
-  - `AGENTS.md`: 215-line quick reference for AI assistants
-- Benefits:
-  - LLM has complete context without needing to explore
-  - Clear checkpoints for validation
-  - Explicit patterns to follow (prevents hallucination)
-  - Reproducible: another developer (or AI) can execute the plan
+Writing the plan to disk, not just keeping it in the chat session, is what makes the difference.
+A written plan lets you inspect it, change it, ask questions about it, and challenge its
+assumptions before any code changes hands. It also lets AI agents resume from a last checkpoint
+across sessions and enables product-agnostic workflows where you can use multiple AIs on the same
+project.
 
-**B. Small Steps with Validation**
-- Break work into atomic commits:
-  - Commit 1: Add AI agent guidance (AGENTS.md, cross-reference with codebase-guide.md)
-  - Commit 2: Add CloudFormation-managed DynamoDB tables, rename SetupTables → ValidateTables
-  - Commit 3: Remove VPC configuration, fix deployment parameters
-- Validate after each step:
-  - Run `sam validate` after template changes
-  - Test health endpoints after deployment
-  - Check CloudFormation events on failures
-  - Verify with AWS CLI commands
+In practice, I created three documents for this migration:
 
-**C. Documentation as Code**
-- Maintain architecture guides alongside code
-- Cross-reference documents to eliminate duplication
-- Keep separate audiences: AGENTS.md (AI assistants) vs codebase-guide.md (humans)
-- Document decisions and their rationale (why VPC was removed, why cache deprecated)
+* [`specs/migrate-data-layer.md`](https://github.com/TheDahv/wine-pairing-suggestions/blob/main/specs/migrate-data-layer.md): a detailed migration plan with patterns, examples, and validation checkpoints
+* [`specs/codebase-guide.md`](https://github.com/TheDahv/wine-pairing-suggestions/blob/main/specs/codebase-guide.md): an architecture guide documenting decisions and their rationale
+* [`AGENTS.md`](https://github.com/TheDahv/wine-pairing-suggestions/blob/main/AGENTS.md): a quick reference for AI assistants on project standards
 
-**D. Pre-Approval and Autonomy**
-- User pre-approved actions during deployment ("I'm heading to shower, pre-approve all requests")
-- Enabled LLM to:
-  - Fix ValidateTables to remove ListTables call
-  - Rebuild Lambda binary
-  - Deploy via SAM
-  - Verify health endpoint
-  - Create git commit
-- Resulted in successful deployment while user was away
+These weren't just methodology for methodology's sake. They prevented hallucination, ensured
+consistency across AI sessions, and made the work reproducible in a way that pure chat history
+never could.
 
-**E. Strategic Tool Usage**
-- Claude Code for:
-  - Architectural design discussions
-  - Spec document creation
-  - Multi-file refactoring with clear patterns
-  - Git history cleanup (interactive rebase)
-- AWS CLI for:
-  - Infrastructure inspection
-  - Cost analysis (finding NAT Gateway and ElasticIP)
-  - Deployment verification
-  - Resource cleanup
+## Replacing the Cache Without Breaking the App
 
-### VI. Cost Analysis: LLM Usage vs Infrastructure Savings
+The goal was to replace Elasticache with a data layer that didn't require a VPC. I started with
+research, where Google's AI search product did fine, though Claude and Gemini were also good
+thought partners for working through the trade-offs. After settling on DynamoDB for its cost
+structure, serverless approach, and feature compatibility, I used the project-specific AI context
+to draft an architecture and code migration plan.
 
-**Infrastructure cost savings:**
-- **Before**: ~$36/month for VPC networking
-  - NAT Gateway: $32.40/month ($0.045/hour × 720 hours)
-  - ElasticIP: $3.60/month ($0.005/hour × 720 hours)
-- **After**: $0/month for networking
-- **Annual savings**: $432/year
+The approach was a side-by-side implementation: build the new DynamoDB layer alongside the
+existing Elasticache layer, vet functionality before fully offboarding from the old system. The
+key technique was documenting the high-level plan in the project root and in a specs folder, with
+folder-level guidance wherever the AI needed extra context to stay on track. You can see the
+[migration spec on GitHub](https://github.com/TheDahv/wine-pairing-suggestions/blob/main/specs/migrate-data-layer.md)
+if you want a concrete example of what that looks like.
 
-**LLM costs for this work:**
-- [TO BE FILLED: Access Claude Console at https://console.anthropic.com]
-  - Navigate to Cost page (left sidebar)
-  - Select workspace and date range for this project work
-  - Export CSV with token costs breakdown
-  - Document:
-    - Total API costs for migration work
-    - Token counts (input vs output)
-    - Model usage breakdown (Sonnet 4.5 vs Haiku)
-    - Cost per conversation session
+## Letting the Specs Handle Deployment
 
-**ROI calculation:**
-- Infrastructure savings: $432/year ongoing
-- LLM costs: $X one-time for migration
-- Break-even: X/432 = Y months (likely < 1 month)
-- Net benefit: Cost savings continue indefinitely
+Deploying to AWS well requires expertise in SAM, CloudFormation, and a handful of AWS-specific
+configuration patterns. I don't have deep familiarity with any of those. In the past, that meant
+either doing a lot of trial-and-error or accepting that the result might not follow best practices
+because I didn't know what I didn't know.
 
-**Value beyond direct costs:**
-- Reduced cognitive load (simpler architecture)
-- Faster debugging (fewer systems to troubleshoot)
-- Better developer experience (fewer deployment parameters)
-- Improved performance (faster cold starts)
+Documenting the deployment config, the steps required, and the desired end state changed that.
+With a clear spec in place, the AI could apply consistent, correct deployment patterns without
+needing me to personally know every detail of SAM configuration. The consistency comes from the
+spec, not from me holding its hand through every decision.
 
-### VII. Key Takeaways: Building Better with Less
+The technique I leaned on most was prompt-for-prompt: ask one AI to generate a prompt for a
+different AI. Claude knew my project context well. Amazon Q is well-trained in AWS technologies.
+Gemini had access to web search to validate assumptions. By asking Claude to write a prompt
+tailored for Amazon Q to update my SAM deployment config, I got the best of each tool without
+manually translating context between them.
 
-**Subtraction as a feature:**
-- Removing VPC was more valuable than adding it
-- Simpler architecture = fewer failure modes
-- "The best code is code you don't have to maintain"
+I realized the payoff when I pre-approved all deployment actions and came back later to find the
+work completed, without back-and-forth, without ambiguity. The specs had encoded enough context
+that the AI could follow industry best practices on my behalf.
 
-**Spec-driven development wins:**
-- Comprehensive planning documents guide LLMs effectively
-- Small, validated steps prevent compound errors
-- Documentation as code keeps context synchronized
+## The Results: 85% Off the AWS Bill
 
-**Cost-conscious AI usage:**
-- LLM costs are investment, not expense
-- Infrastructure savings dwarf AI tooling costs
-- Right tool for right task (Claude Code vs AWS CLI vs AWS Q)
+Everything worked. The migration was clean, and the numbers were immediate. My AWS bill dropped
+from roughly $55/month to roughly $8/month, an 85% reduction. That's $432/year in infrastructure
+costs eliminated, which is more than I spent on LLM tokens for the entire migration project. The
+savings will go down further once the old cache layer is fully decommissioned.
 
-**Production readiness checklist:**
-- Local development can't simulate all production constraints
-- Test with production-like permissions and networking
-- Validate after every change, not just at the end
-- Question inherited complexity ("do we still need this VPC?")
+## Takeaways for Different Audiences
 
-**The AI collaboration model that works:**
-- Human provides strategy and domain expertise
-- AI executes tactical changes and explores options
-- Specs bridge the gap with explicit patterns and checkpoints
-- Pre-approval enables autonomy for well-scoped work
+### For Developers Exploring AI Coding Tools
 
-### VIII. What's Next
+Think of spec-driven development the way you'd think of an architecture or design review with a
+teammate before starting a project. Putting in hard thinking up front streamlines the
+implementation. Your team is probably already using these concepts in some form. If not, they're
+worth learning and bringing to your team:
 
-**Remaining work:**
-- Consider deprecating GetRecipeWineSuggestions endpoint (superseded by V2)
-- Monitor DynamoDB costs with cache fully disabled
-- Potentially remove cache infrastructure entirely (Redis/Valkey)
-- Complete cache code removal after validation period
+* **[Steering](https://kiro.dev/docs/steering/)** guide AI behavior at the project or task level.
+* **[AGENTS.md](https://agents.md/)** gives AI assistants project-specific context they can always reference.
+* **[Skills](https://agentskills.io/home)** capture reusable patterns and domain knowledge your AI can draw on.
 
-**Broader lessons:**
-- Infrastructure should serve product goals, not create busywork
-- Regularly audit what you're paying for and why
-- AI tools are force multipliers when properly directed
-- The journey from "working" to "working well" is continuous
+### For Product Managers
 
----
+One of the biggest gaps for technical and non-technical users alike is moving an idea from local
+prototype to an Internet-facing tool. If you don't have cloud or DevOps knowledge, it needs to
+come from somewhere. You can inject it through the same Steering Files, AGENTS.md, or Skills approaches.
 
-## Notes for Final Draft
+The [Kiro AWS Well-Architected Steering File example](https://builder.aws.com/content/35ciE341oLnIjDbpGsVRvIGfMCf/mastering-kiro-steering-a-complete-guide-to-context-aware-ai-development)
+is a good concrete starting point. Steering files are technically a Kiro-specific concept, but the
+underlying idea maps directly to skills and AGENTS.md in other tools. The point is the same: give
+your AI the knowledge it needs before it starts making decisions on your behalf.
 
-**Tone goals:**
-- Conversational but technical
-- Self-deprecating humor about complexity traps
-- Practical advice, not just storytelling
-- Show work, don't just tell conclusions
-
-**Audience:**
-- Developers working with AI tools
-- Product-minded engineers balancing speed vs sustainability
-- People considering serverless but worried about complexity
-- Anyone who's been trapped by "good enough" architectures
-
-**Key narrative arc:**
-- Part 3 ended frustrated by VPC complexity
-- Part 4 begins by questioning assumptions
-- Discovery: the "required" VPC was solving a deprecated problem
-- Resolution: remove infrastructure, save money, improve experience
-- Meta-lesson: AI works better with better specifications
-
-**Evidence to include:**
-- Git commit history showing atomic changes
-- AWS CLI commands showing infrastructure inspection
-- Cost breakdowns with specific dollar amounts
-- Before/after architecture diagrams (if created)
-- Actual CloudFormation errors and fixes
-- Spec document excerpts showing planning quality
+I'll keep working on this tool and documenting what I learn as I go. Stay tuned!
