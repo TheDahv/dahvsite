@@ -1,6 +1,6 @@
 ---
 title: Wine Pairings and AI Part 3
-slug: wine-pairings-and-part-3
+slug: wine-pairings-and-ai-part-3
 date: 2025-09-12
 categories: programming, product-management, ai
 summary: 
