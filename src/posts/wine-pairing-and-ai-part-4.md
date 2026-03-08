@@ -1,7 +1,7 @@
 ---
 title: Wine Pairings and AI Part 4
 slug: wine-pairings-and-ai-part-4
-date: 2025-03-08
+date: 2026-03-08
 categories: programming, product-management, ai
 summary: >
   Picking a managed cache service early in the project came with hidden
