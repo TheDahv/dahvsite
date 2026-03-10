@@ -19,7 +19,7 @@ export default function Resume({ location }) {
             <p>
               Sr. Technical Product Manager
               <br />
-              7915 14th Ave SW, Seattle WA 98106
+              Seattle WA
             </p>
           </div>
           <div className={styles.contact}>
@@ -35,73 +35,68 @@ export default function Resume({ location }) {
         <div>
           <h2>Summary</h2>
           <p>
-            I'm a customer-focused product leader with a software engineering
-            background that I use to create products for technical customers or
-            that require technical understanding. From startups to corporations,
-            I turn ambiguity into clear direction to deliver results in
-            collaborative and iterative cross-functional teams. Notable skills
-            include:
+            Technical product manager with a software engineering foundation and
+            10+ years leading data-driven products from discovery through
+            launch. Experienced working across Science, Engineering, and BI
+            teams to turn ambiguous problems into products with measurable
+            outcomes. Brings equal comfort in product strategy and technical
+            depth to environments that need both.
           </p>
         </div>
         <div>
-          <ul className={styles.skills}>
-            <li>
-              Technical Product Leadership
-            </li>
-            <li>
-              Data & Analytics (Redshift, Jupyter)
-            </li>
-            <li>
-              Cross-functional Collaboration
-            </li>
-            <li>
-              Software Design &amp; Architecture (React, Node.js, and Go)
-            </li>
-            <li>
-              Scrappy UX research &amp; prototyping (Figma)
-            </li>
-            <li>
-              Program & Project Management (Asana and Jira)
-            </li>
-          </ul>
           <h2>Work Experience</h2>
+          <div className={styles.entry}>
+            <h3>
+              Amazon Web Services (AWS); Seattle, WA &ndash; Sr. Product Manager - Technical
+            </h3>
+            <span className={styles.dateRange}>
+              <nobr>November 2025 &ndash; Present</nobr>
+            </span>
+          </div>
+          <p>
+            Internal transfer to AWS Private Pricing Programs & Experiences team.
+          </p>
           <div className={styles.entry}>
             <h3>
               Amazon; Seattle, WA &ndash; Sr. Product Manager - Technical
             </h3>
             <span className={styles.dateRange}>
-              <nobr>August 2021 &ndash; Present</nobr>
+              <nobr>August 2021 &ndash; November 2025</nobr>
             </span>
           </div>
           <p>
-            I build feedback insights and community products for 3K Amazon's
-            transportation partners in the Last Mile network. I bridge business
-            stakeholder needs to Science, Software, and Business Intelligence
-            teams. Accomplishments include:
+            Built community experience, feedback analytics, and insights
+            products for 3K Amazon transportation partners in the Last Mile
+            network. Bridged business stakeholders with Science, Software,
+            and BI teams.
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              Launched a "zero to one" feedback aggregation and insights
-              platform saving 40+ Amazon teams an average ~2 hours/week to
-              detect defects and drive proactive improvements based on a
-              projected 245K feedback touchpoints across five channels.
+              <b>Town Square:</b> Identified a broken customer feedback flywheel
+              limiting data-driven program improvements. Launched a "zero to
+              one" feedback aggregation and AI-driven sentiment insights
+              platform saving 40+ Amazon teams an average 5+ hours/week to drive
+              defect monitoring and proactive research across 245K feedback
+              touchpoints across five channels.
             </li>
             <li>
-              Drove product strategy and execution for API-driven widget to
-              surface important unread community discussions, achieving a 4.06%
-              daily click-through rate and outperforming a comparable widget by
-              46bps in the pilot.
+              <b>Community Sentiment Metric:</b> To balance inconsistent
+              feedback signals and volumes across customer voices, launched a
+              community sentiment metric to balance ML-based sentiment signals
+              and drive actionable insights.  Application resulted in 97%
+              content viewership growth, 180% interactions growth, and 68% view
+              percentage growth.
             </li>
             <li>
-              Launched a community sentiment metric with weighted prioritization
-              components to turn ML-based sentiment signals into actionable
-              insights resulting in 97% content viewership growth, 180%
-              interactions growth, and 68% view percentage growth.
+              <b>Content Integration Widget:</b> Drove strategy and
+              execution for API-driven widget to surface important unread
+              community discussions, achieving a 4.06% daily click-through rate,
+              206bps above pilot goal.
             </li>
             <li>
-              Led an annotation campaign that produced 43K ground-truth
-              documents for BERT-based sentiment model training, improving
-              accuracy from 68% to 72%.
+              <b>Sentiment Model Retraining:</b> Led an annotation campaign that
+              produced 43K ground-truth documents for BERT-based sentiment model
+              training, improving accuracy from 68% to 72%.
             </li>
           </ul>
           <div className={cx(styles.entry)}>
@@ -111,40 +106,37 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            Starting as a software engineer, I pivoted to product management,
-            driving local SEO products and internal innovation programs. I used
-            Jira, Confluence, and Loom for product planning and internal
-            communications. Accomplishments include:
+            Joined as a software engineer and transitioned into product
+            management, leading local SEO products, new product launches, and
+            internal platform initiatives across consumer and enterprise SaaS
+            segments.
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              Launched a "zero to one" Local SEO beta supporting 6.7K sites
-              tracking 90.5K keywords across 62.4K markets that secured early
-              client gains of $73.2 enterprise ARR and ~$9K SMB ARR. The beta
-              eventually folded into Moz's flagship product.
+              <b>Local Market Analytics Beta:</b> Identified gap for Moz
+              customers in hyperlocal SEO performance analysis and competitor
+              research. Launched a "zero to one" Local SEO beta supporting 6.7K
+              sites tracking 90.5K keywords across 62.4K markets that secured
+              early client gains of $73.2 enterprise ARR and ~$9K SMB ARR. The
+              beta folded into Moz's flagship product.
             </li>
             <li>
-              Spearheaded an internal rapid prototyping studio creating a
-              React-based component library and alpha testing environment,
-              reducing prototype development from months to two sprints, and
-              launching three product alphas in a quarter.
+              <b>Applications Framework:</b> Led an internal rapid
+              prototyping studio using React-based component libraries and alpha
+              testing environment. Reduced prototype development from months to
+              two sprints. Launched three product alphas in a quarter.
             </li>
             <li>
-              Drove technical leadership and influenced product direction for a
-              listings management product supporting over 100K business
-              locations, leading exploration and prototyping of an embedded
-              audit tool for new revenue streams.
+              <b>Listings Management:</b> Drove technical leadership and
+              product direction for a listings management product
+              supporting over 100K business locations, leading exploration and
+              prototyping of an embedded audit tool for new revenue streams.
             </li>
             <li>
-              Drove enterprise locations management API success by translating
-              customer needs into technical solutions while supporting sales
-              processes, onboarding experiences, documentation, and customer key
-              management.
-            </li>
-            <li>
-              Led API integrations for popular listings services such as Google
-              My Business and Yelp to help customers manage their business
-              presence on those services.
+              <b>Enterprise API Management:</b> Drove enterprise locations
+              management API success by translating customer needs into
+              technical solutions while supporting sales, onboarding
+              experiences, and documentation.
             </li>
           </ul>
           <div className={cx(styles.entry, styles.pageBreak)}>
@@ -154,27 +146,12 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            I led the engineering team for a global non-profit building
-            entrepreneurial communities in over 150 countries. As technical
-            director, I served as product manager, team lead, architect, and
-            engineer. Accomplishments and deliverables include:
+            Led engineering for a global non-profit operating in 150+ countries,
+            serving as PM, team lead, architect, and engineer. Built and shipped
+            SWOOP (internal event management database supporting 13.2K events),
+            an Organizer Portal for volunteer event planning, and a family of
+            regional marketing and event hosting sites.
           </p>
-          <ul className={styles.accomplishments}>
-            <li>
-              Developed a database and management tool to help staff track,
-              budget, and support over 13.2K organizer-planned events.
-            </li>
-            <li>
-              Developed a partner-facing admin portal, enabling volunteer
-              organizers to plan, promote, and finance their events using the
-              same database as Startup Weekend staff.
-            </li>
-            <li>
-              Built an automated framework to deliver five regional marketing
-              websites and a platform for generating and hosting customizable
-              event pages for all tracked events.
-            </li>
-          </ul>
           <div className={styles.entry}>
             <h3>WineBid.com; Seattle, WA – Software Engineer</h3>
             <span className={styles.dateRange}>
@@ -182,13 +159,10 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            I grew my skills as a well-rounded full-stack developer on a small
-            team building public and internal software for an Internet wine
-            auction. Technologies and languages include C#, JavaScript, CSS, and
-            MSSQL. Frameworks include ASP.NET MVC, ASP.NET Forms, and WPF.
-            Notable accomplishments include delivering a custom hands-free,
-            no-look inventory tool that reduced the inventory process from an
-            entire workday to a couple hours.
+            Full-stack developer building public and internal tools for an
+            Internet wine auction (C#, JavaScript, ASP.NET MVC, MSSQL). Designed
+            a custom hands-free inventory tool that cut a full-day inventory
+            process down to ~2 hours.
           </p>
           <div className={styles.entry}>
             <h3>Microsoft; Redmond, WA – Program Manager</h3>
@@ -197,11 +171,21 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            I worked on a SharePoint hosted services team. Accomplishments include
-            authoring specifications for service platform monitoring system. I
-            wrote PowerShell scripts to manage VM instances in a dynamic service
-            platform and managing Microsoft's 5 month SharePoint Online 2010
+            Worked on a SharePoint hosted services team. Wrote specifications
+            for a service platform monitoring system, authored PowerShell
+            scripts for VM management, and managed the SharePoint Online 2010
             Community Tech Preview.
+          </p>
+          <h2>Summary of Skills</h2>
+
+          <p>
+            <b>Technical</b> Python (data analysis), SQL (Redshift), JavaScript/Node, Go, React, Jupyter, Figma (wireframing & stakeholder mockups).
+          </p>
+          <p>
+            <b>Product</b> Data product lifecycle, ML product management, experimentation design, discovery & UX research, agile/scrum, cross-functional leadership.
+          </p>
+          <p>
+            <b>Tools</b> Jira, Asana, Confluence, Miro, Loom.
           </p>
           <h2>Education</h2>
           <div className={styles.entry}>

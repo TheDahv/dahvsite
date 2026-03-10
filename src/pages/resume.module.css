@@ -42,6 +42,10 @@
   margin-bottom: 1em;
 }
 
+.root ul li {
+  margin-bottom: 0;
+}
+
 .introduction {
   display: flex;
   justify-content: space-between;
