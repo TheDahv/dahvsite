@@ -14,16 +14,14 @@
   font-size: 1rem;
   color: var(--accent-color);
   line-height: 1.2;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
-.root h1,
-.root h2 {
-  font-size: 1.5rem;
+.root h1 {
+  font-size: 1.1rem;
 }
 
 @media print {
-
   .root h1,
   .root h2,
   .root h3 {
@@ -32,18 +30,20 @@
     margin-bottom: 0.5em;
   }
 
-  .root h1,
-  .root h2 {
-    font-size: 1.5rem;
+  .root h1 {
+    font-size: 1.1rem;
   }
 }
 
 .root p {
-  margin-bottom: 1em;
+  margin-bottom: 0.8rem;
 }
 
-.root ul li {
-  margin-bottom: 0;
+.root ul {
+  margin-bottom: 0.5rem;
+  li {
+    margin-bottom: 0;
+  }
 }
 
 .introduction {

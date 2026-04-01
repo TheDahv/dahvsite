@@ -33,35 +33,23 @@ export default function Resume({ location }) {
           </div>
         </div>
         <div>
-          <h2>Summary</h2>
           <p>
             Technical product manager with a software engineering foundation and
             10+ years leading data-driven products from discovery through
-            launch. Experienced working across Science, Engineering, and BI
-            teams to turn ambiguous problems into products with measurable
-            outcomes. Brings equal comfort in product strategy and technical
-            depth to environments that need both.
+            launch. Experienced working across UX, Data Science, Engineering,
+            and BI to turn ambiguous problems into products with measurable
+            outcomes.  Brings equal comfort in product strategy and technical
+            depth.
           </p>
         </div>
         <div>
           <h2>Work Experience</h2>
           <div className={styles.entry}>
             <h3>
-              Amazon Web Services (AWS); Seattle, WA &ndash; Sr. Product Manager - Technical
-            </h3>
-            <span className={styles.dateRange}>
-              <nobr>November 2025 &ndash; Present</nobr>
-            </span>
-          </div>
-          <p>
-            Internal transfer to AWS Private Pricing Programs & Experiences team.
-          </p>
-          <div className={styles.entry}>
-            <h3>
               Amazon; Seattle, WA &ndash; Sr. Product Manager - Technical
             </h3>
             <span className={styles.dateRange}>
-              <nobr>August 2021 &ndash; November 2025</nobr>
+              <nobr>August 2021 &ndash; Present</nobr>
             </span>
           </div>
           <p>
@@ -80,11 +68,11 @@ export default function Resume({ location }) {
               touchpoints across five channels.
             </li>
             <li>
-              <b>Community Sentiment Metric:</b> To balance inconsistent
-              feedback signals and volumes across customer voices, launched a
-              community sentiment metric to balance ML-based sentiment signals
-              and drive actionable insights.  Application resulted in 97%
-              content viewership growth, 180% interactions growth, and 68% view
+              <b>Community Sentiment Metric:</b> Designed a metric to balance
+              inconsistent volumes from ML-based sentiment signals and volumes
+              as well as drive actionable insights from customer voices.
+              Application in content strategy teams resulted in 97% content
+              viewership growth, 180% interactions growth, and 68% view
               percentage growth.
             </li>
             <li>
@@ -96,7 +84,9 @@ export default function Resume({ location }) {
             <li>
               <b>Sentiment Model Retraining:</b> Led an annotation campaign that
               produced 43K ground-truth documents for BERT-based sentiment model
-              training, improving accuracy from 68% to 72%.
+              training, improving accuracy from 68% to 72%. Drove community
+              engagement strategy to focus on escalations and meaningful
+              sentiment drivers.
             </li>
           </ul>
           <div className={cx(styles.entry)}>
@@ -113,18 +103,19 @@ export default function Resume({ location }) {
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              <b>Local Market Analytics Beta:</b> Identified gap for Moz
-              customers in hyperlocal SEO performance analysis and competitor
-              research. Launched a "zero to one" Local SEO beta supporting 6.7K
-              sites tracking 90.5K keywords across 62.4K markets that secured
-              early client gains of $73.2 enterprise ARR and ~$9K SMB ARR. The
-              beta folded into Moz's flagship product.
+              <b>Local Market Analytics Beta:</b> Identified performance
+              analysis and competor research gap for hyperlocal SEO customers.
+              Launched a "zero to one" Local SEO beta supporting 6.7K sites
+              tracking 90.5K keywords across 62.4K markets that secured early
+              client gains of $73.2K enterprise ARR and ~$9K SMB ARR. Moz merged
+              key beta features into the flagship product.
             </li>
             <li>
               <b>Applications Framework:</b> Led an internal rapid
               prototyping studio using React-based component libraries and alpha
               testing environment. Reduced prototype development from months to
-              two sprints. Launched three product alphas in a quarter.
+              within four weeks. Launched three product alphas in its first quarter
+              before shifting to product experimentation studio.
             </li>
             <li>
               <b>Listings Management:</b> Drove technical leadership and
@@ -136,7 +127,9 @@ export default function Resume({ location }) {
               <b>Enterprise API Management:</b> Drove enterprise locations
               management API success by translating customer needs into
               technical solutions while supporting sales, onboarding
-              experiences, and documentation.
+              experiences, and documentation. Managed flywheel of API endpoint
+              development, documentation management, sales support, and customer
+              onboarding. 
             </li>
           </ul>
           <div className={cx(styles.entry, styles.pageBreak)}>
@@ -176,7 +169,7 @@ export default function Resume({ location }) {
             scripts for VM management, and managed the SharePoint Online 2010
             Community Tech Preview.
           </p>
-          <h2>Summary of Skills</h2>
+          <h2>Skills</h2>
 
           <p>
             <b>Technical</b> Python (data analysis), SQL (Redshift), JavaScript/Node, Go, React, Jupyter, Figma (wireframing & stakeholder mockups).
