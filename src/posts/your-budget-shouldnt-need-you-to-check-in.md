@@ -72,12 +72,21 @@ Before a single line of code, I planned, designed, and debated the plan with Cla
 
 This isn't novel by and means and is widely seen as best practice in industry. It's interesting the impact it has om frugality and getting things right the first time. When I talk to friends who work as profession software developers, they describe liberal budgets with highly-capable models that let them go nuts until the problem is solved. I'm paying with my own credit card, so I want my tokens to count. I spent *lots* of time scrutinizing designs, challenging plans, and ensuring quality up front. 
 
-I experienced much less rework, messy designs, and crufty overhead as a result.
+I experienced minimized rework, cleaner designs, and reduced overhead as a result.
 
-todo: grmini and claude
+A new positive consequence was coordinating the strengths different model platforms. Gemini has decent capacity in its free tier. However, I find Claude Code's overall code quality to be better. Unfortunately, there's no such free tier. To balance, I had Gemini create git branches to implement specific features following Claude-authored plans. Then I had write a code review document document for Gemini to read and clean up its work. This proved to be a great way to make progress frugally, using documentation to guide the way.
 
-1. AI steering files:
-  1. AGENTS.md
+### AI steering files:
+
+In addition to specs, I also wrote documentation to govern AI behavior on tasks. 
+
+[AGENTS.md](https://github.com/TheDahv/financial-assistant/blob/main/AGENTS.md) contains a general project and purpose overview and guides AI assistants for general tasks. I've had mixed results getting Claude Code to read it consistently and have tried creating a CLAUDE.md symlink. However, I can also ask to load it when we start sessions. Gemini seems to read it consistently. It also refers to other files for specific tasks, such as development.
+
+[DEVELOPMENT.md](https://github.com/TheDahv/financial-assistant/blob/main/DEVELOPMENT.md) tries to minimize code base scans and enforce consistent patterns. The former is an attempt to be frugal so agents can get project details its context rather than token-heavy code scans. The latter creates guardrails to keep development patterns consistent and minimize Frankenstein code bases.
+
+[SYSTEM.md](https://github.com/TheDahv/financial-assistant/blob/main/SYSTEM.md) governs the behavior of the financial assistant in action. It gets loaded for each analysis program and ad hoc question from the users (that's us).
+
+1. AGENTS.md
   2. DEVELOPMENT.md
   3. SYSTEM.md
 
