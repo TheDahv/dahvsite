@@ -18,7 +18,10 @@
 }
 
 .root h1 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+}
+.root h2 {
+  font-size: 1.2rem;
 }
 
 @media print {

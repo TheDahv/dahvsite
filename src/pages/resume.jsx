@@ -34,59 +34,95 @@ export default function Resume({ location }) {
         </div>
         <div>
           <p>
-            Technical product manager with a software engineering foundation and
-            10+ years leading data-driven products from discovery through
-            launch. Experienced working across UX, Data Science, Engineering,
-            and BI to turn ambiguous problems into products with measurable
-            outcomes. Brings equal comfort in product strategy and technical
-            depth.
+            Technical PM who validates ideas through rapid prototyping before
+            handing to engineering. 10+ years leading technical products across
+            SaaS, data platforms, APIs, and AI/ML systems. Comfortable designing
+            APIs, leading technical spaces, and staying hands-on with personal
+            AI projects.
           </p>
         </div>
         <div>
+          <h2>Skills &amp; Tools</h2>
+          <ul>
+            <li>
+              <b>AI/ML Tooling:</b> Claude Code, Gemini, AWS Kiro, LangChain,
+              MCP, prompt engineering
+            </li>
+            <li>
+              <b>Languages &amp; Frameworks:</b> TypeScript/Node.js, Go, Python,
+              SQL (Redshift, Postgres), React
+            </li>
+            <li>
+              <b>Data &amp; Analytics:</b> Data & ML product management,
+              NLP/sentiment pipelines, experimentation design
+            </li>
+            <li>
+              <b>Product &amp; Process</b>: Discovery &amp; UX research,
+              agile/scrum, cross-functional leadership, API design,
+              zero-to-one-launches
+            </li>
+            <li>
+              <b>Tools:</b> Jira, Asana, Confluence, Miro
+            </li>
+          </ul>
           <h2>Work Experience</h2>
           <div className={styles.entry}>
-            <h3>Amazon; Seattle, WA &ndash; Sr. Product Manager - Technical</h3>
+            <h3>
+              Amazon Web Services; Seattle, WA &ndash; Sr. Product Manager -
+              Technical
+            </h3>
             <span className={styles.dateRange}>
-              <nobr>August 2021 &ndash; Present</nobr>
+              <nobr>November 2025 &ndash; Present</nobr>
             </span>
           </div>
           <p>
-            Built community experience, feedback analytics, and insights
-            products for 3K Amazon transportation partners in the Last Mile
-            network. Bridged business stakeholders with Science, Software, and
-            BI teams.
+            Supporting automation for programmatic, seller-led AWS deals through
+            the global Private Pricing program.
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              <b>Town Square:</b> Identified a broken customer feedback flywheel
-              limiting data-driven program improvements. Launched a "zero to
-              one" feedback aggregation and AI-driven sentiment insights
-              platform saving 40+ Amazon teams an average 5+ hours/week to drive
-              defect monitoring and proactive research across 245K feedback
-              touchpoints across five channels.
+              <b>PM Feedback Automation:</b> AI tool eliminating 90% of manual
+              PM effort for defect classification and summarization across Slack
+              channels, delivering weekly analysis and metrics for executive
+              reviews.
             </li>
             <li>
-              <b>Community Sentiment Metric:</b> Designed a metric to balance
-              inconsistent ML-based sentiment signal volumes and drive
-              actionable insights from customer voices. Prototyped the approach
-              using Amazon's internal ETL framework and Excel to prove the
-              concept before securing funding to build it as a production tool.
-              Application in content strategy teams resulted in 97% content
-              viewership growth, 180% interactions growth, and 68% view
-              percentage growth.
+              <b>Enterprise Support Integration:</b> Enabled programmatic deal
+              automation to integrate Q4 AWS Support updates into Private
+              Pricing, coordinating the April 2026 launch across 4 orgs spanning
+              engineering to sales enablement.
+            </li>
+          </ul>
+          <div className={styles.entry}>
+            <h3>Amazon; Seattle, WA &ndash; Sr. Product Manager - Technical</h3>
+            <span className={styles.dateRange}>
+              <nobr>August 2021 &ndash; November 2025</nobr>
+            </span>
+          </div>
+          <p>
+            Built AI-driven feedback analytics for 3K Last Mile transportation
+            partners across business, science, software, and BI teams.
+          </p>
+          <ul className={styles.accomplishments}>
+            <li>
+              <b>AI Feedback Analysis Platform:</b> Zero-to-one multi-channel
+              feedback platform allowing 40+ teams to analyze feedback trends
+              across 245K touchpoints with ML sentiment scoring and AI-driven
+              summaries. One program drove $500K+ annual defect prevention
+              through feedback-driven transporter education strategy.
+            </li>
+            <li>
+              <b>AI Sentiment Pipeline:</b> Designed and delivered sentiment
+              metric, validated and prototyped using Amazon's ETL framework.
+              Teams achieved 97% viewership, 180% interaction, 68%
+              view-percentage growth. 43K-document annotation campaign with
+              Applied Science improved underlying BERT model accuracy 68%→72%.
             </li>
             <li>
               <b>Content Integration Widget:</b> Drove strategy and execution
               for API-driven widget to surface important unread community
-              discussions, achieving a 4.06% daily click-through rate, 206bps
-              above pilot goal.
-            </li>
-            <li>
-              <b>Sentiment Model Retraining:</b> Led an annotation campaign that
-              produced 43K ground-truth documents for BERT-based sentiment model
-              training, improving accuracy from 68% to 72%. Drove community
-              engagement strategy to focus on escalations and meaningful
-              sentiment drivers.
+              discussions, achieving a 4.06% daily click-through rate, 2.06
+              percentage points above pilot goal.
             </li>
           </ul>
           <div className={cx(styles.entry)}>
@@ -96,41 +132,27 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            Joined as a software engineer and transitioned into product
-            management, leading local SEO products, new product launches, and
-            internal platform initiatives across consumer and enterprise SaaS
-            segments.
+            Owned platform API strategy and zero-to-one launches; established
+            company-wide innovation culture.
           </p>
           <ul className={styles.accomplishments}>
             <li>
-              <b>Local Market Analytics Beta:</b> Identified performance
-              analysis and competitor research gap for hyperlocal SEO customers.
-              Used Moz's feature flagging framework to prototype directly in the
-              live environment with real customer data before committing to full
-              build. Launched a "zero to one" beta supporting 6.7K sites
-              tracking 90.5K keywords across 62.4K markets, securing $73.2K
-              enterprise ARR and ~$9K SMB ARR. Moz merged key features into the
-              flagship product.
+              <b>Moz Local Enterprise API:</b> Designed and owned Moz Local API
+              managing 100K+ listings. Embedded in sales cycles, translating
+              customer needs into API enhancements for programmatic bulk
+              location data management.
             </li>
             <li>
-              <b>Applications Framework:</b> Led an internal rapid prototyping
-              studio using React-based component libraries and alpha testing
-              environment. Reduced prototype development from months to within
-              four weeks. Launched three product alphas in its first quarter
-              before shifting to product experimentation studio.
+              <b>Local Market Analytics Beta:</b> Launched zero-to-one beta
+              supporting 6.7K sites/90.5K keywords/62.4K markets, securing
+              $73.2K enterprise + $9K SMB ARR by prototyping with real customer
+              data; features merged into flagship product.
             </li>
             <li>
-              <b>Listings Management:</b> Drove technical leadership and product
-              direction for a listings management product supporting over 100K
-              business locations, leading exploration and prototyping of an
-              embedded audit tool for new revenue streams.
-            </li>
-            <li>
-              <b>Enterprise API Management:</b> Embedded in enterprise sales
-              cycles through direct customer calls, translating prospect and
-              client needs into API design decisions and product direction.
-              Managed the full flywheel of endpoint development, documentation,
-              sales enablement, and customer onboarding.
+              <b>Rapid Experimentation Studio:</b> Led across PMs and
+              engineering to accelerate Moz product validation. Reduced
+              prototype cycles from months to 4 weeks, shipped 3 alphas in first
+              quarter to enable hypothesis-driven innovation.
             </li>
           </ul>
           <div className={cx(styles.entry, styles.pageBreak)}>
@@ -140,11 +162,10 @@ export default function Resume({ location }) {
             </span>
           </div>
           <p>
-            Led engineering for a global non-profit operating in 150+ countries,
-            serving as PM, team lead, architect, and engineer. Built and shipped
-            SWOOP (internal event management database supporting 13.2K events),
-            an Organizer Portal for volunteer event planning, and a family of
-            regional marketing and event hosting sites.
+            Led engineering for a global non-profit, serving as PM, team lead,
+            architect, and engineer. Built and shipped internal event planning
+            and management platform supporting 13.2K events as well as a suite
+            of regional marketing and event sites.
           </p>
           <div className={styles.entry}>
             <h3>WineBid.com; Seattle, WA – Software Engineer</h3>
@@ -176,8 +197,8 @@ export default function Resume({ location }) {
               <strong>Family Financial Assistant</strong>: Household AI agent
               connecting Monarch Money to a shared Telegram interface, running
               persistently on a local Mac Mini with zero cloud infrastructure.
-              Dual-mode architecture pushes pre-defined reports and supports
-              tool-driven ad hoc questions. Learn more:
+              Dual-mode architecture validates patterns for financial
+              decision-making. Learn more:
               <a href="https://github.com/TheDahv/financial-assistant">
                 {" "}
                 github.com/TheDahv/financial-assistant
@@ -186,9 +207,9 @@ export default function Resume({ location }) {
             <p>
               <strong>AI Dungeon Master</strong>: LLM-powered Dungeon Master for
               family tabletop RPG sessions with voice synthesis and structured
-              session initialization. Multi-modal design orchestrates existing
-              AI platform capabilities to follow users from desktop to remote
-              terminal to mobile "live mode" app. Learn more:
+              session initialization. Multi-modal design validates orchestrating
+              AI capabilities across form factors (desktop, terminal, mobile).
+              Learn more:
               <a href="https://github.com/TheDahv/family-dnd">
                 {" "}
                 github.com/TheDahv/family-dnd{" "}
@@ -206,22 +227,6 @@ export default function Resume({ location }) {
             </p>
           </div>
 
-          <h2>Skills</h2>
-
-          <p>
-            <b>Builder Stack:</b> Claude Code, Gemini, Kiro (prototyping and
-            development); Python (data analysis), SQL (Redshift),
-            JavaScript/Node, Go, React, Jupyter, Figma (wireframing &
-            stakeholder mockups)
-          </p>
-          <p>
-            <b>Product:</b> Data product lifecycle, ML product management,
-            experimentation design, discovery & UX research, agile/scrum,
-            cross-functional leadership
-          </p>
-          <p>
-            <b>Tools:</b> Jira, Asana, Confluence, Miro, Loom.
-          </p>
           <h2>Education</h2>
           <div className={styles.entry}>
             <h3>Raikes School at University of Nebraska</h3>
