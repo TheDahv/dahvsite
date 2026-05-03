@@ -1,7 +1,7 @@
 ---
 title: My AI Development Setup (Q2 2026)
 slug: my-ai-development-setup-q2-2026
-date: 2026-04-26
+date: 2026-05-02
 categories: programming, product-management, software-engineering, ai
 summary:
   ! How I use a mix of free and pay-as-you-go AI tools — Gemini, Claude Code,
